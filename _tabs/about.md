@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fas fa-user
-order: 6
+order: 5
 ---
 
 
