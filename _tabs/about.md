@@ -4,6 +4,7 @@ icon: fas fas fa-user
 order: 6
 ---
 
+
 **Senior Robotics Software Engineer | Mechatronics Engineer | Robotics & Embedded Systems**
 
 📧 kumar.196@alumni.iitj.ac.in • 📞 (+91) 8741880525
