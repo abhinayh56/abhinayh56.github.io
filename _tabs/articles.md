@@ -1,5 +1,5 @@
 ---
 # the default layout is 'page'
-icon: fas fa-microchip
-order: 2
+icon: fas fa-book
+order: 3
 ---
