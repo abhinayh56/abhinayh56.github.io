@@ -1,0 +1,36 @@
+<!-- ---
+layout: page
+title: Home
+permalink: /
+---
+
+# My Robotics Lab
+
+Robotics Software Engineer
+
+---
+
+## About
+
+...
+
+---
+
+## Featured Projects
+
+- EtherCAT Framework
+- HAL
+- Robotics Toolbox
+- Filters Library
+
+---
+
+## Publications
+
+...
+
+---
+
+## Latest Articles
+
+{% include latest-posts.html %} -->

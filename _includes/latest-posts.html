@@ -1,0 +1,10 @@
+{% assign latest = site.posts | slice: 0,5 %}
+
+<ul>
+{% for post in latest %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <small>{{ post.date | date: "%d %b %Y" }}</small>
+  </li>
+{% endfor %}
+</ul>
