@@ -1,7 +1,7 @@
 ---
-title: Posts
-icon: fas fa-newspaper
-order: 6
-permalink: /posts/
+order: 5
 layout: posts_custom
+icon: fas fa-newspaper
+permalink: /posts/
+title: Posts
 ---

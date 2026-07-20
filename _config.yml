@@ -181,7 +181,19 @@ collections:
   tabs:
     output: true
     sort_by: order
+  projects:
+    output: true
+    sort_by: order
   articles:
+    output: true
+    sort_by: order
+  libraries:
+    output: true
+    sort_by: order
+  datasets:
+    output: true
+    sort_by: order
+  posts:
     output: true
     sort_by: order
 

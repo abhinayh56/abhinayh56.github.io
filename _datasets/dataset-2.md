@@ -1,7 +1,7 @@
 ---
-title: "Article 2"
+title: "Dataset 2"
 date: 2025-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
-layout: article_custom
+layout: dataset_custom
 ---

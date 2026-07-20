@@ -1,9 +1,8 @@
 ---
-# the default layout is 'page'
+order: 6
+layout: page
 icon: fas fas fa-user
-order: 5
 ---
-
 
 **Senior Robotics Software Engineer | Mechatronics Engineer | Robotics & Embedded Systems**
 

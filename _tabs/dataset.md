@@ -1,5 +1,5 @@
 ---
-# the default layout is 'page'
-icon: fas fa-database
 order: 4
+layout: datasets_custom
+icon: fas fa-database
 ---

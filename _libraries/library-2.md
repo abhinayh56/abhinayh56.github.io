@@ -1,7 +1,7 @@
 ---
-title: "Article 2"
+title: "Library 2"
 date: 2025-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
-layout: article_custom
+layout: library_custom
 ---

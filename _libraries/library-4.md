@@ -1,7 +1,7 @@
 ---
-title: "Article 4"
+title: "Library 4"
 date: 2026-01-25 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
-layout: article_custom
+layout: library_custom
 ---

@@ -1,7 +1,7 @@
 ---
-title: Articles
+order: 2
 layout: articles_custom
 icon: fas fa-book
-order: 2
-permalink: /articles/
+title: Articles
+permalink: /articles
 ---

@@ -1,5 +1,5 @@
 ---
-# the default layout is 'page'
-icon: fas fa-microchip
 order: 1
+layout: projects_custom
+icon: fas fa-microchip
 ---
