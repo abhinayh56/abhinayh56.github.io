@@ -6,6 +6,7 @@ tags: [Kinematics]
 layout: project_custom
 permalink: /projects/project-1
 math: true
+order: 1
 ---
 
 
