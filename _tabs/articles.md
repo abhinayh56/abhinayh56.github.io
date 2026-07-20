@@ -1,5 +1,7 @@
 ---
-# the default layout is 'page'
+title: Articles
+layout: articles_custom
 icon: fas fa-book
 order: 2
+permalink: /articles/
 ---
