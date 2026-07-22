@@ -5,7 +5,7 @@ title: Home
 
 <!-- ========================= HERO ========================= -->
 
-<div class="text-center py-5">
+<div class="text-center py-2">
 
 <h1 class="display-4 fw-bold">
 My Robotics Lab
@@ -24,31 +24,17 @@ share datasets, and write about robotics, control systems,
 embedded software, and real-time computing.
 </p>
 
-<div class="mt-4">
-
-<a class="btn btn-primary me-2"
-   href="{{ '/projects' | relative_url }}">
-Projects
-</a>
-
-<a class="btn btn-outline-primary"
-   href="{{ '/about' | relative_url }}">
-About Me
-</a>
-
 </div>
 
-</div>
-
-<hr class="my-5">
+<hr class="my-3">
 
 <!-- ========================= NAVIGATION ========================= -->
 
-<h2 class="mb-4">
+<h2 class="mb-3">
 Explore
 </h2>
 
-<div class="row g-4">
+<div class="row g-2">
 
 <div class="col-lg-4 col-md-6">
 
@@ -202,89 +188,63 @@ Browse →
 
 </div>
 
-<hr class="my-5">
+<hr class="my-3">
 
-<!-- ========================= RESEARCH AREAS ========================= -->
+<h2 class="mb-3">
+Research &amp; Engineering Interests
+</h2>
 
-<h2>Research & Engineering Interests</h2>
+<div class="row">
 
-<div class="mt-4">
+  <div class="col-lg-6">
 
-<span class="badge rounded-pill text-bg-primary m-1 p-2">Robotics</span>
-<span class="badge rounded-pill text-bg-primary m-1 p-2">Medical Robotics</span>
-<span class="badge rounded-pill text-bg-primary m-1 p-2">Embedded Systems</span>
-<span class="badge rounded-pill text-bg-primary m-1 p-2">Real-Time Systems</span>
-<span class="badge rounded-pill text-bg-primary m-1 p-2">Control Systems</span>
-<span class="badge rounded-pill text-bg-primary m-1 p-2">Motion Planning</span>
-<span class="badge rounded-pill text-bg-primary m-1 p-2">Computer Vision</span>
-<span class="badge rounded-pill text-bg-primary m-1 p-2">State Estimation</span>
-<span class="badge rounded-pill text-bg-primary m-1 p-2">ROS / ROS 2</span>
-<span class="badge rounded-pill text-bg-primary m-1 p-2">EtherCAT</span>
-<span class="badge rounded-pill text-bg-primary m-1 p-2">C++</span>
-<span class="badge rounded-pill text-bg-primary m-1 p-2">Python</span>
+    <h4>Robotics & Control</h4>
 
-</div>
+    <ul>
+      <li>Medical Robotics</li>
+      <li>Industrial Robotics</li>
+      <li>Robot Kinematics & Dynamics</li>
+      <li>Robot Motion Planning</li>
+      <li>Robot Control Systems</li>
+      <li>State Estimation & Sensor Fusion</li>
+      <li>Computer Vision</li>
+      <li>Artificial Intelligence for Robotics</li>
+    </ul>
 
-<hr class="my-5">
+  </div>
 
-<!-- ========================= QUICK OVERVIEW ========================= -->
+  <div class="col-lg-6">
 
-<h2>Quick Overview</h2>
+    <h4>Software & Embedded Systems</h4>
 
-<div class="row text-center mt-4">
+    <ul>
+      <li>Modern C++</li>
+      <li>Python</li>
+      <li>Embedded Systems</li>
+      <li>Real-Time Operating Systems (RTOS)</li>
+      <li>ROS / ROS 2</li>
+      <li>EtherCAT & Industrial Communication</li>
+      <li>Software Architecture & Framework Design</li>
+      <li>High-Performance & Real-Time Computing</li>
+    </ul>
 
-<div class="col-md-3">
-
-<h2>🚀</h2>
-
-<h4>Projects</h4>
-
-<p>Engineering solutions and prototypes.</p>
-
-</div>
-
-<div class="col-md-3">
-
-<h2>📖</h2>
-
-<h4>Articles</h4>
-
-<p>Technical tutorials and implementation notes.</p>
+  </div>
 
 </div>
 
-<div class="col-md-3">
+<hr class="my-3">
 
-<h2>📚</h2>
+<div class="text-center pt-2">
 
-<h4>Libraries</h4>
-
-<p>Reusable software and frameworks.</p>
-
-</div>
-
-<div class="col-md-3">
-
-<h2>📊</h2>
-
-<h4>Datasets</h4>
-
-<p>Research data and benchmark resources.</p>
-
-</div>
-
-</div>
-
-<hr class="my-5">
-
-<div class="text-center">
-
-<h2>Building reliable robotics through engineering, research, and continuous learning.</h2>
+<h5>
+Building Reliable Robotics Through Engineering, Research, and Continuous Learning
+</h5>
 
 <p class="mt-3">
-
-Thank you for visiting <strong>My Robotics Lab</strong>.
-
+Thank you for visiting 
+<a href="{{ '/' | relative_url }}" class="text-decoration-none fw-bold">
+    My Robotics Lab
+  </a>.
 </p>
 
 </div>
