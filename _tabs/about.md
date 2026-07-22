@@ -2,6 +2,8 @@
 order: 6
 layout: about_custom
 icon: fas fas fa-user
+permalink: /about
+title: About
 ---
 
 **Senior Robotics Software Engineer | Mechatronics Engineer | Robotics & Embedded Systems**
