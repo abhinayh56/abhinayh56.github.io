@@ -1,81 +1,290 @@
 ---
 layout: home_custom
-math: true
+title: Home
 ---
 
-# this is my resume
-## this is test heading
-- this is point 1
-- this is point 2
-- this is point 3
-- this is point 4
+<!-- ========================= HERO ========================= -->
 
-```cpp
-#include <iostream>
+<div class="text-center py-5">
 
-int main()
-{
-    std::cout << "this is a test for code blocks in c++" << std::endl
+<h1 class="display-4 fw-bold">
+My Robotics Lab
+</h1>
 
-    return 0;
-}
-```
-<!-- {: .nolineno } -->
+<p class="lead mt-3">
+<strong>Robotics • Embedded Systems • Control Systems • Medical Robotics</strong>
+</p>
 
-```shell
-pwd
-mkdir -p ~/abhinay/catkin_ws
-cd /catkin_ws
-catkin create pkg turtlesim_custom
-catkin make
-```
+<p class="mt-4 mx-auto" style="max-width:900px;">
+Welcome! I'm <strong>Abhinay Kumar</strong>, a Robotics Software Engineer passionate
+about designing reliable robotic systems and reusable software.
+This website is my engineering portfolio and technical knowledge base where I
+document projects, publish articles, develop open-source libraries,
+share datasets, and write about robotics, control systems,
+embedded software, and real-time computing.
+</p>
 
-```shell
-# content
-```
-{: file="path/to/file" }
+<div class="mt-4">
 
-{% raw %}
-```liquid
-{% if product.title contains 'Pack' %}
-  This product's title contains the word Pack.
-{% endif %}
-```
-{% endraw %}
+<a class="btn btn-primary me-2"
+   href="{{ '/projects/' | relative_url }}">
+Projects
+</a>
 
+<a class="btn btn-outline-primary"
+   href="{{ '/about/' | relative_url }}">
+About Me
+</a>
 
+</div>
 
-<!-- Block math, keep all blank lines -->
+</div>
 
-$$
-LaTeX_math_expression
-$$
+<hr class="my-5">
 
-<!-- Equation numbering, keep all blank lines  -->
+<!-- ========================= NAVIGATION ========================= -->
 
-$$
-\begin{equation}
-  LaTeX_math_expression
-  \label{eq:label_name}
-\end{equation}
-$$
+<h2 class="mb-4">
+Explore
+</h2>
 
-$$
-\begin{equation}
-s=ut + 1/2at^2
-\alpha_{1,2}=\frac{-b \pm \sqrt{b^2-4ac}}{2a}
-\label{eq:75}
-\end{equation}
-$$
+<div class="row g-4">
 
-Can be referenced as \eqref{eq:label_name}.
+<div class="col-lg-4 col-md-6">
 
-<!-- Inline math in lines, NO blank lines -->
+<div class="card h-100">
 
-"Lorem ipsum dolor sit amet, $$ LaTeX_math_expression $$ consectetur adipiscing elit."
+<div class="card-body">
 
-<!-- Inline math in lists, escape the first `$` -->
+<h3><i class="fas fa-robot me-2"></i>Projects</h3>
 
-1. \$$ LaTeX_math_expression $$
-2. \$$ LaTeX_math_expression $$
-3. \$$ LaTeX_math_expression $$
+<p>
+Robotics systems, embedded software,
+hardware development,
+simulations and engineering prototypes.
+</p>
+
+<a class="btn btn-outline-primary"
+href="{{ '/projects/' | relative_url }}">
+Browse →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100">
+
+<div class="card-body">
+
+<h3><i class="fas fa-book me-2"></i>Articles</h3>
+
+<p>
+In-depth tutorials,
+engineering notes,
+algorithms and technical concepts.
+</p>
+
+<a class="btn btn-outline-primary"
+href="{{ '/articles/' | relative_url }}">
+Browse →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100">
+
+<div class="card-body">
+
+<h3><i class="fas fa-newspaper me-2"></i>Posts</h3>
+
+<p>
+Development updates,
+short technical posts,
+announcements and experiments.
+</p>
+
+<a class="btn btn-outline-primary"
+href="{{ '/posts/' | relative_url }}">
+Browse →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100">
+
+<div class="card-body">
+
+<h3><i class="fas fa-code me-2"></i>Libraries</h3>
+
+<p>
+Reusable C++ libraries,
+robotics utilities,
+frameworks and software modules.
+</p>
+
+<a class="btn btn-outline-primary"
+href="{{ '/libraries/' | relative_url }}">
+Browse →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100">
+
+<div class="card-body">
+
+<h3><i class="fas fa-database me-2"></i>Datasets</h3>
+
+<p>
+Benchmark datasets,
+calibration files,
+experiment logs and research data.
+</p>
+
+<a class="btn btn-outline-primary"
+href="{{ '/datasets/' | relative_url }}">
+Browse →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card h-100">
+
+<div class="card-body">
+
+<h3><i class="fas fa-user me-2"></i>About</h3>
+
+<p>
+Professional experience,
+skills,
+resume and publications.
+</p>
+
+<a class="btn btn-outline-primary"
+href="{{ '/about/' | relative_url }}">
+Browse →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<hr class="my-5">
+
+<!-- ========================= RESEARCH AREAS ========================= -->
+
+<h2>Research & Engineering Interests</h2>
+
+<div class="mt-4">
+
+<span class="badge rounded-pill text-bg-primary m-1 p-2">Robotics</span>
+<span class="badge rounded-pill text-bg-primary m-1 p-2">Medical Robotics</span>
+<span class="badge rounded-pill text-bg-primary m-1 p-2">Embedded Systems</span>
+<span class="badge rounded-pill text-bg-primary m-1 p-2">Real-Time Systems</span>
+<span class="badge rounded-pill text-bg-primary m-1 p-2">Control Systems</span>
+<span class="badge rounded-pill text-bg-primary m-1 p-2">Motion Planning</span>
+<span class="badge rounded-pill text-bg-primary m-1 p-2">Computer Vision</span>
+<span class="badge rounded-pill text-bg-primary m-1 p-2">State Estimation</span>
+<span class="badge rounded-pill text-bg-primary m-1 p-2">ROS / ROS 2</span>
+<span class="badge rounded-pill text-bg-primary m-1 p-2">EtherCAT</span>
+<span class="badge rounded-pill text-bg-primary m-1 p-2">C++</span>
+<span class="badge rounded-pill text-bg-primary m-1 p-2">Python</span>
+
+</div>
+
+<hr class="my-5">
+
+<!-- ========================= QUICK OVERVIEW ========================= -->
+
+<h2>Quick Overview</h2>
+
+<div class="row text-center mt-4">
+
+<div class="col-md-3">
+
+<h2>🚀</h2>
+
+<h4>Projects</h4>
+
+<p>Engineering solutions and prototypes.</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h2>📖</h2>
+
+<h4>Articles</h4>
+
+<p>Technical tutorials and implementation notes.</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h2>📚</h2>
+
+<h4>Libraries</h4>
+
+<p>Reusable software and frameworks.</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h2>📊</h2>
+
+<h4>Datasets</h4>
+
+<p>Research data and benchmark resources.</p>
+
+</div>
+
+</div>
+
+<hr class="my-5">
+
+<div class="text-center">
+
+<h2>Building reliable robotics through engineering, research, and continuous learning.</h2>
+
+<p class="mt-3">
+
+Thank you for visiting <strong>My Robotics Lab</strong>.
+
+</p>
+
+</div>
