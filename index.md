@@ -40,7 +40,7 @@ Explore
 <div class="card-body p-3">
 
 <h4 class="mb-2">
-<i class="fas fa-robot me-2"></i>Projects
+<i class="fas fa-microchip me-2"></i>Projects
 </h4>
 
 <p class="small mb-3">
