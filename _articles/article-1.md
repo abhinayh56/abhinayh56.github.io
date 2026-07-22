@@ -1,5 +1,5 @@
 ---
-title: "Article 1"
+title: "Article 1_"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
