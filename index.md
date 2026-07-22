@@ -62,8 +62,7 @@ $$
 
 $$
 \begin{equation}
-% s=ut + 1/2at^2
-
+s=ut + 1/2at^2
 \alpha_{1,2}=\frac{-b \pm \sqrt{b^2-4ac}}{2a}
 \label{eq:75}
 \end{equation}
