@@ -1,5 +1,5 @@
 ---
 order: 7
-layout: archives
+layout: archives_custom
 icon: fas fa-archive
 ---

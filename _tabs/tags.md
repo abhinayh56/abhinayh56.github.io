@@ -1,5 +1,5 @@
 ---
 order: 9
-layout: tags
+layout: tags_custom
 icon: fas fa-tags
 ---

@@ -1,6 +1,6 @@
 ---
 order: 6
-layout: page
+layout: about_custom
 icon: fas fas fa-user
 ---
 
