@@ -27,12 +27,12 @@ embedded software, and real-time computing.
 <div class="mt-4">
 
 <a class="btn btn-primary me-2"
-   href="{{ '/projects/' | relative_url }}">
+   href="{{ '/projects' | relative_url }}">
 Projects
 </a>
 
 <a class="btn btn-outline-primary"
-   href="{{ '/about/' | relative_url }}">
+   href="{{ '/about' | relative_url }}">
 About Me
 </a>
 
@@ -65,7 +65,7 @@ simulations and engineering prototypes.
 </p>
 
 <a class="btn btn-outline-primary"
-href="{{ '/projects/' | relative_url }}">
+href="{{ '/projects' | relative_url }}">
 Browse →
 </a>
 
@@ -90,7 +90,7 @@ algorithms and technical concepts.
 </p>
 
 <a class="btn btn-outline-primary"
-href="{{ '/articles/' | relative_url }}">
+href="{{ '/articles' | relative_url }}">
 Browse →
 </a>
 
@@ -115,7 +115,7 @@ announcements and experiments.
 </p>
 
 <a class="btn btn-outline-primary"
-href="{{ '/posts/' | relative_url }}">
+href="{{ '/posts' | relative_url }}">
 Browse →
 </a>
 
@@ -140,7 +140,7 @@ frameworks and software modules.
 </p>
 
 <a class="btn btn-outline-primary"
-href="{{ '/libraries/' | relative_url }}">
+href="{{ '/libraries' | relative_url }}">
 Browse →
 </a>
 
@@ -165,7 +165,7 @@ experiment logs and research data.
 </p>
 
 <a class="btn btn-outline-primary"
-href="{{ '/datasets/' | relative_url }}">
+href="{{ '/datasets' | relative_url }}">
 Browse →
 </a>
 
@@ -190,7 +190,7 @@ resume and publications.
 </p>
 
 <a class="btn btn-outline-primary"
-href="{{ '/about/' | relative_url }}">
+href="{{ '/about' | relative_url }}">
 Browse →
 </a>
 
