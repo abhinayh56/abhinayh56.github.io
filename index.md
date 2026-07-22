@@ -1,5 +1,6 @@
 ---
 layout: home_custom
+math: true
 ---
 
 # this is my resume
