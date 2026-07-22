@@ -36,10 +36,6 @@ catkin create pkg turtlesim_custom
 catkin make
 ```
 
-```shell
-# content
-```
-{: file="path/to/file" }
 
 {% raw %}
 ```liquid
