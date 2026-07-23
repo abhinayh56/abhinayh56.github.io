@@ -1,15 +1,11 @@
 #  The contact options.
 
-- type: github
-  icon: "fab fa-github"
-
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
-
 - type: linkedin
   icon: "fab fa-linkedin" # icons powered by <https://fontawesome.com/>
   url: "https://www.linkedin.com/in/abhinay-kumar-b1185011b/" # Fill with your Linkedin homepage
+
+- type: github
+  icon: "fab fa-github"
 
 - type: Youtube
   icon: "fab fa-fw fa-youtube"
@@ -18,6 +14,10 @@
 - type: "Instagram"
   icon: "fab fa-fw fa-instagram"
   url: "https://instagram.com/abhinaykumar_1234"
+
+- type: email
+  icon: "fas fa-envelope"
+  noblank: true # open link in current tab
 
 - type: "Website"
   icon: "fas fa-fw fa-link"
