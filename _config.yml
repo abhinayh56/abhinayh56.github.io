@@ -196,6 +196,9 @@ collections:
   posts:
     output: true
     sort_by: order
+  pages:
+    output: true
+    sort_by: order
 
 defaults:
   - scope:
