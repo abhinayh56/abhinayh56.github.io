@@ -5,13 +5,7 @@ icon: fas fa-user
 permalink: /about
 title: About
 ---
-
-**Senior Robotics Software Engineer | Mechatronics Engineer | Robotics & Embedded Systems**
-
-📧 kumar.196@alumni.iitj.ac.in • 📞 (+91) 8741880525
-
 ---
-
 # Professional Summary
 
 Robotics Software Engineer with experience in **medical robotics, autonomous aerial vehicles, embedded systems, control systems, state estimation, EtherCAT, and robotics software architecture**. Experienced in developing real-time robotic control software, onboard flight control systems, mathematical modeling, robotic calibration systems, and autonomous navigation algorithms.
@@ -22,24 +16,18 @@ Strong background in **C++, Python, robotics algorithms, state estimation, embed
 
 # Education
 
-| Degree | Institute | Year | Score |
-|---------|-----------|------|------:|
-| **M.Tech. (Advanced Manufacturing & Design)** | Indian Institute of Technology Jodhpur | 2022 | **8.04 / 10** |
-| **B.Tech. (Mechanical Engineering)** | Indian Institute of Technology Jodhpur | 2019 | **6.34 / 10** |
-| **Class XII (CBSE)** | Indian Public School, Madhubani | 2014 | **87.40%** |
-| **Class X (CBSE)** | Ramakrishna Mission Vidyapith, Deoghar | 2012 | **10.0 CGPA** |
+| Degree / Level | Institute / sCHOOL | Course / Department | Year |
+|---------|-----------|-----------|------:|
+| **M.Tech.** | Indian Institute of Technology Jodhpur | Advanced Manufacturing & Design | 2022 |
+| **B.Tech.** | Indian Institute of Technology Jodhpur | Mechanical Engineering | 2019 |
+| **Class XII** | Indian Public School, Madhubani | Science & Math | 2014 |
+| **Class X** | Ramakrishna Mission Vidyapith, Deoghar | CBSE | 2012 |
 
 ---
 
 # Publication
-
-**Abhinay Kumar** and **C. Venkatesan**
-
-**Development and Performance Evaluation of Onboard Auto-pilot System for an Aerial Vehicle**
-
-- Accepted as **Late Breaking Report (LBR)**
-- **28th IEEE International Conference on Robot & Human Interactive Communication (RO-MAN)**
-- October 2019
+**Abhinay Kumar** and Prof. C. Venkatesan, _**"Development and Performance Evaluation of Onboard Auto-pilot System for an Aerial Vehicle"**_, 
+28th IEEE International Conference on Robot & Human Interactive Communication (RO-MAN), New Delhi, India, October 2019. Accepted as LBR (Late Breaking Report)
 
 ---
 
