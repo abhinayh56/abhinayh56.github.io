@@ -7,6 +7,7 @@ title: About
 ---
 
 ---
+
 # Professional Summary
 
 Robotics Software Engineer with experience in **medical robotics, autonomous aerial vehicles, embedded systems, control systems, state estimation, EtherCAT, and robotics software architecture**. Experienced in developing real-time robotic control software, onboard flight control systems, mathematical modeling, robotic calibration systems, and autonomous navigation algorithms.
