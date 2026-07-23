@@ -44,33 +44,27 @@ layout: page
   {% case item.collection %}
 
     {% when "projects" %}
-      {% assign badge = "primary" %}
-      {% assign icon = "fas fa-microchip" %}
+      {% assign badge_class = "badge-project" %}
       {% assign type = "PROJECT" %}
 
     {% when "articles" %}
-      {% assign badge = "success" %}
-      {% assign icon = "fas fa-book" %}
+      {% assign badge_class = "badge-article" %}
       {% assign type = "ARTICLE" %}
 
     {% when "libraries" %}
-      {% assign badge = "warning text-dark" %}
-      {% assign icon = "fas fa-code" %}
+      {% assign badge_class = "badge-library" %}
       {% assign type = "LIBRARY" %}
 
     {% when "datasets" %}
-      {% assign badge = "info text-dark" %}
-      {% assign icon = "fas fa-database" %}
+      {% assign badge_class = "badge-dataset" %}
       {% assign type = "DATASET" %}
 
     {% when "posts" %}
-      {% assign badge = "secondary" %}
-      {% assign icon = "fas fa-newspaper" %}
+      {% assign badge_class = "badge-post" %}
       {% assign type = "POST" %}
 
     {% else %}
-      {% assign badge = "dark" %}
-      {% assign icon = "fas fa-file" %}
+      {% assign badge_class = "badge-default" %}
       {% assign type = item.collection | upcase %}
 
   {% endcase %}
@@ -89,46 +83,46 @@ layout: page
 
   <div class="archive-card card mb-3">
 
-  <div class="card-body">
+    <div class="card-body">
 
-    <div class="archive-header">
+      <div class="archive-header">
 
-      <!-- Collection -->
+        <!-- Collection -->
 
-      <span class="badge bg-{{ badge }} archive-badge">
+        <span class="archive-badge {{ badge_class }}">
+          {{ type }}
+        </span>
 
-        {{ type }}
+        <!-- Title -->
 
-      </span>
+        <a
+          href="{{ item.url | relative_url }}"
+          class="archive-title text-decoration-none">
 
-      <!-- Title -->
+          {{ item.title }}
 
-      <a
-        href="{{ item.url | relative_url }}"
-        class="archive-title text-decoration-none">
+        </a>
 
-        {{ item.title }}
+        <!-- Dates -->
 
-      </a>
+        <div class="archive-right">
 
-      <!-- Dates -->
+          {{ item.date | date: "%d %b %Y" }}
 
-      <div class="archive-right">
+          {% if item.last_modified_at %}
+            |
+            Updated {{ item.last_modified_at | date: "%d %b %Y" }}
+          {% endif %}
 
-        {{ item.date | date: "%d %b %Y" }}
+        </div>
 
-        {% if item.last_modified_at %}
-          |
-          Updated {{ item.last_modified_at | date: "%d %b %Y" }}
-        {% endif %}
+        <!-- Description -->
 
-      </div>
+        <div class="archive-description">
 
-      <!-- Description -->
+          {{ description }}
 
-      <div class="archive-description">
-
-        {{ description }}
+        </div>
 
       </div>
 
@@ -136,10 +130,10 @@ layout: page
 
   </div>
 
-</div>
-
 {% endfor %}
 
-</div>
+{% unless all_items == empty %}
+  </div>
+{% endunless %}
 
 </div>

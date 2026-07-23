@@ -43,7 +43,7 @@
 
 .archive-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 .35rem .9rem rgba(0,0,0,.08);
+  box-shadow: 0 .35rem .9rem rgba(0, 0, 0, .08);
 }
 
 .archive-card .card-body {
@@ -55,23 +55,15 @@
    ========================================================== */
 
 .archive-header {
-
   display: grid;
-
-  grid-template-columns:
-      auto
-      1fr
-      auto;
-
+  grid-template-columns: auto 1fr auto;
   grid-template-areas:
-      "badge title date"
-      ".     desc  desc";
+    "badge title date"
+    ". desc desc";
 
   column-gap: 1rem;
   row-gap: .3rem;
-
   align-items: center;
-
 }
 
 /* ==========================================================
@@ -79,27 +71,53 @@
    ========================================================== */
 
 .archive-badge {
-
   grid-area: badge;
 
   display: inline-flex;
-
   align-items: center;
-
   justify-content: center;
 
-  padding: .28rem .55rem;
+  padding: .30rem .60rem;
+
+  border-radius: .35rem;
 
   font-size: .68rem;
-
   font-weight: 700;
-
-  letter-spacing: .45px;
-
-  white-space: nowrap;
-
+  letter-spacing: .5px;
   text-transform: uppercase;
+  white-space: nowrap;
+}
 
+/* Badge Colors */
+
+.badge-project {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.badge-article {
+  background: #198754;
+  color: #fff;
+}
+
+.badge-library {
+  background: #ffc107;
+  color: #212529;
+}
+
+.badge-dataset {
+  background: #0dcaf0;
+  color: #212529;
+}
+
+.badge-post {
+  background: #6c757d;
+  color: #fff;
+}
+
+.badge-default {
+  background: #343a40;
+  color: #fff;
 }
 
 /* ==========================================================
@@ -107,27 +125,20 @@
    ========================================================== */
 
 .archive-title {
-
   grid-area: title;
 
   font-size: 1rem;
-
   font-weight: 600;
 
   color: var(--heading-color);
 
   overflow: hidden;
-
-  white-space: nowrap;
-
   text-overflow: ellipsis;
-
+  white-space: nowrap;
 }
 
 .archive-title:hover {
-
   text-decoration: none;
-
 }
 
 /* ==========================================================
@@ -135,17 +146,14 @@
    ========================================================== */
 
 .archive-right {
-
   grid-area: date;
 
   justify-self: end;
 
-  white-space: nowrap;
-
   font-size: .82rem;
-
   color: var(--text-muted-color);
 
+  white-space: nowrap;
 }
 
 /* ==========================================================
@@ -153,21 +161,16 @@
    ========================================================== */
 
 .archive-description {
-
   grid-area: desc;
 
   color: var(--text-muted-color);
 
   font-size: .88rem;
-
   line-height: 1.35;
 
   overflow: hidden;
-
-  white-space: nowrap;
-
   text-overflow: ellipsis;
-
+  white-space: nowrap;
 }
 
 /* ==========================================================
@@ -185,28 +188,19 @@
       "date date"
       "desc desc";
 
-    row-gap: .4rem;
-
+    row-gap: .45rem;
   }
 
   .archive-right {
-
     justify-self: start;
-
     font-size: .78rem;
-
   }
 
   .archive-title {
-
     white-space: normal;
-
   }
 
   .archive-description {
-
     white-space: normal;
-
   }
-
 }
