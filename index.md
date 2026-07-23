@@ -65,8 +65,7 @@ Projects
 </h4>
 
 <p class="small flex-grow-1">
-Engineering projects, robotic systems, embedded software,
-hardware prototypes, simulations, and experiments.
+Engineering projects on robotics, embedded systems, hardware development, control, and simulation.
 </p>
 
 <div>
@@ -96,8 +95,7 @@ Articles
 </h4>
 
 <p class="small flex-grow-1">
-Detailed tutorials, implementation notes,
-engineering concepts, algorithms, and best practices.
+Technical articles covering engineering concepts, algorithms, software implementation, and best practices.
 </p>
 
 <div>
@@ -127,9 +125,7 @@ Posts
 </h4>
 
 <p class="small flex-grow-1">
-Development updates,
-technical observations,
-engineering discussions and announcements.
+Development updates, engineering insights, technical discussions, project progress, and announcements.
 </p>
 
 <div>
@@ -159,9 +155,7 @@ Libraries
 </h4>
 
 <p class="small flex-grow-1">
-Reusable C++ libraries,
-robotics utilities,
-frameworks, APIs, and software modules.
+Reusable C++, C, and Python libraries, robotics frameworks, APIs, utilities, and software modules.
 </p>
 
 <div>
@@ -191,9 +185,7 @@ Datasets
 </h4>
 
 <p class="small flex-grow-1">
-Benchmark datasets,
-calibration files,
-experiment logs and research data.
+Benchmark datasets, calibration files, experimental results, measurements, and research data.
 </p>
 
 <div>
@@ -223,9 +215,7 @@ About
 </h4>
 
 <p class="small flex-grow-1">
-Professional background,
-technical expertise,
-resume, publications, and career journey.
+Professional background, technical expertise, research interests, publications, and career highlights.
 </p>
 
 <div>
