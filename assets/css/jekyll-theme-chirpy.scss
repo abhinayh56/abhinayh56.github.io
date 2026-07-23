@@ -15,36 +15,163 @@
 /* append your custom style below */
 
 /* ==========================================================
-   Archive Timeline
-========================================================== */
+   Archives
+   ========================================================== */
 
-#archives h2 {
-  font-size: 2rem;
+.archive-year {
+  margin: 2rem 0 1rem;
+  padding-bottom: .4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--main-border-color);
 }
 
-#archives .card {
-  transition: all .2s ease;
+.archive-year-group {
+  margin-bottom: 2rem;
 }
 
-#archives .card:hover {
+/* ---------------- Card ---------------- */
+
+.archive-card {
+  border: 1px solid var(--main-border-color);
+  border-radius: 10px;
+  transition: all .18s ease;
+}
+
+.archive-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.12);
+  box-shadow: 0 .35rem .9rem rgba(0,0,0,.10);
 }
 
-#archives .badge {
-  font-size: .78rem;
-  padding: .45rem .65rem;
+.archive-card .card-body {
+  padding: .8rem 1rem;
 }
 
-#archives h4 {
-  font-size: 1.15rem;
+/* ---------------- Header ---------------- */
+
+.archive-header {
+
+  display: grid;
+
+  grid-template-columns:
+      auto        /* badge */
+      1fr         /* title */
+      auto;       /* dates */
+
+  align-items: center;
+
+  column-gap: 1rem;
+
+}
+
+/* ---------------- Badge ---------------- */
+
+.archive-badge {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: .35rem;
+
+  padding: .3rem .55rem;
+
+  font-size: .68rem;
+
+  font-weight: 700;
+
+  letter-spacing: .4px;
+
+  white-space: nowrap;
+
+}
+
+/* ---------------- Title ---------------- */
+
+.archive-title {
+
+  font-size: 1rem;
+
   font-weight: 600;
+
+  color: var(--heading-color);
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
 }
 
-#archives p {
-  margin-bottom: .75rem;
+.archive-title:hover {
+  text-decoration: none;
 }
 
-#archives .card-body {
-  padding: 1.4rem 1.6rem;
+/* ---------------- Dates ---------------- */
+
+.archive-right {
+
+  justify-self: end;
+
+  white-space: nowrap;
+
+  color: var(--text-muted-color);
+
+  font-size: .82rem;
+
+}
+
+/* ---------------- Description ---------------- */
+
+.archive-description {
+
+  grid-column: 2 / 4;
+
+  margin-top: .35rem;
+
+  margin-left: 0;
+
+  color: var(--text-muted-color);
+
+  font-size: .88rem;
+
+  line-height: 1.35;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+}
+
+/* ---------------- Mobile ---------------- */
+
+@media (max-width: 768px) {
+
+  .archive-header {
+
+    grid-template-columns: auto 1fr;
+
+    row-gap: .35rem;
+
+  }
+
+  .archive-right {
+
+    grid-column: 2;
+
+    justify-self: start;
+
+    font-size: .78rem;
+
+  }
+
+  .archive-description {
+
+    grid-column: 1 / -1;
+
+  }
+
 }

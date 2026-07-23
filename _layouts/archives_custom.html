@@ -19,139 +19,122 @@ layout: page
 
 {% for item in all_items %}
 
-{% unless item.date %}
-{% continue %}
-{% endunless %}
+  {% unless item.date %}
+    {% continue %}
+  {% endunless %}
 
-{% assign cur_year = item.date | date: "%Y" %}
+  {% assign cur_year = item.date | date: "%Y" %}
 
-{% if cur_year != last_year %}
+  {% if cur_year != last_year %}
 
-{% unless forloop.first %}
-</div>
-{% endunless %}
+    {% unless forloop.first %}
+      </div>
+    {% endunless %}
 
-<h2 class="mt-5 mb-4 fw-bold border-bottom pb-2">
-{{ cur_year }}
-</h2>
+    <h2 class="archive-year mt-5 mb-3">
+      {{ cur_year }}
+    </h2>
 
-<div class="archive-year">
+    <div class="archive-year-group">
 
-{% assign last_year = cur_year %}
+    {% assign last_year = cur_year %}
 
-{% endif %}
+  {% endif %}
 
-{% case item.collection %}
+  {% case item.collection %}
 
-{% when "projects" %}
-{% assign icon = "fas fa-microchip" %}
-{% assign badge = "primary" %}
-{% assign label = "Project" %}
+    {% when "projects" %}
+      {% assign badge = "primary" %}
+      {% assign icon = "fas fa-microchip" %}
+      {% assign type = "PROJECT" %}
 
-{% when "articles" %}
-{% assign icon = "fas fa-book" %}
-{% assign badge = "success" %}
-{% assign label = "Article" %}
+    {% when "articles" %}
+      {% assign badge = "success" %}
+      {% assign icon = "fas fa-book" %}
+      {% assign type = "ARTICLE" %}
 
-{% when "libraries" %}
-{% assign icon = "fas fa-code" %}
-{% assign badge = "warning text-dark" %}
-{% assign label = "Library" %}
+    {% when "libraries" %}
+      {% assign badge = "warning text-dark" %}
+      {% assign icon = "fas fa-code" %}
+      {% assign type = "LIBRARY" %}
 
-{% when "datasets" %}
-{% assign icon = "fas fa-database" %}
-{% assign badge = "info text-dark" %}
-{% assign label = "Dataset" %}
+    {% when "datasets" %}
+      {% assign badge = "info text-dark" %}
+      {% assign icon = "fas fa-database" %}
+      {% assign type = "DATASET" %}
 
-{% when "posts" %}
-{% assign icon = "fas fa-newspaper" %}
-{% assign badge = "secondary" %}
-{% assign label = "Post" %}
+    {% when "posts" %}
+      {% assign badge = "secondary" %}
+      {% assign icon = "fas fa-newspaper" %}
+      {% assign type = "POST" %}
 
-{% else %}
-{% assign icon = "fas fa-file" %}
-{% assign badge = "dark" %}
-{% assign label = item.collection %}
-{% endcase %}
+    {% else %}
+      {% assign badge = "dark" %}
+      {% assign icon = "fas fa-file" %}
+      {% assign type = item.collection | upcase %}
 
-{% assign description = item.description %}
+  {% endcase %}
 
-{% if description == nil or description == "" %}
-{% assign description = item.excerpt | strip_html %}
-{% endif %}
+  {% assign description = item.description %}
 
-{% if description == nil or description == "" %}
-{% assign description = item.content | strip_html | truncate: 180 %}
-{% endif %}
+  {% if description == nil or description == "" %}
+    {% assign description = item.excerpt | strip_html %}
+  {% endif %}
 
-<div class="card shadow-sm border-0 mb-4">
+  {% if description == nil or description == "" %}
+    {% assign description = item.content | strip_html %}
+  {% endif %}
 
-<div class="card-body">
+  {% assign description = description | strip | truncate: 120 %}
 
-<div class="d-flex justify-content-between align-items-start flex-wrap">
+  <div class="archive-card card mb-3">
 
-<div>
+  <div class="card-body">
 
-<span class="badge bg-{{ badge }} me-2">
+    <div class="archive-header">
 
-<i class="{{ icon }}"></i>
+      <!-- Collection -->
 
-{{ label }}
+      <span class="badge bg-{{ badge }} archive-badge">
 
-</span>
+        {{ type }}
 
-<a href="{{ item.url | relative_url }}"
-class="text-decoration-none">
+      </span>
 
-<h4 class="d-inline ms-2">
+      <!-- Title -->
 
-{{ item.title }}
+      <a
+        href="{{ item.url | relative_url }}"
+        class="archive-title text-decoration-none">
 
-</h4>
+        {{ item.title }}
 
-</a>
+      </a>
 
-</div>
+      <!-- Dates -->
 
-<div class="text-muted small mt-2 mt-md-0">
+      <div class="archive-right">
 
-{{ item.date | date: "%d %b %Y" }}
+        {{ item.date | date: "%d %b %Y" }}
 
-</div>
+        {% if item.last_modified_at %}
+          |
+          Updated {{ item.last_modified_at | date: "%d %b %Y" }}
+        {% endif %}
 
-</div>
+      </div>
 
-{% if description != "" %}
+      <!-- Description -->
 
-<p class="mt-3 mb-3">
+      <div class="archive-description">
 
-{{ description }}
+        {{ description }}
 
-</p>
+      </div>
 
-{% endif %}
+    </div>
 
-<div class="small text-muted">
-
-<i class="far fa-calendar-plus me-1"></i>
-
-Published:
-{{ item.date | date: "%d %b %Y" }}
-
-{% if item.last_modified_at %}
-
-<span class="mx-3">|</span>
-
-<i class="far fa-calendar-check me-1"></i>
-
-Updated:
-{{ item.last_modified_at | date: "%d %b %Y" }}
-
-{% endif %}
-
-</div>
-
-</div>
+  </div>
 
 </div>
 
