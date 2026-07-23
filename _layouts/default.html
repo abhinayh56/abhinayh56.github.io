@@ -37,15 +37,15 @@ layout: compress
           <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
             <div class="access">
               {% if page.collection == "articles" %}
-                {% include_cached collection-update-list.html lang=lang collection=site.articles title="Recent Articles" limit=5 %}
+                {% include_cached collection-update-list.html lang=lang collection=site.articles title="Recent Articles" limit=10 %}
               {% elsif page.collection == "projects" %}
-                {% include_cached collection-update-list.html lang=lang collection=site.projects title="Recent Projects" limit=5 %}
+                {% include_cached collection-update-list.html lang=lang collection=site.projects title="Recent Projects" limit=10 %}
               {% elsif page.collection == "libraries" %}
-                {% include_cached collection-update-list.html lang=lang collection=site.libraries title="Recent Libraries" limit=5 %}
+                {% include_cached collection-update-list.html lang=lang collection=site.libraries title="Recent Libraries" limit=10 %}
               {% elsif page.collection == "datasets" %}
-                {% include_cached collection-update-list.html lang=lang collection=site.datasets title="Recent Datasets" limit=5 %}
+                {% include_cached collection-update-list.html lang=lang collection=site.datasets title="Recent Datasets" limit=10 %}
               {% elsif page.collection == "posts" or page.layout == "post" %}
-                {% include_cached collection-update-list.html lang=lang collection=site.posts title="Recent Posts" limit=5 %}
+                {% include_cached collection-update-list.html lang=lang collection=site.posts title="Recent Posts" limit=10 %}
                 {% include_cached trending-tags.html lang=lang %}
               {% endif %}
             </div>
