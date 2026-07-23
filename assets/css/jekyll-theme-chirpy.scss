@@ -13,3 +13,38 @@
 ';
 
 /* append your custom style below */
+
+/* ==========================================================
+   Archive Timeline
+========================================================== */
+
+#archives h2 {
+  font-size: 2rem;
+}
+
+#archives .card {
+  transition: all .2s ease;
+}
+
+#archives .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.12);
+}
+
+#archives .badge {
+  font-size: .78rem;
+  padding: .45rem .65rem;
+}
+
+#archives h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+#archives p {
+  margin-bottom: .75rem;
+}
+
+#archives .card-body {
+  padding: 1.4rem 1.6rem;
+}

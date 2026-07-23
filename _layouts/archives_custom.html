@@ -4,78 +4,159 @@ layout: page
 
 {% include lang.html %}
 
-{% assign df_strftime_m = site.data.locales[lang].df.archives.strftime | default: '/ %m' %}
-{% assign df_dayjs_m = site.data.locales[lang].df.archives.dayjs | default: '/ MM' %}
-
-{%- assign all_items = site.posts
+{% assign all_items = site.posts
   | concat: site.projects
   | concat: site.articles
   | concat: site.libraries
   | concat: site.datasets
   | sort: "date"
   | reverse
--%}
+%}
 
-<div id="archives" class="pl-xl-3">
+<div id="archives" class="ps-xl-3">
 
 {% assign last_year = "" %}
 
 {% for item in all_items %}
 
-  {% if item.date %}
+{% unless item.date %}
+{% continue %}
+{% endunless %}
 
-    {% assign cur_year = item.date | date: "%Y" %}
+{% assign cur_year = item.date | date: "%Y" %}
 
-    {% if cur_year != last_year %}
+{% if cur_year != last_year %}
 
-      {% unless forloop.first %}
-        </ul>
-      {% endunless %}
+{% unless forloop.first %}
+</div>
+{% endunless %}
 
-      <time class="year lead d-block">
-        {{ cur_year }}
-      </time>
+<h2 class="mt-5 mb-4 fw-bold border-bottom pb-2">
+{{ cur_year }}
+</h2>
 
-      <ul class="list-unstyled">
+<div class="archive-year">
 
-      {% assign last_year = cur_year %}
-
-    {% endif %}
-
-    {% assign ts = item.date | date: "%s" %}
-
-    <li>
-
-      <span
-        class="date day"
-        data-ts="{{ ts }}"
-        data-df="DD">
-        {{ item.date | date: "%d" }}
-      </span>
-
-      <span
-        class="date month small text-muted ms-1"
-        data-ts="{{ ts }}"
-        data-df="{{ df_dayjs_m }}">
-        {{ item.date | date: df_strftime_m }}
-      </span>
-
-      {% assign type = item.collection | capitalize %}
-
-      <span class="badge bg-secondary ms-2 me-2">
-        {{ type }}
-      </span>
-
-      <a href="{{ item.url | relative_url }}">
-        {{ item.title }}
-      </a>
-
-    </li>
+{% assign last_year = cur_year %}
 
 {% endif %}
 
+{% case item.collection %}
+
+{% when "projects" %}
+{% assign icon = "fas fa-microchip" %}
+{% assign badge = "primary" %}
+{% assign label = "Project" %}
+
+{% when "articles" %}
+{% assign icon = "fas fa-book" %}
+{% assign badge = "success" %}
+{% assign label = "Article" %}
+
+{% when "libraries" %}
+{% assign icon = "fas fa-code" %}
+{% assign badge = "warning text-dark" %}
+{% assign label = "Library" %}
+
+{% when "datasets" %}
+{% assign icon = "fas fa-database" %}
+{% assign badge = "info text-dark" %}
+{% assign label = "Dataset" %}
+
+{% when "posts" %}
+{% assign icon = "fas fa-newspaper" %}
+{% assign badge = "secondary" %}
+{% assign label = "Post" %}
+
+{% else %}
+{% assign icon = "fas fa-file" %}
+{% assign badge = "dark" %}
+{% assign label = item.collection %}
+{% endcase %}
+
+{% assign description = item.description %}
+
+{% if description == nil or description == "" %}
+{% assign description = item.excerpt | strip_html %}
+{% endif %}
+
+{% if description == nil or description == "" %}
+{% assign description = item.content | strip_html | truncate: 180 %}
+{% endif %}
+
+<div class="card shadow-sm border-0 mb-4">
+
+<div class="card-body">
+
+<div class="d-flex justify-content-between align-items-start flex-wrap">
+
+<div>
+
+<span class="badge bg-{{ badge }} me-2">
+
+<i class="{{ icon }}"></i>
+
+{{ label }}
+
+</span>
+
+<a href="{{ item.url | relative_url }}"
+class="text-decoration-none">
+
+<h4 class="d-inline ms-2">
+
+{{ item.title }}
+
+</h4>
+
+</a>
+
+</div>
+
+<div class="text-muted small mt-2 mt-md-0">
+
+{{ item.date | date: "%d %b %Y" }}
+
+</div>
+
+</div>
+
+{% if description != "" %}
+
+<p class="mt-3 mb-3">
+
+{{ description }}
+
+</p>
+
+{% endif %}
+
+<div class="small text-muted">
+
+<i class="far fa-calendar-plus me-1"></i>
+
+Published:
+{{ item.date | date: "%d %b %Y" }}
+
+{% if item.last_modified_at %}
+
+<span class="mx-3">|</span>
+
+<i class="far fa-calendar-check me-1"></i>
+
+Updated:
+{{ item.last_modified_at | date: "%d %b %Y" }}
+
+{% endif %}
+
+</div>
+
+</div>
+
+</div>
+
 {% endfor %}
 
-</ul>
+</div>
 
 </div>
