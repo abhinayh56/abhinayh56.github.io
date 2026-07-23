@@ -5,6 +5,7 @@ icon: fas fa-user
 permalink: /about
 title: About
 ---
+
 ---
 # Professional Summary
 
@@ -16,18 +17,12 @@ Strong background in **C++, Python, robotics algorithms, state estimation, embed
 
 # Education
 
-| Degree / Level | Institute / sCHOOL | Course / Department | Year |
+| Degree / Level | Institute | Course / Department | Year |
 |---------|-----------|-----------|------:|
 | **M.Tech.** | Indian Institute of Technology Jodhpur | Advanced Manufacturing & Design | 2022 |
 | **B.Tech.** | Indian Institute of Technology Jodhpur | Mechanical Engineering | 2019 |
 | **Class XII** | Indian Public School, Madhubani | Science & Math | 2014 |
 | **Class X** | Ramakrishna Mission Vidyapith, Deoghar | CBSE | 2012 |
-
----
-
-# Publication
-**Abhinay Kumar** and Prof. C. Venkatesan, _**"Development and Performance Evaluation of Onboard Auto-pilot System for an Aerial Vehicle"**_, 
-28th IEEE International Conference on Robot & Human Interactive Communication (RO-MAN), New Delhi, India, October 2019. Accepted as LBR (Late Breaking Report)
 
 ---
 
@@ -51,7 +46,7 @@ Strong background in **C++, Python, robotics algorithms, state estimation, embed
 
 ---
 
-## Robotics Laboratory, IIT Jodhpur
+## Robotics Lab, IIT Jodhpur
 
 **Research Engineer**
 
@@ -72,7 +67,7 @@ SERB-DST funded project on autonomous unmanned rotorcraft navigation.
 ---
 
 ## Student Project Research Associate
-### Helicopter Laboratory, IIT Jodhpur
+### Helicopter Lab, IIT Jodhpur
 
 **October 2020 – July 2022**
 
@@ -265,13 +260,13 @@ Development of indigenous onboard Flight Control System (FCS)
 
 ## Programming
 
-- C++
+- C, C++
 - Python
 - Embedded C
 
 ## Robotics
 
-- ROS
+- ROS, ROS2
 - RViz
 - Gazebo
 - EtherCAT
@@ -302,6 +297,7 @@ Development of indigenous onboard Flight Control System (FCS)
 
 - SolidWorks
 - MATLAB
+- Scilab
 - Octave
 - Simulink
 - Adams View (Basic)
@@ -322,6 +318,12 @@ Development of indigenous onboard Flight Control System (FCS)
 - Kinematics and Dynamics of Machines
 - Multibody Dynamics
 - Linear Algebra
+
+---
+
+# Publication
+**Abhinay Kumar** and Prof. C. Venkatesan, _**"Development and Performance Evaluation of Onboard Auto-pilot System for an Aerial Vehicle"**_, 
+28th IEEE International Conference on Robot & Human Interactive Communication (RO-MAN), New Delhi, India, October 2019. Accepted as LBR (Late Breaking Report)
 
 ---
 
