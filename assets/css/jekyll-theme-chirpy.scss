@@ -204,19 +204,3 @@
     white-space: normal;
   }
 }
-
-/* Left section of the topbar */
-.topbar-left {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* Sidebar button */
-#sidebar-trigger {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin: 0;
-}
