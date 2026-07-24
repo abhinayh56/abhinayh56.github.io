@@ -12,6 +12,10 @@ panel_includes:
     {{ page.title }}
   </h1>
 
+  {% if enable_toc %}
+    {% include mobile-toc.html %}
+  {% endif %}
+
   <div class="content">
     {{ content }}
   </div>
