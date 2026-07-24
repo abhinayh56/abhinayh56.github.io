@@ -10,9 +10,16 @@
    or page.layout == 'page'
    or page.layout == 'home'
    or page.layout == 'article_custom'
+   or page.layout == 'articles_custom'
    or page.layout == 'project_custom'
+   or page.layout == 'projects_custom'
    or page.layout == 'library_custom'
-   or page.layout == 'dataset_custom' %}
+   or page.layout == 'libraries_custom'
+   or page.layout == 'post_custom'
+   or page.layout == 'posts_custom'
+   or page.layout == 'dataset_custom'
+   or page.layout == 'datasets_custom'
+   or page.layout == 'about_custom' %}
 
   {% assign urls = urls
     | append: ','
@@ -34,9 +41,16 @@
 {% if page.layout == 'home'
    or page.layout == 'post'
    or page.layout == 'article_custom'
+   or page.layout == 'articles_custom'
    or page.layout == 'project_custom'
+   or page.layout == 'projects_custom'
    or page.layout == 'library_custom'
+   or page.layout == 'libraries_custom'
+   or page.layout == 'post_custom'
+   or page.layout == 'posts_custom'
    or page.layout == 'dataset_custom'
+   or page.layout == 'datasets_custom'
+   or page.layout == 'about_custom'
    or page.layout == 'archives'
    or page.layout == 'category'
    or page.layout == 'tag'
@@ -81,9 +95,16 @@
 
   {% when 'post',
           'article_custom',
+          'articles_custom',
           'project_custom',
+          'projects_custom',
           'library_custom',
-          'dataset_custom' %}
+          'libraries_custom',
+          'post_custom',
+          'posts_custom',
+          'dataset_custom',
+          'datasets_custom',
+          'about_custom' %}
     {% assign js = 'post' %}
 
   {% when 'page' %}
@@ -116,9 +137,16 @@
 <!-- Pageviews -->
 {% if page.layout == 'post'
    or page.layout == 'article_custom'
+   or page.layout == 'articles_custom'
    or page.layout == 'project_custom'
+   or page.layout == 'projects_custom'
    or page.layout == 'library_custom'
+   or page.layout == 'libraries_custom'
+   or page.layout == 'post_custom'
+   or page.layout == 'posts_custom'
    or page.layout == 'dataset_custom'
+   or page.layout == 'datasets_custom'
+   or page.layout == 'about_custom'
 %}
 
   {% assign provider = site.pageviews.provider %}

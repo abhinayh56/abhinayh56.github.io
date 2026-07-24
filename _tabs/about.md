@@ -4,11 +4,12 @@ layout: about_custom
 icon: fas fa-user
 permalink: /about
 title: About
+toc: true
 ---
 
 ---
 
-# Professional Summary
+## Professional Summary
 
 Robotics Software Engineer with experience in **medical robotics, autonomous aerial vehicles, embedded systems, control systems, state estimation, EtherCAT, and robotics software architecture**. Experienced in developing real-time robotic control software, onboard flight control systems, mathematical modeling, robotic calibration systems, and autonomous navigation algorithms.
 
@@ -16,7 +17,7 @@ Strong background in **C++, Python, robotics algorithms, state estimation, embed
 
 ---
 
-# Education
+## Education
 
 | Degree / Level | Institute | Course / Department | Year |
 |---------|-----------|-----------|------:|
@@ -27,14 +28,14 @@ Strong background in **C++, Python, robotics algorithms, state estimation, embed
 
 ---
 
-# Professional Experience
+## Professional Experience
 
-## SS Innovations Pvt. Ltd.
+### SS Innovations Pvt. Ltd.
 **Mechatronics Engineer (Robotics Software Development)**
 
 **February 2023 – Present**
 
-### Responsibilities
+#### Responsibilities
 
 - Develop robotics software for surgical robotic systems.
 - Designed mathematical models for **30+ cable-driven robotic grippers** spanning five different mechanisms.
@@ -47,33 +48,25 @@ Strong background in **C++, Python, robotics algorithms, state estimation, embed
 
 ---
 
-## Robotics Lab, IIT Jodhpur
+### IIT Jodhpur
 
-**Research Engineer**
-
-**March 2022 – May 2022**
-
-### Project
-
+#### **Research Engineer**
+**Robotics Lab | March 2022 – May 2022**
+##### Project
 SERB-DST funded project on autonomous unmanned rotorcraft navigation.
-
-### Contributions
-
+##### Contributions
 - Integrated flight controller with Single Board Computer (SBC).
 - Implemented visual odometry framework.
 - Interfaced long-range communication module (RFD900) with custom autopilot.
+
 - Developed communication software for transmission, reception and packet-loss analysis.
 - Investigated autonomous hovering and waypoint navigation for helicopter platforms.
 
 ---
 
-## Student Project Research Associate
-### Helicopter Lab, IIT Jodhpur
-
-**October 2020 – July 2022**
-
-### Responsibilities
-
+#### **Student Project Research Associate**
+**Helicopter Lab | October 2020 – July 2022**
+##### Responsibilities
 - Improved quadrotor orientation and position control.
 - Implemented GPS delay compensation using IMU sensor fusion.
 - Studied and implemented modern waypoint navigation algorithms.
@@ -81,17 +74,11 @@ SERB-DST funded project on autonomous unmanned rotorcraft navigation.
 
 ---
 
-## Project Assistant
-### Helicopter Laboratory, IIT Jodhpur
-
-**December 2019 – September 2020**
-
-### DRDO DYSL-AST Sponsored Project
-
+#### **Project Assistant**
+**Helicopter Laboratory | December 2019 – September 2020**
+##### DRDO DYSL-AST Sponsored Project
 Development of indigenous onboard Flight Control System (FCS)
-
-### Responsibilities
-
+##### Responsibilities
 - Developed complete flight-control software framework.
 - Implemented:
   - State estimation
@@ -102,25 +89,23 @@ Development of indigenous onboard Flight Control System (FCS)
 - Successfully demonstrated autonomous outdoor flight.
 - Delivered software and documentation to DRDO.
 
-### Additional Responsibilities
+##### Additional Responsibilities
 
-#### Mid-range RF Communication System
-
+###### Mid-range RF Communication System
 - Designed and developed RF transceiver (>10 km range) for nuclear radiation sensors.
 
-#### Nuclear Sensor Communication
-
+###### Nuclear Sensor Communication
 - Developed communication software for DRDO DELRAD nuclear sensors.
 - Used TI TIVA CC1310 LaunchPad.
 - Implemented wireless communication and sensor data interpretation.
 
 ---
 
-# Major Projects
+## Major Projects
 
 ---
 
-## GPS Delay Compensation, Trajectory Tracking & Mini Helicopter Integration
+### GPS Delay Compensation, Trajectory Tracking & Mini Helicopter Integration
 
 **M.Tech Thesis**
 
@@ -128,7 +113,7 @@ Development of indigenous onboard Flight Control System (FCS)
 
 **August 2021 – July 2022**
 
-### Highlights
+#### Highlights
 
 - Estimated GPS latency using cross-correlation techniques.
 - Compensated GPS delay using acceleration kinematic models.
@@ -147,7 +132,7 @@ Development of indigenous onboard Flight Control System (FCS)
 
 ---
 
-## Design of Onboard Flight Control System for Aerial Vehicle
+### Design of Onboard Flight Control System for Aerial Vehicle
 
 **B.Tech Project**
 
@@ -155,7 +140,7 @@ Development of indigenous onboard Flight Control System (FCS)
 
 **June 2018 – May 2019**
 
-### Highlights
+#### Highlights
 
 - Designed complete avionics architecture.
 - Integrated:
@@ -169,13 +154,13 @@ Development of indigenous onboard Flight Control System (FCS)
 
 ---
 
-## Quadrotor Mounted with Manipulator Arm
+### Quadrotor Mounted with Manipulator Arm
 
 **Supervisor:** Prof. Suril V. Shah
 
 **January 2017 – April 2018**
 
-### Highlights
+#### Highlights
 
 - Developed mathematical dynamics of quadrotor-manipulator system.
 - Simulated dynamic inversion and PID control in MATLAB.
@@ -187,7 +172,7 @@ Development of indigenous onboard Flight Control System (FCS)
 
 ---
 
-## Two-Wheel Self-Balancing Robot
+### Two-Wheel Self-Balancing Robot
 
 **Summer Project**
 
@@ -195,7 +180,7 @@ Development of indigenous onboard Flight Control System (FCS)
 
 **April 2016 – June 2016**
 
-### Highlights
+#### Highlights
 
 - Built complete balancing robot prototype.
 - Developed:
@@ -211,9 +196,9 @@ Development of indigenous onboard Flight Control System (FCS)
 
 ---
 
-## Collaborative Control & Teleoperation of Robotic Swarm
+### Collaborative Control & Teleoperation of Robotic Swarm
 
-### Highlights
+#### Highlights
 
 - Designed framework for controlling four TurtleBot3 robots.
 - Implemented:
@@ -225,9 +210,9 @@ Development of indigenous onboard Flight Control System (FCS)
 
 ---
 
-## Obstacle Avoidance & Path Tracking of Mobile Robot
+### Obstacle Avoidance & Path Tracking of Mobile Robot
 
-### Highlights
+#### Highlights
 
 - Differential drive waypoint navigation.
 - Implemented:
@@ -238,9 +223,9 @@ Development of indigenous onboard Flight Control System (FCS)
 
 ---
 
-## Teleoperation of 6-DOF Manipulator with Force Feedback
+### Teleoperation of 6-DOF Manipulator with Force Feedback
 
-### Highlights
+#### Highlights
 
 - Kinematic analysis of UR5 manipulator.
 - Developed ROS-based teleoperation software.
@@ -257,15 +242,15 @@ Development of indigenous onboard Flight Control System (FCS)
 
 ---
 
-# Technical Skills
+## Technical Skills
 
-## Programming
+### Programming
 
 - C, C++
 - Python
 - Embedded C
 
-## Robotics
+### Robotics
 
 - ROS, ROS2
 - RViz
@@ -277,7 +262,7 @@ Development of indigenous onboard Flight Control System (FCS)
 - Robot Dynamics
 - Trajectory Planning
 
-## Control & Estimation
+### Control & Estimation
 
 - PID
 - Complementary Filter
@@ -285,7 +270,7 @@ Development of indigenous onboard Flight Control System (FCS)
 - Sensor Fusion
 - State Estimation
 
-## Embedded Platforms
+### Embedded Platforms
 
 - AVR
 - Arduino
@@ -294,7 +279,7 @@ Development of indigenous onboard Flight Control System (FCS)
 - Raspberry Pi
 - Pixhawk
 
-## CAD & Simulation
+### CAD & Simulation
 
 - SolidWorks
 - MATLAB
@@ -308,7 +293,7 @@ Development of indigenous onboard Flight Control System (FCS)
 
 ---
 
-# Relevant Coursework
+## Relevant Coursework
 
 - Introduction to Robotics
 - Introduction to Aerial Robotics
@@ -322,15 +307,15 @@ Development of indigenous onboard Flight Control System (FCS)
 
 ---
 
-# Publication
+## Publication
 **Abhinay Kumar** and Prof. C. Venkatesan, _**"Development and Performance Evaluation of Onboard Auto-pilot System for an Aerial Vehicle"**_, 
 28th IEEE International Conference on Robot & Human Interactive Communication (RO-MAN), New Delhi, India, October 2019. Accepted as LBR (Late Breaking Report)
 
 ---
 
-# Achievements
+## Achievements
 
-## IIT R&D Fair 2022
+### IIT R&D Fair 2022
 
 - Selected for the PAN IIT R&D Fair.
 - Demonstrated indigenous autopilot system.
@@ -343,7 +328,7 @@ Development of indigenous onboard Flight Control System (FCS)
 
 ---
 
-## SAE BAJA 2017
+### SAE BAJA 2017
 
 - Secured **63rd Rank** among **400+ teams**.
 - Designed:
@@ -358,7 +343,7 @@ Development of indigenous onboard Flight Control System (FCS)
 
 ---
 
-# Areas of Interest
+## Areas of Interest
 
 - Surgical Robotics
 - Medical Robotics
