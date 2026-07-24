@@ -21,7 +21,7 @@ math: true
 
 int main()
 {
-    std::cout << "this is a test for code blocks in c++" << std::endl
+    std::cout << "this is a test for code blocks in c++" << std::endl;
 
     return 0;
 }
