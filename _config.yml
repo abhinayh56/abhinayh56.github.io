@@ -16,7 +16,7 @@ timezone: Asia/Kolkata
 
 title: My Robotics Lab # the main title
 
-tagline: My digital placeholder for documentation # it will display as the subtitle
+tagline: Explore-Learn-Implement # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   This is a personal website for my robotics lab. It contains information about our research, publications, and team members.
