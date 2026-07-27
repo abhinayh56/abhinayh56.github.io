@@ -45,35 +45,52 @@
     </button>
 
     <div id="topbar-title">
-      {% if page.layout == 'home' %}
-        {{- site.data.locales[include.lang].title | default: site.title -}}
+      {% if page.layout == 'home_custom' %}
+        <i class="fas fa-home me-1"></i>
+        {{- site.data.locales[include.lang].title | default: page.title -}}
       {% elsif page.collection == 'tabs' or page.layout == 'page' %}
         {%- capture tab_key -%}{{ page.url | split: '/' }}{%- endcapture -%}
-        {{- site.data.locales[include.lang].tabs[tab_key] | default: page.title -}}
+        {% case page.layout %}
+          {% when 'about_custom' %}
+            <i class="fas fa-user me-1"></i>
+            {{ site.data.locales[include.lang].layout[page.layout] | default: "About" }}
+          {% when 'projects_custom' %}
+            <i class="fas fa-microchip me-1"></i>
+            {{ site.data.locales[include.lang].layout[page.layout] | default: "Projects" }}
+          {% when 'articles_custom' %}
+            <i class="fas fa-book me-1"></i>
+            {{ site.data.locales[include.lang].layout[page.layout] | default: "Articles" }}
+          {% when 'libraries_custom' %}
+            <i class="fas fa-code me-1"></i>
+            {{ site.data.locales[include.lang].layout[page.layout] | default: "Libraries" }}
+          {% when 'datasets_custom' %}
+            <i class="fas fa-database me-1"></i>
+            {{ site.data.locales[include.lang].layout[page.layout] | default: "Datasets" }}
+          {% when 'posts_custom' %}
+            <i class="fas fa-newspaper me-1"></i>
+            {{ site.data.locales[include.lang].layout[page.layout] | default: "Posts" }}
+          {% when 'archives_custom' %}
+            <i class="fas fa-archive me-1"></i>
+            {{ site.data.locales[include.lang].layout[page.layout] | default: page.title }}
+        {% endcase %}
       {% else %}
-        {% if page.layout == 'about_custom' %}
-          {{- site.data.locales[include.lang].layout[page.layout] | default: "About" | capitalize -}}
-        {% elsif page.layout == 'project_custom' %}
-          {{- site.data.locales[include.lang].layout[page.layout] | default: "Project" | capitalize -}}
-        {% elsif page.layout == 'article_custom' %}
-          {{- site.data.locales[include.lang].layout[page.layout] | default: "Article" | capitalize -}}
-        {% elsif page.layout == 'library_custom' %}
-          {{- site.data.locales[include.lang].layout[page.layout] | default: "Library" | capitalize -}}
-        {% elsif page.layout == 'dataset_custom' %}
-          {{- site.data.locales[include.lang].layout[page.layout] | default: "Dataset" | capitalize -}}
-        {% elsif page.layout == 'post_custom' %}
-          {{- site.data.locales[include.lang].layout[page.layout] | default: "Post" | capitalize -}}
-        {% elsif page.layout == 'projects_custom' %}
-          {{- site.data.locales[include.lang].layout[page.layout] | default: "Projects" | capitalize -}}
-        {% elsif page.layout == 'articles_custom' %}
-          {{- site.data.locales[include.lang].layout[page.layout] | default: "Articles" | capitalize -}}
-        {% elsif page.layout == 'libraries_custom' %}
-          {{- site.data.locales[include.lang].layout[page.layout] | default: "Libraries" | capitalize -}}
-        {% elsif page.layout == 'datasets_custom' %}
-          {{- site.data.locales[include.lang].layout[page.layout] | default: "Datasets" | capitalize -}}
-        {% elsif page.layout == 'posts_custom' %}
-          {{- site.data.locales[include.lang].layout[page.layout] | default: "Posts" | capitalize -}}
-        {% endif %}
+        {% case page.layout %}
+          {% when 'project_custom' %}
+            <i class="fas fa-microchip me-1"></i>
+            {{ site.data.locales[include.lang].layout[page.layout] | default: "Project" }}
+          {% when 'article_custom' %}
+            <i class="fas fa-book me-1"></i>
+            {{ site.data.locales[include.lang].layout[page.layout] | default: "Article" }}
+          {% when 'library_custom' %}
+            <i class="fas fa-code me-1"></i>
+            {{ site.data.locales[include.lang].layout[page.layout] | default: "Library" }}
+          {% when 'dataset_custom' %}
+            <i class="fas fa-database me-1"></i>
+            {{ site.data.locales[include.lang].layout[page.layout] | default: "Dataset" }}
+          {% when 'post_custom' %}
+            <i class="fas fa-newspaper me-1"></i>
+            {{ site.data.locales[include.lang].layout[page.layout] | default: "Post" }}
+        {% endcase %}
       {% endif %}
     </div>
 
