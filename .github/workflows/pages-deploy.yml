@@ -1,3 +1,11 @@
+name: Show versions
+  run: |
+    ruby -v
+    gem -v
+    bundle -v
+    bundle exec jekyll -v
+    bundle list
+
 name: "Build and Deploy"
 on:
   push:
