@@ -108,3 +108,14 @@ Development of indigenous onboard Flight Control System (FCS)
 - this is point 2
 - this is point 3
 - this is point 4
+
+```cpp
+#include <iostream>
+
+int main()
+{
+    std::cout << "this is a test for code blocks in c++" << std::endl;
+
+    return 0;
+}
+```
