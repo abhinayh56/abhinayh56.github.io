@@ -8,6 +8,7 @@ layout: article_custom
 toc: true
 permalink: /articles/article-1
 description: "this is a description for article-1.md. this is an article."
+comments: true
 ---
 
 ## Professional Summary

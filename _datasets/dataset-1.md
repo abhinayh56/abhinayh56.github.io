@@ -7,6 +7,7 @@ layout: dataset_custom
 permalink: /datasets/dataset-1
 math: true
 toc: true
+comments: true
 ---
 
 ## Professional Summary

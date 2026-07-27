@@ -7,6 +7,7 @@ layout: library_custom
 permalink: /libraries/library-1
 math: true
 toc: true
+comments: true
 ---
 
 ## Professional Summary

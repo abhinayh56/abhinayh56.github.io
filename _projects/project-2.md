@@ -8,6 +8,7 @@ permalink: /projects/project-2
 math: true
 order: 1
 toc: true
+comments: true
 ---
 
 ## Professional Summary

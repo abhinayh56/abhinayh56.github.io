@@ -7,6 +7,7 @@ layout: article_custom
 permalink: /articles/article-6
 math: true
 toc: true
+comments: true
 ---
 
 ## Professional Summary
