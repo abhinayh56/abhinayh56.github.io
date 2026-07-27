@@ -75,22 +75,38 @@
         {% endcase %}
       {% else %}
         {% case page.layout %}
-          {% when 'project_custom' %}
-            <i class="fas fa-microchip me-1"></i>
-            {{ site.data.locales[include.lang].layout[page.layout] | default: "Project" }}
-          {% when 'article_custom' %}
-            <i class="fas fa-book me-1"></i>
-            {{ site.data.locales[include.lang].layout[page.layout] | default: "Article" }}
-          {% when 'library_custom' %}
-            <i class="fas fa-code me-1"></i>
-            {{ site.data.locales[include.lang].layout[page.layout] | default: "Library" }}
-          {% when 'dataset_custom' %}
-            <i class="fas fa-database me-1"></i>
-            {{ site.data.locales[include.lang].layout[page.layout] | default: "Dataset" }}
-          {% when 'post_custom' %}
-            <i class="fas fa-newspaper me-1"></i>
-            {{ site.data.locales[include.lang].layout[page.layout] | default: "Post" }}
-        {% endcase %}
+
+  {% when 'project_custom' %}
+    <a href="{{ '/projects/' | relative_url }}">
+      <i class="fas fa-microchip me-1"></i>
+      {{ site.data.locales[include.lang].layout[page.layout] | default: "Project" }}
+    </a>
+
+  {% when 'article_custom' %}
+    <a href="{{ '/articles/' | relative_url }}">
+      <i class="fas fa-book me-1"></i>
+      {{ site.data.locales[include.lang].layout[page.layout] | default: "Article" }}
+    </a>
+
+  {% when 'library_custom' %}
+    <a href="{{ '/libraries/' | relative_url }}">
+      <i class="fas fa-code me-1"></i>
+      {{ site.data.locales[include.lang].layout[page.layout] | default: "Library" }}
+    </a>
+
+  {% when 'dataset_custom' %}
+    <a href="{{ '/datasets/' | relative_url }}">
+      <i class="fas fa-database me-1"></i>
+      {{ site.data.locales[include.lang].layout[page.layout] | default: "Dataset" }}
+    </a>
+
+  {% when 'post_custom' %}
+    <a href="{{ '/posts/' | relative_url }}">
+      <i class="fas fa-newspaper me-1"></i>
+      {{ site.data.locales[include.lang].layout[page.layout] | default: "Post" }}
+    </a>
+
+{% endcase %}
       {% endif %}
     </div>
 
