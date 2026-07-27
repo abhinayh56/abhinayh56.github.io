@@ -1,13 +1,13 @@
 ---
-layout: article_custom
 title: "Article 1"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [kinematics]
+math: true
+layout: article_custom
+toc: true
 permalink: /articles/article-1
 description: "this is a description for article-1.md. this is an article."
-math: true
-toc: true
 ---
 
 ## Professional Summary
