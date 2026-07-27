@@ -109,6 +109,40 @@ Development of indigenous onboard Flight Control System (FCS)
 - this is point 3
 - this is point 4
 
+```cpp
+#include <iostream>
+
+int main()
+{
+    std::cout << "this is a test for code blocks in c++" << std::endl
+
+    return 0;
+}
+```
+<!-- {: .nolineno } -->
+
+```shell
+pwd
+mkdir -p ~/abhinay/catkin_ws
+cd /catkin_ws
+catkin create pkg turtlesim_custom
+catkin make
+```
+
+```shell
+# content
+```
+{: file="path/to/file" }
+
+{% raw %}
+```liquid
+{% if product.title contains 'Pack' %}
+  This product's title contains the word Pack.
+{% endif %}
+```
+{% endraw %}
+
+
 
 <!-- Block math, keep all blank lines -->
 
@@ -145,14 +179,3 @@ Can be referenced as \eqref{eq:label_name}.
 1. \$$ LaTeX_math_expression $$
 2. \$$ LaTeX_math_expression $$
 3. \$$ LaTeX_math_expression $$
-
-```
-#include <iostream>
-
-int main()
-{
-    std::cout << "this is a test for code blocks in c++" << std::endl
-
-    return 0;
-}
-```
