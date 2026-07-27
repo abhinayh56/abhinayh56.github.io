@@ -5,6 +5,7 @@ categories: [Robotics]
 tags: [kinematics]
 layout: article_custom
 permalink: /articles/article-1
+description: "this is a description for article-1.md. this is an article."
 math: true
 toc: true
 ---
