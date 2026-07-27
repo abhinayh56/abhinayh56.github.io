@@ -1,11 +1,3 @@
-name: Show versions
-  run:
-    ruby -v
-    gem -v
-    bundle -v
-    bundle exec jekyll -v
-    bundle list
-
 name: "Build and Deploy"
 on:
   push:
@@ -51,7 +43,24 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.4
-          bundler-cache: true
+          bundler-cache: 
+          
+      - name: Show environment versions
+        run: |
+          echo "=== Ruby ==="
+          ruby -v
+
+          echo "=== RubyGems ==="
+          gem -v
+
+          echo "=== Bundler ==="
+          bundle -v
+
+          echo "=== Jekyll ==="
+          bundle exec jekyll -v
+
+          echo "=== Installed gems ==="
+          bundle list
 
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
