@@ -152,14 +152,3 @@ s=ut + 1/2at^2
 \end{equation}
 $$
 
-Can be referenced as \eqref{eq:label_name}.
-
-<!-- Inline math in lines, NO blank lines -->
-
-"Lorem ipsum dolor sit amet, $$ LaTeX_math_expression $$ consectetur adipiscing elit."
-
-<!-- Inline math in lists, escape the first `$` -->
-
-1. \$$ LaTeX_math_expression $$
-2. \$$ LaTeX_math_expression $$
-3. \$$ LaTeX_math_expression $$
