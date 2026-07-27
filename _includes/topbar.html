@@ -48,7 +48,7 @@
       {% if page.layout == 'home_custom' %}
         <i class="fas fa-home me-1"></i>
         {{- site.data.locales[include.lang].title | default: page.title -}}
-      {% elsif page.collection == 'tabs' or page.layout == 'page' %}
+      {% elsif page.collection == 'tabs' %}
         {%- capture tab_key -%}{{ page.url | split: '/' }}{%- endcapture -%}
         {% case page.layout %}
           {% when 'about_custom' %}
@@ -100,6 +100,18 @@
               <i class="fas fa-newspaper me-1"></i>
               {{ site.data.locales[include.lang].layout[page.layout] | default: "Post" }}
             </a>
+
+          {% when 'categories_custom' %}
+            <a href="{{ '/categories/'}}">
+              <i class="fas fa-stream me-1"></i>
+              {{ site.data.locales[include.lang].layout[page.layout] | default: "Categories" }}
+            </a>
+          {% when 'tags_custom' %}
+            <a href="{{ '/tags/'}}">
+              <i class="fas fa-tags me-1"></i>
+              {{ site.data.locales[include.lang].layout[page.layout] | default: "Tags" }}
+            </a>
+
         {% endcase %}
       {% endif %}
     </div>
