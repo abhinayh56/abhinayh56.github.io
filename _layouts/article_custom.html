@@ -2,4 +2,9 @@
 layout: content_custom
 ---
 
-{{ content }}
+{% include lang.html %}
+{% include toc-status.html %}
+
+<div class="content">
+    {{ content }}
+</div>
