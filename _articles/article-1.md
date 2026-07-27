@@ -119,7 +119,6 @@ int main()
     return 0;
 }
 ```
-<!-- {: .nolineno } -->
 
 ```shell
 pwd
@@ -128,21 +127,6 @@ cd /catkin_ws
 catkin create pkg turtlesim_custom
 catkin make
 ```
-
-```shell
-# content
-```
-{: file="path/to/file" }
-
-{% raw %}
-```liquid
-{% if product.title contains 'Pack' %}
-  This product's title contains the word Pack.
-{% endif %}
-```
-{% endraw %}
-
-
 
 <!-- Block math, keep all blank lines -->
 
