@@ -1,7 +1,7 @@
 ---
 title: "Article 6"
 date: 2024-07-20 02:05:30 +0530
-categories: [Math]
+categories: [Vector]
 tags: [mechanics]
 layout: article_custom
 permalink: /articles/article-6
