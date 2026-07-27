@@ -110,14 +110,6 @@ Development of indigenous onboard Flight Control System (FCS)
 - this is point 4
 
 
-```shell
-pwd
-mkdir -p ~/abhinay/catkin_ws
-cd /catkin_ws
-catkin create pkg turtlesim_custom
-catkin make
-```
-
 <!-- Block math, keep all blank lines -->
 
 $$
