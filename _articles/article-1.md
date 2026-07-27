@@ -146,7 +146,7 @@ Can be referenced as \eqref{eq:label_name}.
 2. \$$ LaTeX_math_expression $$
 3. \$$ LaTeX_math_expression $$
 
-```cpp
+```
 #include <iostream>
 
 int main()
