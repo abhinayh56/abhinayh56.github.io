@@ -51,7 +51,23 @@
         {%- capture tab_key -%}{{ page.url | split: '/' }}{%- endcapture -%}
         {{- site.data.locales[include.lang].tabs[tab_key] | default: page.title -}}
       {% else %}
-        {{- page.title -}}
+        {% if page.layout == 'project_custom' %}
+          {{- site.data.locales[include.lang].layout[page.layout] | default: "Project" | capitalize -}}
+        {% elsif page.layout == 'article_custom' %}
+          {{- site.data.locales[include.lang].layout[page.layout] | default: "Article" | capitalize -}}
+        {% elsif page.layout == 'library_custom' %}
+          {{- site.data.locales[include.lang].layout[page.layout] | default: "Library" | capitalize -}}
+        {% elsif page.layout == 'dataset_custom' %}
+          {{- site.data.locales[include.lang].layout[page.layout] | default: "Dataset" | capitalize -}}
+        {% elsif page.layout == 'projects_custom' %}
+          {{- site.data.locales[include.lang].layout[page.layout] | default: "Projects" | capitalize -}}
+        {% elsif page.layout == 'articles_custom' %}
+          {{- site.data.locales[include.lang].layout[page.layout] | default: "Articles" | capitalize -}}
+        {% elsif page.layout == 'libraries_custom' %}
+          {{- site.data.locales[include.lang].layout[page.layout] | default: "Libraries" | capitalize -}}
+        {% elsif page.layout == 'datasets_custom' %}
+          {{- site.data.locales[include.lang].layout[page.layout] | default: "Datasets" | capitalize -}}
+        {% endif %}
       {% endif %}
     </div>
 
