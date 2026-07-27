@@ -1,15 +1,15 @@
 ---
-title: "GPS Delay Compensation, Trajectory Tracking of Quadrotor and Integration of Mini Helicopter"
+title: "Two Wheel Self-Balancing Robot"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
 layout: project_custom
-permalink: /projects/project-2
+permalink: /projects/project-5
 math: true
 order: 1
 toc: true
 comments: true
-description: "Designed trajectory tracking controllers with GPS delay compensation and integrated autonomous flight control for quadrotor and mini-helicopter platforms."
+description: "Designed and implemented a closed-loop balance controller using IMU feedback to achieve stable posture control and autonomous navigation of a two-wheel robot."
 ---
 
 ## Professional Summary

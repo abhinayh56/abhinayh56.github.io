@@ -1,5 +1,5 @@
 ---
-title: "Project 3"
+title: "Design of Onboard Flight Control System for Aerial Vehicle"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
@@ -9,6 +9,7 @@ math: true
 order: 1
 toc: true
 comments: true
+description: "Developed an embedded onboard flight control system for autonomous aerial vehicles, integrating sensor fusion, state estimation, and real-time control algorithms."
 ---
 
 ## Professional Summary

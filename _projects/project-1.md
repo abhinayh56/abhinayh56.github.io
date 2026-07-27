@@ -1,5 +1,5 @@
 ---
-title: "Project 1"
+title: "Control of Surgical Instruments for Minimum Invasive Surgical Robot"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
@@ -9,6 +9,7 @@ math: true
 order: 1
 toc: true
 comments: true
+description: "Developed real-time motion control algorithms for robotic surgical instruments, enabling precise, stable, and safe manipulation for minimally invasive surgical procedures."
 ---
 
 ## Professional Summary

@@ -1,15 +1,15 @@
 ---
-title: "GPS Delay Compensation, Trajectory Tracking of Quadrotor and Integration of Mini Helicopter"
+title: "Obstacle Avoidance and Path Tracking of Mobile Robot"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
 layout: project_custom
-permalink: /projects/project-2
+permalink: /projects/project-7
 math: true
 order: 1
 toc: true
 comments: true
-description: "Designed trajectory tracking controllers with GPS delay compensation and integrated autonomous flight control for quadrotor and mini-helicopter platforms."
+description: "Implemented autonomous navigation algorithms combining path tracking and real-time obstacle avoidance for reliable mobile robot operation in dynamic environments."
 ---
 
 ## Professional Summary
