@@ -145,3 +145,14 @@ Can be referenced as \eqref{eq:label_name}.
 1. \$$ LaTeX_math_expression $$
 2. \$$ LaTeX_math_expression $$
 3. \$$ LaTeX_math_expression $$
+
+```cpp
+#include <iostream>
+
+int main()
+{
+    std::cout << "this is a test for code blocks in c++" << std::endl
+
+    return 0;
+}
+```
