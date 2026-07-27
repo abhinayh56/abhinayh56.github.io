@@ -56,12 +56,6 @@ jobs:
           echo "=== Bundler ==="
           bundle -v
 
-          echo "=== Jekyll ==="
-          bundle exec jekyll -v
-
-          echo "=== Installed gems ==="
-          bundle list
-
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
