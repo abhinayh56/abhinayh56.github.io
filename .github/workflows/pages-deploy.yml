@@ -1,5 +1,5 @@
 name: Show versions
-  run: |
+  run:
     ruby -v
     gem -v
     bundle -v
