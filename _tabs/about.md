@@ -356,3 +356,10 @@ Development of indigenous onboard Flight Control System (FCS)
 - Robot Software Architecture
 - EtherCAT
 - Real-Time Robotics
+
+---
+
+You can reach out to me on the following link <br>
+<a href="{{ '/contact' | relative_url }}"><i class="fas fa-envelope"></i> **Contact**</a>
+
+---

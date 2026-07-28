@@ -25,16 +25,17 @@ libraries, share datasets, and write about modern robotics software.
 
 <div class="mt-4">
 
-<a class="btn btn-primary me-2"
-href="{{ '/projects' | relative_url }}">
-<i class="fas fa-microchip me-1"></i>
-Projects
-</a>
 
-<a class="btn btn-outline-secondary"
+<a class="btn btn-sm btn-outline-primary me-2"
 href="{{ '/about' | relative_url }}">
 <i class="fas fa-user me-1"></i>
 About Me
+</a>
+
+<a class="btn btn-sm btn-outline-primary me-2"
+href="{{ '/contact' | relative_url }}">
+<i class="fas fa-envelope me-1"></i>
+Contact
 </a>
 
 </div>

@@ -15,9 +15,10 @@
   icon: "fab fa-fw fa-instagram"
   url: "https://instagram.com/abhinaykumar_1234"
 
-- type: email
+- type: contact_me
   icon: "fas fa-envelope"
-  noblank: true # open link in current tab
+  #noblank: false # open link in current tab
+  url: "/contact"
 
 - type: "Website"
   icon: "fas fa-fw fa-link"

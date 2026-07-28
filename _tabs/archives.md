@@ -1,7 +1,7 @@
 ---
-order: 7
+order: 8
 layout: archives_custom
 icon: fas fa-archive
 permalink: /archives
-title: Archives, Categories & Tags
+title: Archives
 ---
