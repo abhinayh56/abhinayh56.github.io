@@ -121,6 +121,7 @@ a.btn.btn-outline-primary:active i {
 }
 
 .archive-title a:hover {
+    color: var(--link-color);
     text-decoration: underline;
 }
 
@@ -135,8 +136,9 @@ a.btn.btn-outline-primary:active i {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: .45rem;
 
-    min-width: 100px;
+    min-width: 100%;
     padding: .35rem .75rem;
 
     border-radius: 6px;
@@ -144,11 +146,18 @@ a.btn.btn-outline-primary:active i {
     font-size: .72rem;
     font-weight: 700;
     letter-spacing: .5px;
+    text-transform: uppercase;
 
     transition:
         transform .18s ease,
         box-shadow .18s ease,
         filter .18s ease;
+}
+
+.archive-badge i {
+    width: 1em;
+    text-align: center;
+    font-size: .82rem;
 }
 
 .archive-type a {

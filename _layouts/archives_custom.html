@@ -45,26 +45,37 @@ layout: default
   {% case item.collection %}
     {% when "projects" %}
       {% assign badge_class = "badge-project" %}
+      {% assign icon = "fas fa-diagram-project" %}
       {% assign type = "PROJECT" %}
-      {% assign type_url = "/projects" %}
+      {% assign type_url = "/projects/" %}
+
     {% when "articles" %}
       {% assign badge_class = "badge-article" %}
+      {% assign icon = "fas fa-newspaper" %}
       {% assign type = "ARTICLE" %}
-      {% assign type_url = "/articles" %}
+      {% assign type_url = "/articles/" %}
+
     {% when "libraries" %}
       {% assign badge_class = "badge-library" %}
+      {% assign icon = "fas fa-book" %}
       {% assign type = "LIBRARY" %}
-      {% assign type_url = "/libraries" %}
+      {% assign type_url = "/libraries/" %}
+
     {% when "datasets" %}
       {% assign badge_class = "badge-dataset" %}
+      {% assign icon = "fas fa-database" %}
       {% assign type = "DATASET" %}
-      {% assign type_url = "/datasets" %}
+      {% assign type_url = "/datasets/" %}
+
     {% when "posts" %}
       {% assign badge_class = "badge-post" %}
+      {% assign icon = "fas fa-file-lines" %}
       {% assign type = "POST" %}
-      {% assign type_url = "/posts" %}
+      {% assign type_url = "/posts/" %}
+
     {% else %}
       {% assign badge_class = "badge-default" %}
+      {% assign icon = "fas fa-file" %}
       {% assign type = item.collection | upcase %}
       {% assign type_url = "/" %}
   {% endcase %}
@@ -74,7 +85,8 @@ layout: default
     <div class="archive-type">
       <a href="{{ type_url | relative_url }}">
         <span class="archive-badge {{ badge_class }}">
-          {{ type }}
+          <i class="{{ icon }}"></i>
+          <span>{{ type }}</span>
         </span>
       </a>
     </div>
