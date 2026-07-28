@@ -1,13 +1,15 @@
 ---
-title: "Article 3"
+title: "Obstacle Avoidance and Path Tracking of Mobile Robot"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
-tags: [kinematics]
-layout: article_custom
-permalink: /articles/article-3
+tags: [Kinematics]
+layout: project_custom
+permalink: /projects/project-6
 math: true
+order: 6
 toc: true
 comments: true
+description: "Implemented autonomous navigation algorithms combining path tracking and real-time obstacle avoidance for reliable mobile robot operation in dynamic environments."
 ---
 
 ## Professional Summary

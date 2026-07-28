@@ -1,15 +1,15 @@
 ---
-title: "Control of Quadrotor Mounted with Manipulator Arm"
+title: "Two-Wheeled Self-Balancing Robot"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
 layout: project_custom
 permalink: /projects/project-4
 math: true
-order: 1
+order: 4
 toc: true
 comments: true
-description: "Implemented coordinated flight and manipulator control strategies to enable stable aerial manipulation while compensating for dynamic payload and arm motion."
+description: "Designed and implemented a closed-loop balance controller using IMU feedback to achieve stable posture control and autonomous navigation of a two-wheel robot."
 ---
 
 ## Professional Summary

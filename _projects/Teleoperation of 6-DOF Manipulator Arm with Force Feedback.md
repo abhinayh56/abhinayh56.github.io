@@ -1,12 +1,12 @@
 ---
-title: "Teleoperation of 6 DOF Manipulator Arm with Force Feedback"
+title: "Teleoperation of 6-DOF Manipulator Arm with Force Feedback"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
 layout: project_custom
-permalink: /projects/project-8
+permalink: /projects/project-7
 math: true
-order: 1
+order: 7
 toc: true
 comments: true
 description: "Developed a bilateral teleoperation system with haptic force feedback, providing intuitive remote manipulation and enhanced operator situational awareness."

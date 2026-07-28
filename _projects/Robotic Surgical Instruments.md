@@ -1,15 +1,15 @@
 ---
-title: "GPS Delay Compensation, Trajectory Tracking of Quadrotor and Integration of Mini Helicopter"
+title: "Robotic Surgical Instruments"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
 layout: project_custom
-permalink: /projects/project-2
+permalink: /projects/project-1
 math: true
 order: 1
 toc: true
 comments: true
-description: "Designed trajectory tracking controllers with GPS delay compensation and integrated autonomous flight control for quadrotor and mini-helicopter platforms."
+description: "Developed real-time motion control algorithms for robotic surgical instruments, enabling precise, stable, and safe manipulation for minimally invasive surgical procedures."
 ---
 
 ## Professional Summary

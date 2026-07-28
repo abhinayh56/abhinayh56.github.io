@@ -1,15 +1,15 @@
 ---
-title: "Collaborative Control and Teleoperation of Robotic Swarm"
+title: "Flight Control System for Aerial Vehicle"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
 layout: project_custom
-permalink: /projects/project-6
+permalink: /projects/project-2
 math: true
-order: 1
+order: 2
 toc: true
 comments: true
-description: "Developed teleoperation and cooperative control algorithms for multi-robot systems, enabling coordinated task execution and real-time operator interaction."
+description: "Designed trajectory tracking controllers with GPS delay compensation and integrated autonomous flight control for quadrotor and mini-helicopter platforms."
 ---
 
 ## Professional Summary

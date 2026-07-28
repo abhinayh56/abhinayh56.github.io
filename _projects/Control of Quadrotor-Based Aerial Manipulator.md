@@ -1,13 +1,15 @@
 ---
-title: Post 2
-date: 2024-01-05 02:05:30 +0530
-last_modified_at: 2026-07-24 18:13:00 +0530
-categories: [robotics, control, imu, control system, lidar]
-tags: [engineering, robotics, control, stability]     # TAG names should always be lowercase
+title: "Control of Quadrotor-Based Aerial Manipulator"
+date: 2024-07-20 02:05:30 +0530
+categories: [Robotics]
+tags: [Kinematics]
+layout: project_custom
+permalink: /projects/project-3
 math: true
-layout: post_custom
+order: 3
 toc: true
 comments: true
+description: "Implemented coordinated flight and manipulator control strategies to enable stable aerial manipulation while compensating for dynamic payload and arm motion."
 ---
 
 ## Professional Summary

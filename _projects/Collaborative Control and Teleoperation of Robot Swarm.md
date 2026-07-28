@@ -1,15 +1,15 @@
 ---
-title: "Design of Onboard Flight Control System for Aerial Vehicle"
+title: "Collaborative Control and Teleoperation of Robot Swarm"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
 layout: project_custom
-permalink: /projects/project-3
+permalink: /projects/project-5
 math: true
-order: 1
+order: 5
 toc: true
 comments: true
-description: "Developed an embedded onboard flight control system for autonomous aerial vehicles, integrating sensor fusion, state estimation, and real-time control algorithms."
+description: "Developed teleoperation and cooperative control algorithms for multi-robot systems, enabling coordinated task execution and real-time operator interaction."
 ---
 
 ## Professional Summary
