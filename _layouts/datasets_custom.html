@@ -8,6 +8,8 @@ layout: default
 {% assign all_normal = site.datasets | where_exp: "article", "article.pin != true and article.hidden != true" %}
 {% assign posts = all_pinned | concat: all_normal %}
 
+<p> This page contains a list of datasets. Explore the datasets below, and feel free to suggest improvements at the end of each dataset page. </p>
+
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
     <article class="card-wrapper card">

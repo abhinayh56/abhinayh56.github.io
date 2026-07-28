@@ -57,26 +57,32 @@ layout: page
     {% when "projects" %}
       {% assign badge_class = "badge-project" %}
       {% assign type = "PROJECT" %}
+      {% assign type_url = "/projects" %}
 
     {% when "articles" %}
       {% assign badge_class = "badge-article" %}
       {% assign type = "ARTICLE" %}
+      {% assign type_url = "/articles" %}
 
     {% when "libraries" %}
       {% assign badge_class = "badge-library" %}
       {% assign type = "LIBRARY" %}
+      {% assign type_url = "/libraries" %}
 
     {% when "datasets" %}
       {% assign badge_class = "badge-dataset" %}
       {% assign type = "DATASET" %}
+      {% assign type_url = "/datasets" %}
 
     {% when "posts" %}
       {% assign badge_class = "badge-post" %}
       {% assign type = "POST" %}
+      {% assign type_url = "/posts" %}
 
     {% else %}
       {% assign badge_class = "badge-default" %}
       {% assign type = item.collection | upcase %}
+      {% assign type_url = "/" %}
 
   {% endcase %}
 
@@ -100,9 +106,11 @@ layout: page
 
         <!-- Collection -->
 
-        <span class="archive-badge {{ badge_class }}">
-          {{ type }}
-        </span>
+        <a href="{{ type_url | relative_url }}">
+          <span class="archive-badge {{ badge_class }}">
+              {{ type }}
+          </span>
+        </a>
 
         <!-- Title -->
 

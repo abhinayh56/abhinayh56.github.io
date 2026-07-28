@@ -8,6 +8,8 @@ layout: default
 {% assign all_normal = site.posts | where_exp: "post", "post.pin != true and post.hidden != true" %}
 {% assign posts = all_pinned | concat: all_normal %}
 
+<p> This page contains a list of posts. Explore the posts below, and feel free to suggest improvements at the end of each post page. </p>
+
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
     <article class="card-wrapper card">
