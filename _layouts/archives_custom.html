@@ -130,11 +130,10 @@ layout: page
 
         <div class="archive-right">
 
-          {{ item.date | date: "%d %b %Y" }}
+          Posted: {{ item.date | date: "%d %b %Y" }} <br>
 
           {% if item.last_modified_at %}
-            |
-            Updated {{ item.last_modified_at | date: "%d %b %Y" }}
+            Recent: {{ item.last_modified_at | date: "%d %b %Y" }}
           {% endif %}
 
         </div>
