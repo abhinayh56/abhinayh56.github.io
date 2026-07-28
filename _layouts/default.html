@@ -21,11 +21,11 @@ layout: compress
     {% include sidebar.html lang=lang %}
 
     <div id="main-wrapper" class="d-flex justify-content-center">
-      <div class="container d-flex flex-column px-xxl-5">
+      <div class="container-fluid d-flex flex-column px-xxl-5">
         {% include topbar.html lang=lang %}
 
         <div class="row flex-grow-1">
-          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
+          <main aria-label="Main Content" class="{% if page.layout == 'archives_custom' %}col-12{% else %}col-12 col-lg-11 col-xl-9{% endif %} px-md-4">
             {% if layout.layout == 'default' %}
               {% include refactor-content.html content=content lang=lang %}
             {% else %}
@@ -34,6 +34,7 @@ layout: compress
           </main>
 
           <!-- panel -->
+          {% unless page.layout == "archives_custom" %}
           <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
             <div class="access">
               {% if page.collection == "articles" %}
@@ -55,6 +56,7 @@ layout: compress
               {% include {{ _include_path }} lang=lang %}
             {% endfor %}
           </aside>
+          {% endunless %}
         </div>
 
         <div class="row">
