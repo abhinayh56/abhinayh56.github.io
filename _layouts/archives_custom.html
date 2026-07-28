@@ -45,19 +45,19 @@ layout: default
   {% case item.collection %}
     {% when "projects" %}
       {% assign badge_class = "badge-project" %}
-      {% assign icon = "fas fa-diagram-project" %}
+      {% assign icon = "fas fa-microchip" %}
       {% assign type = "PROJECT" %}
       {% assign type_url = "/projects/" %}
 
     {% when "articles" %}
       {% assign badge_class = "badge-article" %}
-      {% assign icon = "fas fa-newspaper" %}
+      {% assign icon = "fas fa-book" %}
       {% assign type = "ARTICLE" %}
       {% assign type_url = "/articles/" %}
 
     {% when "libraries" %}
       {% assign badge_class = "badge-library" %}
-      {% assign icon = "fas fa-book" %}
+      {% assign icon = "fas fa-code" %}
       {% assign type = "LIBRARY" %}
       {% assign type_url = "/libraries/" %}
 
@@ -69,7 +69,7 @@ layout: default
 
     {% when "posts" %}
       {% assign badge_class = "badge-post" %}
-      {% assign icon = "fas fa-file-lines" %}
+      {% assign icon = "fas fa-newspaper" %}
       {% assign type = "POST" %}
       {% assign type_url = "/posts/" %}
 
