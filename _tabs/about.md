@@ -360,6 +360,6 @@ Development of indigenous onboard Flight Control System (FCS)
 ---
 
 You can reach out to me on the following link <br>
-<a href="{{ '/contact' | relative_url }}"><i class="fas fa-envelope"></i> **Contact**</a>
+<a href="{{ '/contact' | relative_url }}" class="btn btn-sm btn-outline-primary" ><i class="fas fa-envelope"></i> **Contact**</a>
 
 ---

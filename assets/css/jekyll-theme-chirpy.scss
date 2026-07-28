@@ -230,3 +230,25 @@
   color: inherit;
   text-decoration: none;
 }
+
+/* for hiding gray dots near title and badge */
+.archive-header a {
+  text-shadow: none !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+.archive-header a::before,
+.archive-header a::after {
+  content: none !important;
+}
+
+/* for changing button text and icon color to white ehn mouse hover on it */
+a.btn.btn-outline-primary:hover,
+a.btn.btn-outline-primary:hover i,
+a.btn.btn-outline-primary:focus,
+a.btn.btn-outline-primary:focus i,
+a.btn.btn-outline-primary:active,
+a.btn.btn-outline-primary:active i {
+  color: #fff !important;
+}
