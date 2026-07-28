@@ -13,87 +13,6 @@
 ';
 
 /* append your custom style below */
-
-/* ==========================================================
-   Archives
-   ========================================================== */
-
-.archive-year {
-  margin: 2.2rem 0 1rem;
-  padding-bottom: .45rem;
-  font-size: 1.8rem;
-  font-weight: 700;
-  border-bottom: 2px solid var(--main-border-color);
-}
-
-.archive-year-group {
-  margin-bottom: 2rem;
-}
-
-/* ==========================================================
-   Card
-   ========================================================== */
-
-.archive-card {
-  border: 1px solid var(--main-border-color);
-  border-radius: 10px;
-  background: var(--card-bg);
-  transition: all .18s ease;
-}
-
-.archive-card:hover {
-  transform: translateY(0px);
-  box-shadow: 0 .35rem .9rem rgba(0, 0, 0, .08);
-}
-
-.archive-card .card-body {
-  padding-left: 0;
-}
-
-/* ==========================================================
-   Header Grid
-   ========================================================== */
-
-.archive-header {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-template-areas:
-    "badge title date"
-    ". desc desc";
-
-  column-gap: 0.1rem;
-  row-gap: .1rem;
-  align-items: center;
-}
-
-/* ==========================================================
-   Badge
-   ========================================================== */
-
-.archive-badge {
-  grid-area: badge;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: .30rem .60rem;
-
-  border-radius: .35rem;
-
-  font-size: .68rem;
-  font-weight: 700;
-  letter-spacing: .5px;
-  text-transform: uppercase;
-  white-space: nowrap;
-  min-width: 66.5px;
-}
-
-.archive-badge:hover {
-  transform: translateX(-2px);
-  box-shadow: 0 .35rem .9rem rgba(0, 0, 0, .08);
-}
-
 /* Badge Colors */
 
 .badge-project {
@@ -127,99 +46,8 @@
 }
 
 /* ==========================================================
-   Title
-   ========================================================== */
-
-.archive-title {
-  grid-area: title;
-
-  font-size: 1rem;
-  font-weight: 600;
-
-  color: var(--heading-color);
-
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-  padding: 1px 3px;
-  border-radius: 4px;
-
-  border: 1px solid #ccc;
-}
-
-.archive-title:hover {
-  text-decoration: none;
-  transform: translateX(-2px);
-  box-shadow: 0 .35rem .9rem rgba(0, 0, 0, .08);
-}
-
-/* ==========================================================
-   Date
-   ========================================================== */
-
-.archive-right {
-  grid-area: date;
-
-  justify-self: end;
-
-  margin-left: auto;
-  text-align: right;
-
-  font-size: .82rem;
-  color: var(--text-muted-color);
-
-  white-space: nowrap;
-}
-
-/* ==========================================================
-   Description
-   ========================================================== */
-
-.archive-description {
-  grid-area: desc;
-
-  color: var(--text-muted-color);
-
-  font-size: .88rem;
-  line-height: 1.35;
-
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-/* ==========================================================
    Mobile
    ========================================================== */
-
-@media (max-width: 768px) {
-
-  .archive-header {
-
-    grid-template-columns: auto 1fr;
-
-    grid-template-areas:
-      "badge title"
-      "date date"
-      "desc desc";
-
-    row-gap: .45rem;
-  }
-
-  .archive-right {
-    justify-self: start;
-    font-size: .78rem;
-  }
-
-  .archive-title {
-    white-space: normal;
-  }
-
-  .archive-description {
-    white-space: normal;
-  }
-}
 
 #topbar-title a {
   color: inherit;
@@ -231,17 +59,6 @@
   text-decoration: none;
 }
 
-/* for hiding gray dots near title and badge */
-.archive-header a {
-  text-shadow: none !important;
-  filter: none !important;
-  box-shadow: none !important;
-}
-
-.archive-header a::before,
-.archive-header a::after {
-  content: none !important;
-}
 
 /* for changing button text and icon color to white ehn mouse hover on it */
 a.btn.btn-outline-primary:hover,
@@ -251,4 +68,121 @@ a.btn.btn-outline-primary:focus i,
 a.btn.btn-outline-primary:active,
 a.btn.btn-outline-primary:active i {
   color: #fff !important;
+}
+
+/*========================================*/
+.archive-year {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.archive-year-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.archive-card {
+    display: grid;
+    grid-template-columns: 110px minmax(0, 1fr) 170px;
+    align-items: center;
+    gap: 1.5rem;
+
+    padding: 1rem 1.25rem;
+
+    background: var(--card-bg);
+    border: 1px solid var(--bs-border-color);
+    border-radius: 8px;
+
+    transition: box-shadow .2s ease;
+}
+
+.archive-type {
+    display: flex;
+    justify-content: center;
+}
+
+.archive-title {
+    overflow: hidden;
+}
+
+.archive-title a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+
+    transition: color .2s ease;
+}
+
+.archive-title a:hover {
+    text-decoration: underline;
+}
+
+.archive-date {
+    text-align: right;
+    font-size: 0.88rem;
+    color: var(--bs-secondary-color);
+    white-space: nowrap;
+}
+
+.archive-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 100px;
+    padding: .35rem .75rem;
+
+    border-radius: 6px;
+
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease,
+        filter .18s ease;
+}
+
+.archive-type a {
+    text-decoration: none;
+}
+
+.archive-type a:hover .archive-badge {
+    transform: translateY(-1px);
+    filter: brightness(1.08);
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.15);
+}
+
+@media (max-width: 768px) {
+
+    .archive-card {
+        grid-template-columns: 1fr;
+        gap: .75rem;
+    }
+
+    .archive-type {
+        justify-content: flex-start;
+    }
+
+    .archive-title a {
+        white-space: normal;
+    }
+
+    .archive-date {
+        text-align: left;
+    }
+
+}
+
+.archive-card:hover {
+    border-color: var(--bs-secondary-color);
+    box-shadow: 0 .35rem .9rem rgba(0,0,0,.08);
 }

@@ -1,6 +1,6 @@
 ---
 title: "Flight Control System for Aerial Vehicle"
-date: 2024-07-20 02:05:30 +0530
+date: 2025-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
 layout: project_custom

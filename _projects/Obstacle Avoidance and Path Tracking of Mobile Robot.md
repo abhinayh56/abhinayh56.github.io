@@ -1,6 +1,6 @@
 ---
 title: "Obstacle Avoidance and Path Tracking of Mobile Robot"
-date: 2024-07-20 02:05:30 +0530
+date: 2026-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
 layout: project_custom
