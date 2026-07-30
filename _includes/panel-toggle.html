@@ -1,0 +1,50 @@
+<script>
+window.addEventListener("load", () => {
+
+  const floatingBtn = document.getElementById("panel-toggle");
+  const sidebarBtn  = document.getElementById("sidebar-trigger");
+
+  if (!floatingBtn || !sidebarBtn) return;
+
+  floatingBtn.addEventListener("click", () => {
+    if (typeof sidebarBtn.onclick === "function") {
+      sidebarBtn.onclick();
+    }
+  });
+
+  function updateButton() {
+
+    if (window.innerWidth >= 850) {
+      floatingBtn.classList.remove("show");
+      return;
+    }
+
+    const sidebarOpen = document.body.hasAttribute("sidebar-display");
+
+    const rect = sidebarBtn.getBoundingClientRect();
+
+    const triggerVisible =
+      rect.bottom > 0 &&
+      rect.top < window.innerHeight &&
+      rect.left < window.innerWidth &&
+      rect.right > 0;
+
+    if (!sidebarOpen && !triggerVisible) {
+      floatingBtn.classList.add("show");
+    } else {
+      floatingBtn.classList.remove("show");
+    }
+  }
+
+  updateButton();
+
+  window.addEventListener("scroll", updateButton, { passive: true });
+  window.addEventListener("resize", updateButton);
+
+  new MutationObserver(updateButton).observe(document.body, {
+    attributes: true,
+    attributeFilter: ["sidebar-display"]
+  });
+
+});
+</script>
