@@ -8,7 +8,11 @@ layout: default
 {% assign all_normal = site.articles | where_exp: "article", "article.pin != true and article.hidden != true" %}
 {% assign posts = all_pinned | concat: all_normal %}
 
-<p> This page contains a list of articles. Explore the articles below, and feel free to suggest improvements at the end of each article page. </p>
+{% if posts.size < 1 %}
+  <p> No article available. </p>
+{% else %}
+  <p> This page contains a list of articles. Explore the articles below, and feel free to suggest improvements at the end of each article page. </p>
+{% endif %}
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}

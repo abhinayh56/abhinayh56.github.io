@@ -8,7 +8,11 @@ layout: default
 {% assign all_normal = site.posts | where_exp: "post", "post.pin != true and post.hidden != true" %}
 {% assign posts = all_pinned | concat: all_normal %}
 
-<p> This page contains a list of posts. Explore the posts below, and feel free to suggest improvements at the end of each post page. </p>
+{% if posts.size < 1 %}
+  <p> No post available. </p>
+{% else %}
+  <p> This page contains a list of posts. Explore the posts below, and feel free to suggest improvements at the end of each post page. </p>
+{% endif %}
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
