@@ -16,6 +16,8 @@ order: 1
 
 This is a header only library that contains various constants and macros for unit conversions. All constants are defined as macros.
 
-Source code is available at GitHub and can be accessed by following this [Link](https://github.com/abhinayh56/Constants){:target="_blank" rel="noopener noreferrer"}.
+### Source Code
+- Source code is available at GitHub and can be accessed by following this [**Link**](https://github.com/abhinayh56/Constants){:target="_blank" rel="noopener noreferrer"}.
 
-Documentation and tutorials can be accessed by following this [Link](https://myroboticslab.com/Constants_docs){:target="_blank" rel="noopener noreferrer"}.
+### Documentation
+- Documentation and tutorials can be accessed by following this [**Link**](https://myroboticslab.com/Constants_docs){:target="_blank" rel="noopener noreferrer"}.
