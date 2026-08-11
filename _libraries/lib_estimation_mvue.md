@@ -12,4 +12,15 @@ description: "Minimum Variance Unbiased Estimator (MVUE) for multi-sensor data f
 order: 6
 ---
 
-## Title
+## MVUE
+Minimum Variance Unbiased Estimator (MVUE) also known as Best Linear Unbiased Estimator (BLUE).
+This is a header only template implementation of MVUE.
+It is one of the best and simplest method to fuse data from multiple sources such as sensors.
+
+This is a header only library that contains various constants and macros for unit conversions. All constants are defined as macros.
+
+### Source Code
+- Source code is available at GitHub and can be accessed by following this [**Link**](https://github.com/abhinayh56/MVUE){:target="_blank" rel="noopener noreferrer"}.
+
+### Documentation
+- Documentation and tutorials can be accessed by following this [**Link**](https://myroboticslab.com/MVUE_docs){:target="_blank" rel="noopener noreferrer"}.

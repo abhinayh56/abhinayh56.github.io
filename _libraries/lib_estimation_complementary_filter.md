@@ -14,7 +14,7 @@ order: 5
 
 ## Complementary Filter
 
-This is a header only library that contains various constants and macros for unit conversions. All constants are defined as macros.
+This is a header only template implementation of complementary filter.
 
 ### Source Code
 - Source code is available at GitHub and can be accessed by following this [**Link**](https://github.com/abhinayh56/Complementary_filter){:target="_blank" rel="noopener noreferrer"}.
