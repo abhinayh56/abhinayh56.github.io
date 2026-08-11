@@ -16,19 +16,19 @@ order: 4
 PID Control implementation in C++
 This is a header only template implementation.
 Various form of PID and related control systems implemented are:
-- P
-- I
-- D
-- D_LPF_1
-- PI
-- PD
-- PD_LPF_1
-- PID
-- PID_P
-- PID_S
-- PID_LPF_1
-- PID_LPF_1_FF
-- PID_GS
+- P (Proportional Control)
+- I (Integral Control)
+- D (Derivative Control)
+- D_LPF_1 (Derivative Control with Low Pass Filter of Order 1)
+- PI (Proportional Integral Cotnrol)
+- PD (Proportional Derivative Control)
+- PD_LPF_1 (Proportional Derivative Control with Low Pass Filter of Order 1)
+- PID (Proportional, Integral and Derivative Control)
+- PID_P (PID Control in Parallel Form)
+- PID_S (PID Control in Standard Form)
+- PID_LPF_1 (PID Control with Low Pass Filter of Order 1)
+- PID_LPF_1_FF (PID_LPF_1 with Feed-Forward term)
+- PID_GS (PID with Gain Scheduling Options)
 
 ### Source Code
 - Source code is available at GitHub and can be accessed by following this [**Link**](https://github.com/abhinayh56/PID){:target="_blank" rel="noopener noreferrer"}.
