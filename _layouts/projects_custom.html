@@ -8,7 +8,11 @@ layout: default
 {% assign all_normal = site.projects | where_exp: "article", "article.pin != true and article.hidden != true" %}
 {% assign posts = all_pinned | concat: all_normal %}
 
-<p> This page contains a list of projects. Explore the projects below, and feel free to suggest improvements at the end of each project page. </p>
+{% if posts.size < 1 %}
+  <p> No project available. </p>
+{% else %}
+  <p> This page contains a list of projects. Explore the projects below, and feel free to suggest improvements at the end of each project page. </p>
+{% endif %}
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
