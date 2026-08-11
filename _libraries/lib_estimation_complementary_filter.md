@@ -17,7 +17,7 @@ order: 5
 This is a header only library that contains various constants and macros for unit conversions. All constants are defined as macros.
 
 ### Source Code
-- Source code is available at GitHub and can be accessed by following this [**Link**](https://myroboticslab.com/Complementary_filter){:target="_blank" rel="noopener noreferrer"}.
+- Source code is available at GitHub and can be accessed by following this [**Link**](https://github.com/abhinayh56/Complementary_filter){:target="_blank" rel="noopener noreferrer"}.
 
 ### Documentation
 - Documentation and tutorials can be accessed by following this [**Link**](https://myroboticslab.com/Complementary_filter_docs){:target="_blank" rel="noopener noreferrer"}.
