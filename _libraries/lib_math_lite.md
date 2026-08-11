@@ -12,4 +12,4 @@ description: "Lightweight implementation of various math operations in C++."
 order: 2
 ---
 
-## Title
+### Details

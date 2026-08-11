@@ -12,7 +12,7 @@ description: "Minimum Variance Unbiased Estimator (MVUE) for multi-sensor data f
 order: 6
 ---
 
-## MVUE
+### Details
 Minimum Variance Unbiased Estimator (MVUE) also known as Best Linear Unbiased Estimator (BLUE).
 This is a header only template implementation of MVUE.
 It is one of the best and simplest method to fuse data from multiple sources such as sensors.

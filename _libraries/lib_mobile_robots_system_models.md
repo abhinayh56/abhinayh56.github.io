@@ -12,4 +12,4 @@ description: "C++ library for mathematical models of various mobile robots."
 order: 14
 ---
 
-## Title
+### Details

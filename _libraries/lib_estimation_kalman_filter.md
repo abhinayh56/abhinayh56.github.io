@@ -12,4 +12,4 @@ description: "C++ library for implementation of Kalman filters (KF, EKF, __)."
 order: 7
 ---
 
-## Title
+### Details

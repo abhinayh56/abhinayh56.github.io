@@ -12,4 +12,4 @@ description: "C++ library for IPC (publish-subscribe mechanism between different
 order: 12
 ---
 
-## Title
+### Details

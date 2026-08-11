@@ -12,4 +12,4 @@ description: "C++ library for implementation of Bayes filter."
 order: 8
 ---
 
-## Title
+### Details

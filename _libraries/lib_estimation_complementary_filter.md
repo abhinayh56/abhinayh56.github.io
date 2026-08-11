@@ -12,7 +12,7 @@ description: "Implementation of complementary filter for data fusion in C++."
 order: 5
 ---
 
-## Complementary Filter
+### Details
 
 This is a header only template implementation of complementary filter.
 

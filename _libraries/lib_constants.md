@@ -12,7 +12,7 @@ description: "Collection of various constants (unit conversion, math, data type,
 order: 1
 ---
 
-## Constants
+### Details
 
 This is a header only library that contains various constants and macros for unit conversions. All constants are defined as macros.
 

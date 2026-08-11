@@ -12,4 +12,4 @@ description: "C++ library of Finite State Machine (FSM) for application in realt
 order: 9
 ---
 
-## Title
+### Details

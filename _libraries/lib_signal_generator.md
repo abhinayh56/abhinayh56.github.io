@@ -12,4 +12,4 @@ description: "C++ library for generating signals (impulse, step, ramp, pulse, ch
 order: 10
 ---
 
-## Title
+### Details

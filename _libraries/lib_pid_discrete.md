@@ -12,4 +12,4 @@ description: "C++ library of discrete PID control system for application in real
 order: 4
 ---
 
-## Title
+### Details

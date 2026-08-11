@@ -12,4 +12,4 @@ description: "C++ library (drivers) for various sensors, actuators, HAL for embe
 order: 13
 ---
 
-## Title
+### Details

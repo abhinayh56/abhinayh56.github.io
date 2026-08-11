@@ -12,7 +12,7 @@ description: "C++ library for digital filters for realtime implementation (LPF, 
 order: 3
 ---
 
-## Digital Filters
+### Details
 This is a header only template implementation of digital filters.
 - Filters method used: Butterworth
 - Discretization method: Trustin (Trapezoidal)

@@ -12,4 +12,4 @@ description: "C++ library for ITC (publish-subscribe mechanism between classes o
 order: 11
 ---
 
-## Title
+### Details
