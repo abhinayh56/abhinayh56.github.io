@@ -17,7 +17,7 @@ order: 5
 This is a header only template implementation of complementary filter.
 
 ### Source Code
-- Source code is available at GitHub and can be accessed by following this [**Link**](https://github.com/abhinayh56/Complementary_filter){:target="_blank" rel="noopener noreferrer"}.
+- Source code is available on GitHub and can be accessed using the following [**Link**](https://github.com/abhinayh56/Complementary_filter){:target="_blank" rel="noopener noreferrer"}.
 
 ### Documentation
-- Documentation and tutorials can be accessed by following this [**Link**](https://myroboticslab.com/Complementary_filter_docs){:target="_blank" rel="noopener noreferrer"}.
+- Documentation and tutorials can be accessed  using the following [**Link**](https://myroboticslab.com/Complementary_filter_docs){:target="_blank" rel="noopener noreferrer"}.
