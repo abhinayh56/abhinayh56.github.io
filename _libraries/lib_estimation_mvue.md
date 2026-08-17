@@ -20,7 +20,7 @@ It is one of the best and simplest method to fuse data from multiple sources suc
 This is a header only library that contains various constants and macros for unit conversions. All constants are defined as macros.
 
 ### Source Code
-- Source code is available at GitHub and can be accessed by following this [**Link**](https://github.com/abhinayh56/MVUE){:target="_blank" rel="noopener noreferrer"}.
+- Source code is available on GitHub and can be accessed using the following [**Link**](https://github.com/abhinayh56/MVUE){:target="_blank" rel="noopener noreferrer"}.
 
 ### Documentation
-- Documentation and tutorials can be accessed by following this [**Link**](https://myroboticslab.com/MVUE_docs){:target="_blank" rel="noopener noreferrer"}.
+- Documentation and tutorials can be accessed  using the following [**Link**](https://myroboticslab.com/MVUE_docs){:target="_blank" rel="noopener noreferrer"}.
