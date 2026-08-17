@@ -20,4 +20,4 @@ This is a header only library that contains various constants and macros for uni
 - Source code is available on GitHub and can be accessed using the following [**Link**](https://github.com/abhinayh56/Constants){:target="_blank" rel="noopener noreferrer"}.
 
 ### Documentation
-- Documentation and tutorials can be accessed using the following this [**Link**](https://myroboticslab.com/Constants_docs){:target="_blank" rel="noopener noreferrer"}.
+- Documentation and tutorials can be accessed using the following [**Link**](https://myroboticslab.com/Constants_docs){:target="_blank" rel="noopener noreferrer"}.
