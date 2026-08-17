@@ -1,10 +1,10 @@
 ---
-title: "PID Control"
+title: "Control: PID"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
 layout: library_custom
-permalink: /libraries/lib_pid_discrete
+permalink: /libraries/lib_control_pid
 math: true
 toc: true
 comments: true
@@ -34,4 +34,4 @@ Various form of PID and related control systems implemented are:
 - Source code is available at GitHub and can be accessed by following this [**Link**](https://github.com/abhinayh56/PID_control){:target="_blank" rel="noopener noreferrer"}.
 
 ### Documentation
-- Documentation and tutorials can be accessed by following this [**Link**](https://myroboticslab.com/PID_control_docs){:target="_blank" rel="noopener noreferrer"}.
+- Documentation and tutorials can be accessed by following this [**Link**](https://myroboticslab.com/PID_control_docs/){:target="_blank" rel="noopener noreferrer"}.
