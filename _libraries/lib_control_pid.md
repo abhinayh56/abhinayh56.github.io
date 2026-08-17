@@ -31,7 +31,7 @@ Various form of PID and related control systems implemented are:
 - PID_GS (PID with Gain Scheduling Options)
 
 ### Source Code
-- Source code is available on GitHub and can be accessed by using the following [**Link**](https://github.com/abhinayh56/PID_control){:target="_blank" rel="noopener noreferrer"}.
+- Source code is available on GitHub and can be accessed using the following [**Link**](https://github.com/abhinayh56/PID_control){:target="_blank" rel="noopener noreferrer"}.
 
 ### Documentation
 - Documentation and tutorials can be accessedd using the following [**Link**](https://myroboticslab.com/PID_control_docs/){:target="_blank" rel="noopener noreferrer"}.
