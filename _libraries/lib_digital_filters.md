@@ -27,7 +27,7 @@ List of filter class implemented are:
 - BPF_2 (Band Pass Filter of order 2)
 
 ### Source Code
-- Source code is available at GitHub and can be accessed by following this [**Link**](https://github.com/abhinayh56/Filters){:target="_blank" rel="noopener noreferrer"}.
+- Source code is available on GitHub and can be accessed using the following [**Link**](https://github.com/abhinayh56/Filters){:target="_blank" rel="noopener noreferrer"}.
 
 ### Documentation
-- Documentation and tutorials can be accessed by following this [**Link**](https://myroboticslab.com/Filters_docs){:target="_blank" rel="noopener noreferrer"}.
+- Documentation and tutorials can be accessed using the following [**Link**](https://myroboticslab.com/Filters_docs){:target="_blank" rel="noopener noreferrer"}.
