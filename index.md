@@ -114,33 +114,33 @@ Browse →
 
 <!-- Posts -->
 
-<div class="col-lg-4 col-md-6">
+<!-- <div class="col-lg-4 col-md-6"> -->
 
-<div class="card shadow-sm h-100">
+<!-- <div class="card shadow-sm h-100"> -->
 
-<div class="card-body d-flex flex-column">
+<!-- <div class="card-body d-flex flex-column"> -->
 
-<h4>
-<i class="fas fa-newspaper me-2"></i>
-Posts
-</h4>
+<!-- <h4> -->
+<!-- <i class="fas fa-newspaper me-2"></i> -->
+<!-- Posts -->
+<!-- </h4> -->
 
-<p class="small flex-grow-1">
-Development updates, engineering insights, technical discussions, project progress, and announcements.
-</p>
+<!-- <p class="small flex-grow-1"> -->
+<!-- <!-- Development updates, engineering insights, technical discussions, project progress, and announcements. -->
+<!-- </p> -->
 
-<div>
-<a class="btn btn-sm btn-outline-primary"
-href="{{ '/posts' | relative_url }}">
-Browse →
-</a>
-</div>
+<!-- <div> -->
+<!-- <a class="btn btn-sm btn-outline-primary" -->
+<!-- href="{{ '/posts' | relative_url }}"> -->
+<!-- Browse → -->
+<!-- </a> -->
+<!-- </div> -->
 
-</div>
+<!-- </div> -->
 
-</div>
+<!-- </div> -->
 
-</div>
+<!-- </div> -->
 
 <!-- Libraries -->
 
@@ -192,6 +192,36 @@ Benchmark datasets, calibration files, experimental results, measurements, and r
 <div>
 <a class="btn btn-sm btn-outline-primary"
 href="{{ '/datasets' | relative_url }}">
+Browse →
+</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Datasets -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body d-flex flex-column">
+
+<h4>
+<i class="fas fa-archive me-2"></i>
+Archives
+</h4>
+
+<p class="small flex-grow-1">
+Link to collection of all projects, articles, libraries, posts and other contents uploaded on this website.
+</p>
+
+<div>
+<a class="btn btn-sm btn-outline-primary"
+href="{{ '/archives' | relative_url }}">
 Browse →
 </a>
 </div>
