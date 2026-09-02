@@ -6,11 +6,6 @@ permalink: /admin
 title: Admin
 ---
 
-## Provide admin credential to access
-
-- User ID: xxxxx
-- Password: yyyyy
-
 ---
 
 ## **1. Java script based calculator**
@@ -70,7 +65,8 @@ async function addNumbers_2() {
 
   try {
 
-    const response = await fetch("http://127.0.0.1:8000/add", {
+    // const response = await fetch("http://127.0.0.1:8000/add", {
+    const response = await fetch("https://api.myroboticslab.com/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
