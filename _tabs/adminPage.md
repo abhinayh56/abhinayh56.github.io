@@ -64,8 +64,6 @@ async function addNumbers_2() {
   const num2 = Number(document.getElementById("num2_2").value);
 
   try {
-
-    // const response = await fetch("http://127.0.0.1:8000/add", {
     const response = await fetch("https://api.myroboticslab.com/add", {
       method: "POST",
       headers: {
