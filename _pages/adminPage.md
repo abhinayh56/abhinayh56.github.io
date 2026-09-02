@@ -1,10 +1,20 @@
 ---
-order: 9
+order: 1
 layout: admin_custom
 icon: fas fa-lock
 permalink: /admin
 title: Admin
 ---
+
+---
+
+<div>
+<a class="btn btn-sm btn-outline-primary me-2"
+href="{{ '/' | relative_url }}">
+<i class="fas fa-home me-1"></i>
+Go to home page
+</a>
+</div>
 
 ---
 
