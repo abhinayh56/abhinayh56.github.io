@@ -15,14 +15,14 @@
   icon: "fab fa-fw fa-instagram"
   url: "https://instagram.com/abhinaykumar_1234"
 
-- type: contact_me
+- type: "contact_me"
   icon: "fas fa-envelope"
   #noblank: false # open link in current tab
   url: "/contact"
 
-- type: "Website"
-  icon: "fas fa-fw fa-link"
-  url: "https://myroboticslab.com/"
+- type: ""
+  icon: "fas fa fa-lock"
+  url: "/admin"
   
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
