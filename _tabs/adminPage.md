@@ -27,7 +27,9 @@ title: Admin
 </div>
 
 <script>
+
 function addNumbers_1() {
+
   const num1 = Number(document.getElementById("num1_1").value);
   const num2 = Number(document.getElementById("num2_1").value);
 
@@ -35,6 +37,7 @@ function addNumbers_1() {
 
   document.getElementById("result_1").textContent = sum;
 }
+
 </script>
 
 ---
@@ -58,12 +61,14 @@ function addNumbers_1() {
 </div>
 
 <script>
+
 async function addNumbers_2() {
 
   const num1 = Number(document.getElementById("num1_2").value);
   const num2 = Number(document.getElementById("num2_2").value);
 
   try {
+
     const response = await fetch("https://api.myroboticslab.com/add", {
       method: "POST",
       headers: {
@@ -89,7 +94,7 @@ async function addNumbers_2() {
 
     document.getElementById("result_2").textContent =
       "Backend connection failed";
-
   }
 }
+
 </script>
