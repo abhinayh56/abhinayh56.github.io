@@ -17,7 +17,7 @@
 
 - type: "contact_me"
   icon: "fas fa-envelope"
-  #noblank: false # open link in current tab
+  noblank: true # open link in current tab
   url: "/contact"
 
 - type: ""
