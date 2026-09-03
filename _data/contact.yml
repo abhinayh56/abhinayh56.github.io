@@ -22,6 +22,7 @@
 
 - type: ""
   icon: "fas fa fa-lock"
+  noblank: true
   url: "/admin"
   
 # - type: stack-overflow
