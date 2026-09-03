@@ -23,7 +23,12 @@
 - type: ""
   icon: "fas fa fa-lock"
   noblank: true
-  url: "/admin"
+  url: "/admin1"
+
+- type: ""
+  icon: "fas fa fa-lock"
+  noblank: true
+  url: "/admin2"
   
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
