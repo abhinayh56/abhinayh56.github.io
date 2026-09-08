@@ -1,8 +1,0 @@
-<map id="include/mvue_n.h" name="include/mvue_n.h">
-<area shape="rect" id="Node000001" title="N&#45;measurement Minimum Variance Unbiased Estimator." alt="" coords="98,5,222,32"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,70,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,34,74,74,71,69,136,31"/>
-<area shape="rect" id="Node000003" href="$d4/d25/mvue__n_8tpp.html" title=" " alt="" coords="94,80,227,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="155,31,154,66,149,63,151,34"/>
-<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="165,78,167,49,171,46,169,81"/>
-</map>
