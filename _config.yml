@@ -259,7 +259,7 @@ compress_html:
 exclude:
   - "*.gem"
   - "*.gemspec"
-  - docs
+  #- docs
   - tools
   - README.md
   - LICENSE

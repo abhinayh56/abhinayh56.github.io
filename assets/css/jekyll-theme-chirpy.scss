@@ -223,3 +223,39 @@ a.btn.btn-outline-primary:active i {
   visibility: visible;
   pointer-events: auto;
 }
+
+/* =========================================================
+   MkDocs embedded documentation
+   ========================================================= */
+
+/* Keep Chirpy left sidebar.
+   Make the main content occupy the center + right panel area. */
+body:has(.mkdocs-page) #main-wrapper main {
+  flex: 0 0 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Hide only Chirpy's right panel on the documentation page. */
+body:has(.mkdocs-page) #panel-wrapper {
+  display: none;
+}
+
+/* MkDocs container */
+body:has(.mkdocs-page) .mkdocs-page {
+  width: 100%;
+  height: calc(100vh - 100px);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* MkDocs iframe */
+body:has(.mkdocs-page) .mkdocs-iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
