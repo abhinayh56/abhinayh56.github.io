@@ -48,15 +48,15 @@ python 3.12 -m venv venv
 
 4. Activate the virtual environment
 
-- For Windows pc use the following command
-```sh
-venv/Scripts/activate
-```
+    - For Windows pc use the following command
+    ```sh
+    venv/Scripts/activate
+    ```
 
-- For Linux based pc use the following command
-```sh
-. venv/Scripts/activate
-```
+    - For Linux based pc use the following command
+    ```sh
+    . venv/Scripts/activate
+    ```
 
 5. Install requirements in the virtual environment
 ```sh
