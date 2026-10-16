@@ -9,7 +9,7 @@ math: true
 order: 9
 toc: true
 comments: true
-description: "Description"
+description: "This contains the differential drive robots build for learning, engineering and implementation related skills"
 ---
 
 # DDR_2018
