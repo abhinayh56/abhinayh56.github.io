@@ -52,215 +52,136 @@ Explore
 
 <div class="row g-3">
 
-<!-- Projects -->
-
-<div class="col-lg-4 col-md-6">
-
-<div class="card shadow-sm h-100">
-
-<div class="card-body d-flex flex-column">
-
-<h4>
-<i class="fas fa-microchip me-2"></i>
-Projects
-</h4>
-
-<p class="small flex-grow-1">
-Engineering projects on robotics, embedded systems, hardware development, control, and simulation.
-</p>
-
-<div>
-<a class="btn btn-sm btn-outline-primary"
-href="{{ '/projects' | relative_url }}">
-Browse →
-</a>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Articles -->
-
-<div class="col-lg-4 col-md-6">
-
-<div class="card shadow-sm h-100">
-
-<div class="card-body d-flex flex-column">
-
-<h4>
-<i class="fas fa-book me-2"></i>
-Articles
-</h4>
-
-<p class="small flex-grow-1">
-Technical articles covering engineering concepts, algorithms, software implementation, and best practices.
-</p>
-
-<div>
-<a class="btn btn-sm btn-outline-primary"
-href="{{ '/articles' | relative_url }}">
-Browse →
-</a>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Posts -->
-
-<!-- <div class="col-lg-4 col-md-6"> -->
-
-<!-- <div class="card shadow-sm h-100"> -->
-
-<!-- <div class="card-body d-flex flex-column"> -->
-
-<!-- <h4> -->
-<!-- <i class="fas fa-newspaper me-2"></i> -->
-<!-- Posts -->
-<!-- </h4> -->
-
-<!-- <p class="small flex-grow-1"> -->
-<!-- <!-- Development updates, engineering insights, technical discussions, project progress, and announcements. -->
-<!-- </p> -->
-
-<!-- <div> -->
-<!-- <a class="btn btn-sm btn-outline-primary" -->
-<!-- href="{{ '/posts' | relative_url }}"> -->
-<!-- Browse → -->
-<!-- </a> -->
-<!-- </div> -->
-
-<!-- </div> -->
-
-<!-- </div> -->
-
-<!-- </div> -->
-
-<!-- Libraries -->
-
-<div class="col-lg-4 col-md-6">
-
-<div class="card shadow-sm h-100">
-
-<div class="card-body d-flex flex-column">
-
-<h4>
-<i class="fas fa-code me-2"></i>
-Libraries
-</h4>
-
-<p class="small flex-grow-1">
-Reusable C++, C, and Python libraries, robotics frameworks, APIs, utilities, and software modules.
-</p>
-
-<div>
-<a class="btn btn-sm btn-outline-primary"
-href="{{ '/libraries' | relative_url }}">
-Browse →
-</a>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Datasets -->
-
-<div class="col-lg-4 col-md-6">
-
-<div class="card shadow-sm h-100">
-
-<div class="card-body d-flex flex-column">
-
-<h4>
-<i class="fas fa-database me-2"></i>
-Datasets
-</h4>
-
-<p class="small flex-grow-1">
-Benchmark datasets, calibration files, experimental results, measurements, and research data.
-</p>
-
-<div>
-<a class="btn btn-sm btn-outline-primary"
-href="{{ '/datasets' | relative_url }}">
-Browse →
-</a>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Datasets -->
-
-<div class="col-lg-4 col-md-6">
-
-<div class="card shadow-sm h-100">
-
-<div class="card-body d-flex flex-column">
-
-<h4>
-<i class="fas fa-archive me-2"></i>
-Archives
-</h4>
-
-<p class="small flex-grow-1">
-Link to collection of all projects, articles, libraries, posts and other contents uploaded on this website.
-</p>
-
-<div>
-<a class="btn btn-sm btn-outline-primary"
-href="{{ '/archives' | relative_url }}">
-Browse →
-</a>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- About -->
-
-<div class="col-lg-4 col-md-6">
-
-<div class="card shadow-sm h-100">
-
-<div class="card-body d-flex flex-column">
-
-<h4>
-<i class="fas fa-user me-2"></i>
-About
-</h4>
-
-<p class="small flex-grow-1">
-Professional background, technical expertise, research interests, publications, and career highlights.
-</p>
-
-<div>
-<a class="btn btn-sm btn-outline-primary"
-href="{{ '/about' | relative_url }}">
-Browse →
-</a>
-</div>
-
-</div>
-
-</div>
-
-</div>
+    <!-- Projects -->
+    
+    <a href="{{ '/projects' | relative_url }}" class="text-decoration-none text-reset">
+        <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <h4>
+                        <i class="fas fa-microchip me-2"></i>
+                        Projects
+                    </h4>
+                    <p class="small flex-grow-1">
+                        Engineering projects on robotics, embedded systems, hardware development, control, and simulation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+
+
+    <!-- Articles -->
+    
+    <a href="{{ '/articles' | relative_url }}" class="text-decoration-none text-reset">
+        <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <h4>
+                        <i class="fas fa-book me-2"></i>
+                        Articles
+                    </h4>
+                    <p class="small flex-grow-1">
+                        Technical articles covering engineering concepts, algorithms, software implementation, and best practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+
+
+    <!-- Posts -->
+    <!-- <div class="col-lg-4 col-md-6"> -->
+    <!-- <div class="card shadow-sm h-100"> -->
+    <!-- <div class="card-body d-flex flex-column"> -->
+    <!-- <h4> -->
+    <!-- <i class="fas fa-newspaper me-2"></i> -->
+    <!-- Posts -->
+    <!-- </h4> -->
+    <!-- <p class="small flex-grow-1"> -->
+    <!-- <!-- Development updates, engineering insights, technical discussions, project progress, and announcements. -->
+    <!-- </p> -->
+    <!-- <div> -->
+    <!-- <a class="btn btn-sm btn-outline-primary" -->
+    <!-- href="{{ '/posts' | relative_url }}"> -->
+    <!-- Browse → -->
+    <!-- </a> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+
+    <!-- Libraries -->
+    <a href="{{ '/libraries' | relative_url }}" class="text-decoration-none text-reset">
+        <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <h4>
+                        <i class="fas fa-code me-2"></i>
+                        Libraries
+                    </h4>
+                    <p class="small flex-grow-1">
+                        Reusable C++, C, and Python libraries, robotics frameworks, APIs, utilities, and software modules.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <!-- Datasets -->
+    <a href="{{ '/datasets' | relative_url }}" class="text-decoration-none text-reset">
+        <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <h4>
+                        <i class="fas fa-database me-2"></i>
+                        Datasets
+                    </h4>
+                    <p class="small flex-grow-1">
+                        Benchmark datasets, calibration files, experimental results, measurements, and research data.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <!-- Archives -->
+    <a href="{{ '/archives' | relative_url }}" class="text-decoration-none text-reset">
+        <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <h4>
+                        <i class="fas fa-archive me-2"></i>
+                        Archives
+                    </h4>
+                    <p class="small flex-grow-1">
+                        Link to collection of all projects, articles, libraries, posts and other contents uploaded on this website.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <!-- About -->
+    <div class="col-lg-4 col-md-6">
+    <div class="card shadow-sm h-100">
+    <div class="card-body d-flex flex-column">
+    <h4>
+    <i class="fas fa-user me-2"></i>
+    About
+    </h4>
+    <p class="small flex-grow-1">
+    Professional background, technical expertise, research interests, publications, and career highlights.
+    </p>
+    <div>
+    <a class="btn btn-sm btn-outline-primary"
+    href="{{ '/about' | relative_url }}">
+    Browse →
+    </a>
+    </div>
+    </div>
+    </div>
+    </div>
 
 </div>
 
