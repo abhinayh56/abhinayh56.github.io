@@ -12,8 +12,6 @@ comments: true
 description: "This contains the differential drive robots build for learning, engineering and implementation related skills"
 ---
 
-# DDR_2018
-
 **Objective:** To build a simple Differential Drive Robot (DDR) using inexpensive components and involving a lot of hands-on experiments and learning.
 
 ## Info
