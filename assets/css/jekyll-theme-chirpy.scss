@@ -225,7 +225,5 @@ a.btn.btn-outline-primary:active i {
 }
 
 #toc-bar.invisible {
-  position: absolute;
-  visibility: hidden !important;
-  pointer-events: none;
+  margin-bottom: -3rem;
 }
