@@ -31,11 +31,11 @@ title: Home
     </div>
 </div>
 
-<hr class="my-3">
+<hr class="my-3 mb-3">
 
 <!-- ========================= EXPLORE ========================= -->
 
-<h2 class="mb-3">
+<h2 class="mb-3 mt-0">
     Explore
 </h2>
 
@@ -166,11 +166,11 @@ title: Home
 
 <!-- ========================= RESEARCH ========================= -->
 
-<h2 class="mb-2">
+<h2 class="mb-0 mt-0">
 Research & Engineering Interests
 </h2>
 
-<p class="text-muted mb-4">
+<p class="text-muted mb-3">
 Areas that I actively study, build, and write about.
 </p>
 
