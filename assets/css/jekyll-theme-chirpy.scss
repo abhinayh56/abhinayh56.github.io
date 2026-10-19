@@ -328,3 +328,8 @@ a.btn.btn-outline-primary:active i {
 .card:hover div {
   background-color: var(--card-hover-bg, #f2f2f2) !important;
 }
+
+/* Restore vertical spacing between homepage cards */
+#main-content .row.g-3 > [class*="col-"] {
+    margin-bottom: 1rem;
+}
