@@ -1,130 +1,116 @@
+
 <!-- ========================= EXPLORE ========================= -->
 
-<h2 class="mb-3 mt-0">
-    Explore
-</h2>
+<section class="explore-section" aria-labelledby="explore-heading">
 
-<div class="row g-3">
-    <!-- Projects -->
-    <div class="col-lg-4 col-md-6">
-        <a href="{{ '/projects' | relative_url }}"
-        class="text-decoration-none text-reset d-block h-100">
-            <div class="card shadow-sm h-100">
-                <div class="card-body d-flex flex-column">
-                    <h4 class="mt-0 mb-3">
-                        <i class="fas fa-microchip me-2"></i>
-                        Projects
-                    </h4>
-                    <p class="small flex-grow-1 mt-0 mb-0">
-                        Engineering projects on robotics, embedded systems,
-                        hardware development, control, and simulation.
-                    </p>
-                </div>
-            </div>
-        </a>
-    </div>
-    <!-- Articles -->
-    <div class="col-lg-4 col-md-6">
-        <a href="{{ '/articles' | relative_url }}"
-        class="text-decoration-none text-reset d-block h-100">
-            <div class="card shadow-sm h-100">
-                <div class="card-body d-flex flex-column">
-                    <h4 class="mt-0 mb-3">
-                        <i class="fas fa-book me-2"></i>
-                        Articles
-                    </h4>
-                    <p class="small flex-grow-1 mt-0 mb-0">
-                        Technical articles covering engineering concepts, software implementation, and best practices.
-                    </p>
-                </div>
-            </div>
-        </a>
-    </div>
-    <!-- Posts -->
-    <!-- <div class="col-lg-4 col-md-6"> -->
-    <!--     <a href="{{ '/posts' | relative_url }}" -->
-    <!--     class="text-decoration-none text-reset d-block h-100"> -->
-    <!--         <div class="card shadow-sm h-100"> -->
-    <!--             <div class="card-body d-flex flex-column"> -->
-    <!--                 <h4 class="mt-0 mb-3"> -->
-    <!--                     <i class="fas fa-newspaper me-2"></i> -->
-    <!--                     Posts -->
-    <!--                 </h4> -->
-    <!--                 <p class="small flex-grow-1 mt-0 mb-0"> -->
-    <!--                     Development updates, engineering insights, technical discussions, project progress, and announcements. -->
-    <!--                 </p> -->
-    <!--             </div> -->
-    <!--         </div> -->
-    <!--     </a> -->
-    <!-- </div> -->
-    <!-- Libraries -->
-    <div class="col-lg-4 col-md-6">
-        <a href="{{ '/libraries' | relative_url }}"
-        class="text-decoration-none text-reset d-block h-100">
-            <div class="card shadow-sm h-100">
-                <div class="card-body d-flex flex-column">
-                    <h4 class="mt-0 mb-3">
-                        <i class="fas fa-code me-2"></i>
-                        Libraries
-                    </h4>
-                    <p class="small flex-grow-1 mt-0 mb-0">
-                        Reusable C++, C, and Python libraries, robotics frameworks, APIs, utilities, and software modules.
-                    </p>
-                </div>
-            </div>
-        </a>
-    </div>
-    <!-- Datasets -->
-    <div class="col-lg-4 col-md-6">
-        <a href="{{ '/datasets' | relative_url }}"
-        class="text-decoration-none text-reset d-block h-100">
-            <div class="card shadow-sm h-100">
-                <div class="card-body d-flex flex-column">
-                    <h4 class="mt-0 mb-3">
-                        <i class="fas fa-database me-2"></i>
-                        Datasets
-                    </h4>
-                    <p class="small flex-grow-1 mt-0 mb-0">
-                        Benchmark datasets, calibration files, experimental results, measurements, and research data.
-                    </p>
-                </div>
-            </div>
-        </a>
-    </div>
-    <!-- Archives -->
-    <div class="col-lg-4 col-md-6">
-        <a href="{{ '/archives' | relative_url }}"
-        class="text-decoration-none text-reset d-block h-100">
-            <div class="card shadow-sm h-100">
-                <div class="card-body d-flex flex-column">
-                    <h4 class="mt-0 mb-3">
-                        <i class="fas fa-archive me-2"></i>
-                        Archives
-                    </h4>
-                    <p class="small flex-grow-1 mt-0 mb-0">
-                        Link to collection of all projects, articles, libraries, posts and other contents uploaded on this website.
-                    </p>
-                </div>
-            </div>
-        </a>
-    </div>
-    <!-- About -->
-    <div class="col-lg-4 col-md-6">
-        <a href="{{ '/about' | relative_url }}"
-        class="text-decoration-none text-reset d-block h-100">
-            <div class="card shadow-sm h-100">
-                <div class="card-body d-flex flex-column">
-                    <h4 class="mt-0 mb-3">
-                        <i class="fas fa-user me-2"></i>
-                        About
-                    </h4>
-                    <p class="small flex-grow-1 mt-0 mb-0">
-                        Professional background, technical expertise, research interests, publications, and career highlights.
-                    </p>
-                </div>
-            </div>
-        </a>
-    </div>
-</div>
+    <h2 class="explore-heading" id="explore-heading">
+        Explore
+    </h2>
 
-<hr class="my-3">
+    <div class="explore-grid">
+
+        <!-- Projects -->
+        <a href="{{ '/projects' | relative_url }}" class="explore-card">
+            <div class="explore-card-body">
+                <h4 class="explore-card-title">
+                    <i class="fas fa-microchip" aria-hidden="true"></i>
+                    Projects
+                </h4>
+                <p class="explore-card-description">
+                    Engineering projects on robotics, embedded systems,
+                    hardware development, control, and simulation.
+                </p>
+            </div>
+        </a>
+
+        <!-- Articles -->
+        <a href="{{ '/articles' | relative_url }}" class="explore-card">
+            <div class="explore-card-body">
+                <h4 class="explore-card-title">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                    Articles
+                </h4>
+                <p class="explore-card-description">
+                    Technical articles covering engineering concepts,
+                    software implementation, and best practices.
+                </p>
+            </div>
+        </a>
+
+        <!-- Posts (currently disabled) -->
+        <!--
+        <a href="{{ '/posts' | relative_url }}" class="explore-card">
+            <div class="explore-card-body">
+                <h4 class="explore-card-title">
+                    <i class="fas fa-newspaper" aria-hidden="true"></i>
+                    Posts
+                </h4>
+                <p class="explore-card-description">
+                    Development updates, engineering insights, technical
+                    discussions, project progress, and announcements.
+                </p>
+            </div>
+        </a>
+        -->
+
+        <!-- Libraries -->
+        <a href="{{ '/libraries' | relative_url }}" class="explore-card">
+            <div class="explore-card-body">
+                <h4 class="explore-card-title">
+                    <i class="fas fa-code" aria-hidden="true"></i>
+                    Libraries
+                </h4>
+                <p class="explore-card-description">
+                    Reusable C++, C, and Python libraries, robotics
+                    frameworks, APIs, utilities, and software modules.
+                </p>
+            </div>
+        </a>
+
+        <!-- Datasets -->
+        <a href="{{ '/datasets' | relative_url }}" class="explore-card">
+            <div class="explore-card-body">
+                <h4 class="explore-card-title">
+                    <i class="fas fa-database" aria-hidden="true"></i>
+                    Datasets
+                </h4>
+                <p class="explore-card-description">
+                    Benchmark datasets, calibration files, experimental
+                    results, measurements, and research data.
+                </p>
+            </div>
+        </a>
+
+        <!-- Archives -->
+        <a href="{{ '/archives' | relative_url }}" class="explore-card">
+            <div class="explore-card-body">
+                <h4 class="explore-card-title">
+                    <i class="fas fa-archive" aria-hidden="true"></i>
+                    Archives
+                </h4>
+                <p class="explore-card-description">
+                    Link to collection of all projects, articles, libraries,
+                    posts and other contents uploaded on this website.
+                </p>
+            </div>
+        </a>
+
+        <!-- About -->
+        <a href="{{ '/about' | relative_url }}" class="explore-card">
+            <div class="explore-card-body">
+                <h4 class="explore-card-title">
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                    About
+                </h4>
+                <p class="explore-card-description">
+                    Professional background, technical expertise, research
+                    interests, publications, and career highlights.
+                </p>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+<hr class="explore-divider">
