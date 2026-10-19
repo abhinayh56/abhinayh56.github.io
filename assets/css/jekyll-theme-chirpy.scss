@@ -229,23 +229,34 @@ a.btn.btn-outline-primary:active i {
 }
 
 /* Library cards — match archives_custom */
-#post-list .card {
+#post-list .card-wrapper.card {
+  background: var(--card-bg);
   border: 1px solid var(--bs-border-color);
   border-radius: 8px;
-  transition: box-shadow 0.2s ease;
+  overflow: hidden;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-#post-list .card:hover {
+/* Match the archive-card hover border and shadow */
+#post-list .card-wrapper.card:hover {
   border-color: var(--bs-secondary-color);
   box-shadow: 0 0.35rem 0.9rem rgba(0, 0, 0, 0.08);
 }
 
-/* Disable gray hover background */
-#post-list .post-preview,
-#post-list .post-preview:hover,
-#post-list .post-preview:focus,
-#post-list .post-preview:active,
-#post-list .post-preview .card-body,
-#post-list .post-preview:hover .card-body {
+/* Override the theme's preview-link hover background */
+#post-list .card-wrapper.card > a.post-preview,
+#post-list .card-wrapper.card > a.post-preview:hover,
+#post-list .card-wrapper.card > a.post-preview:focus,
+#post-list .card-wrapper.card > a.post-preview:active {
+  background: var(--card-bg) !important;
+  background-image: none !important;
+}
+
+/* Keep content areas consistent */
+#post-list .card-wrapper.card .card-body,
+#post-list .card-wrapper.card .card-text,
+#post-list .card-wrapper.card .post-meta {
   background: transparent !important;
 }
