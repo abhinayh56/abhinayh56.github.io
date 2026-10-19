@@ -260,3 +260,14 @@ a.btn.btn-outline-primary:active i {
 #post-list .card-wrapper.card .post-meta {
   background: transparent !important;
 }
+
+/* Library title hover effect */
+#post-list .card-wrapper.card .card-title {
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+#post-list .card-wrapper.card:hover .card-title {
+  text-decoration: underline;
+  color: #007bff !important;
+}
