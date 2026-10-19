@@ -19,16 +19,6 @@ title: Home
         where I document projects, publish technical articles, develop reusable software
         libraries, share datasets, and write about modern robotics software.
     </p>
-    <div class="mt-1">
-        <a class="btn btn-sm btn-outline-primary me-2" href="{{ '/about' | relative_url }}">
-            <i class="fas fa-user me-1"></i>
-            About Me
-        </a>
-        <a class="btn btn-sm btn-outline-primary me-2" href="{{ '/contact' | relative_url }}">
-            <i class="fas fa-envelope me-1"></i>
-            Contact
-        </a>
-    </div>
 </div>
 
 <hr class="my-3 mb-3">
@@ -236,6 +226,17 @@ Thank you for visiting
 My Robotics Lab
 </a>.
 </p>
+
+<div class="mt-1">
+    <a class="btn btn-sm btn-outline-primary me-2" href="{{ '/about' | relative_url }}">
+        <i class="fas fa-user me-1"></i>
+        About Me
+    </a>
+    <a class="btn btn-sm btn-outline-primary me-2" href="{{ '/contact' | relative_url }}">
+        <i class="fas fa-envelope me-1"></i>
+        Contact
+    </a>
+</div>
 
 <p class="small text-muted mb-0">
 
