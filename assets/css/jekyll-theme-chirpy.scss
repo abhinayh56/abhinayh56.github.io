@@ -318,3 +318,13 @@ a.btn.btn-outline-primary:active i {
 .home-explore-link:focus-visible .home-explore-card {
   background-color: var(--card-bg);
 }
+
+/* Underline card headings when hovering over a card */
+.card:hover h4 {
+  text-decoration: underline;
+  color: #007bff !important;
+}
+
+.card:hover div {
+  background-color: var(--card-hover-bg, #f2f2f2) !important;
+}
