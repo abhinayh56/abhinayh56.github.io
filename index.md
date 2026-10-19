@@ -46,7 +46,7 @@ title: Home
         class="text-decoration-none text-reset d-block h-100">
             <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
-                    <h4 class="mt-1 mb-3">
+                    <h4 class="mt-0 mb-3">
                         <i class="fas fa-microchip me-2"></i>
                         Projects
                     </h4>
@@ -64,12 +64,12 @@ title: Home
         class="text-decoration-none text-reset d-block h-100">
             <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
-                    <h4 class="mt-1 mb-3">
+                    <h4 class="mt-0 mb-3">
                         <i class="fas fa-book me-2"></i>
                         Articles
                     </h4>
                     <p class="small flex-grow-1 mt-0 mb-0">
-                        Technical articles covering engineering concepts, algorithms, software implementation, and best practices.
+                        Technical articles covering engineering concepts, software implementation, and best practices.
                     </p>
                 </div>
             </div>
@@ -81,7 +81,7 @@ title: Home
     <!--     class="text-decoration-none text-reset d-block h-100"> -->
     <!--         <div class="card shadow-sm h-100"> -->
     <!--             <div class="card-body d-flex flex-column"> -->
-    <!--                 <h4 class="mt-1 mb-3"> -->
+    <!--                 <h4 class="mt-0 mb-3"> -->
     <!--                     <i class="fas fa-newspaper me-2"></i> -->
     <!--                     Posts -->
     <!--                 </h4> -->
@@ -98,7 +98,7 @@ title: Home
         class="text-decoration-none text-reset d-block h-100">
             <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
-                    <h4 class="mt-1 mb-3">
+                    <h4 class="mt-0 mb-3">
                         <i class="fas fa-code me-2"></i>
                         Libraries
                     </h4>
@@ -115,7 +115,7 @@ title: Home
         class="text-decoration-none text-reset d-block h-100">
             <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
-                    <h4 class="mt-1 mb-3">
+                    <h4 class="mt-0 mb-3">
                         <i class="fas fa-database me-2"></i>
                         Datasets
                     </h4>
@@ -132,7 +132,7 @@ title: Home
         class="text-decoration-none text-reset d-block h-100">
             <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
-                    <h4 class="mt-1 mb-3">
+                    <h4 class="mt-0 mb-3">
                         <i class="fas fa-archive me-2"></i>
                         Archives
                     </h4>
@@ -149,7 +149,7 @@ title: Home
         class="text-decoration-none text-reset d-block h-100">
             <div class="card shadow-sm h-100">
                 <div class="card-body d-flex flex-column">
-                    <h4 class="mt-1 mb-3">
+                    <h4 class="mt-0 mb-3">
                         <i class="fas fa-user me-2"></i>
                         About
                     </h4>
