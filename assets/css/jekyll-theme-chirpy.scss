@@ -239,3 +239,13 @@ a.btn.btn-outline-primary:active i {
   border-color: var(--bs-secondary-color);
   box-shadow: 0 0.35rem 0.9rem rgba(0, 0, 0, 0.08);
 }
+
+/* Disable gray hover background */
+#post-list .post-preview,
+#post-list .post-preview:hover,
+#post-list .post-preview:focus,
+#post-list .post-preview:active,
+#post-list .post-preview .card-body,
+#post-list .post-preview:hover .card-body {
+  background: transparent !important;
+}
