@@ -333,3 +333,8 @@ a.btn.btn-outline-primary:active i {
 #main-content .row.g-3 > [class*="col-"] {
     margin-bottom: 1rem;
 }
+
+/* Fix vertical spacing between homepage cards */
+#main-content .row.g-3 {
+    --bs-gutter-y: 1rem;
+}
