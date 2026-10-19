@@ -25,7 +25,7 @@ layout: compress
         {% include topbar.html lang=lang %}
 
         <div class="row flex-grow-1">
-          <main aria-label="Main Content" class="{% if page.layout == 'archives_custom' or page.layout == 'articles_custom' or page.layout == 'projects_custom' or page.layout == 'libraries_custom' or page.layout == 'datasets_custom' or page.layout == 'contact_custom'%}col-12{% else %}col-12 col-lg-11 col-xl-9{% endif %} px-md-4">
+          <main aria-label="Main Content" class="{% if page.layout == 'archives_custom' or page.layout == 'articles_custom' or page.layout == 'projects_custom' or page.layout == 'libraries_custom' or page.layout == 'datasets_custom' or page.layout == 'contact_custom' or page.layout == 'home_custom' %}col-12{% else %}col-12 col-lg-11 col-xl-9{% endif %} px-md-4">
             {% if layout.layout == 'default' %}
               {% include refactor-content.html content=content lang=lang %}
             {% else %}
@@ -34,7 +34,7 @@ layout: compress
           </main>
 
           <!-- panel -->
-          {% unless page.layout == "archives_custom" or page.layout == 'articles_custom' or page.layout == 'projects_custom' or page.layout == 'libraries_custom' or page.layout == 'datasets_custom' or page.layout == 'contact_custom'%}
+          {% unless page.layout == "archives_custom" or page.layout == 'articles_custom' or page.layout == 'projects_custom' or page.layout == 'libraries_custom' or page.layout == 'datasets_custom' or page.layout == 'contact_custom' or page.layout == 'home_custom' %}
           <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
             <div class="access">
               {% if page.collection == "articles" %}
