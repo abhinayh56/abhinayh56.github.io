@@ -6,5 +6,3 @@ title: Home
 {% include home/hero.html %}
 
 {% include home/explore.html %}
-
-{% include home/footer.html %}
