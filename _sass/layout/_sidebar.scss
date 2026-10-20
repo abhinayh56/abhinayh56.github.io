@@ -115,8 +115,10 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     font-size: 95%;
     color: var(--site-subtitle-color);
     margin-top: 0.25rem;
+    margin-bottom: 0;
     word-spacing: 1px;
-    height: 3rem;
+    height: auto;
+    line-height: 1.75;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -124,7 +126,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   }
 
   ul {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 
     li.nav-item {
       opacity: 0.9;
