@@ -7,7 +7,4 @@ title: Home
 
 {% include home/explore.html %}
 
-{% include home/research.html %}
-
 {% include home/footer.html %}
-
