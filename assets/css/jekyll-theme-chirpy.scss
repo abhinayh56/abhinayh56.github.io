@@ -577,3 +577,15 @@ a.btn.btn-outline-primary:active i {
   padding-top: 0 !important;
   line-height: 1;
 }
+
+.library-preview-content .card-title {
+  flex-shrink: 0;
+}
+
+.library-preview-content .card-text {
+  flex-shrink: 0;
+}
+
+.library-preview-content .post-meta {
+  flex-shrink: 0;
+}
