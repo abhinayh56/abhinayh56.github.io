@@ -5,56 +5,91 @@ function setupLibraryPreview() {
   );
 
   previews.forEach((preview) => {
-    const thumbnail = preview.querySelector(".library-preview-thumbnail");
-    const image = thumbnail?.querySelector("img");
-    const meta = preview.querySelector(
-      ".library-preview-content .post-meta"
+    const image = preview.querySelector(
+      ".library-preview-thumbnail img"
     );
+    const body = preview.querySelector(
+      ".library-preview-content .card-body"
+    );
+    const title = body?.querySelector(".card-title");
+    const description = body?.querySelector(".card-text");
+    const meta = body?.querySelector(".post-meta");
 
-    if (!thumbnail || !image || !meta) return;
+    if (!image || !body || !title || !description || !meta) return;
 
     let frameId = 0;
-    let lastHiddenState = null;
+    let observer;
+
+    // Start with metadata visible.
+    meta.classList.remove("library-meta-hidden");
+    meta.style.removeProperty("display");
+
+    function outerHeight(element) {
+      const style = getComputedStyle(element);
+
+      return (
+        element.getBoundingClientRect().height +
+        (parseFloat(style.marginTop) || 0) +
+        (parseFloat(style.marginBottom) || 0)
+      );
+    }
 
     function updatePreview() {
       cancelAnimationFrame(frameId);
 
       frameId = requestAnimationFrame(() => {
+        if (!image.complete || image.naturalWidth === 0) return;
+
+        // Keep the metadata visible while measuring its natural height.
+        meta.classList.remove("library-meta-hidden");
+        meta.style.removeProperty("display");
+
         const imageHeight = image.getBoundingClientRect().height;
-        const thumbnailHeight = thumbnail.clientHeight;
-        const style = getComputedStyle(thumbnail);
 
-        const availableHeight =
-          thumbnailHeight -
-          (parseFloat(style.paddingTop) || 0) -
-          (parseFloat(style.paddingBottom) || 0);
+        if (imageHeight <= 0) return;
 
-        if (imageHeight <= 0 || availableHeight <= 0) return;
+        const bodyStyle = getComputedStyle(body);
+        const padding =
+          (parseFloat(bodyStyle.paddingTop) || 0) +
+          (parseFloat(bodyStyle.paddingBottom) || 0);
 
-        const shouldHide = imageHeight < availableHeight - 2;
+        const requiredHeight =
+          padding +
+          outerHeight(title) +
+          outerHeight(description) +
+          outerHeight(meta);
 
-        // Update only when the state actually changes.
-        if (shouldHide !== lastHiddenState) {
-          meta.classList.toggle("library-meta-hidden", shouldHide);
-          lastHiddenState = shouldHide;
-        }
+        const shouldHide = imageHeight < requiredHeight - 4;
+
+        meta.classList.toggle("library-meta-hidden", shouldHide);
       });
     }
 
-    // Observe the image only; do not observe the thumbnail box.
     if ("ResizeObserver" in window) {
-      const observer = new ResizeObserver(updatePreview);
+      observer = new ResizeObserver(updatePreview);
       observer.observe(image);
+      observer.observe(title);
+      observer.observe(description);
     }
 
     image.addEventListener("load", updatePreview);
-
-    if (image.complete) updatePreview();
+    updatePreview();
   });
 }
 
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", setupLibraryPreview);
+  document.addEventListener("DOMContentLoaded", setupLibraryPreview, {
+    once: true
+  });
 } else {
   setupLibraryPreview();
 }
+
+window.addEventListener("resize", () => {
+  document.querySelectorAll(
+    "#post-list .post-preview.library-preview.has-thumbnail"
+  ).forEach((preview) => {
+    const image = preview.querySelector(".library-preview-thumbnail img");
+    if (image) image.dispatchEvent(new Event("resize-check"));
+  });
+});
