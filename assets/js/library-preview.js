@@ -5,17 +5,11 @@ function setupLibraryPreview() {
   );
 
   previews.forEach((preview) => {
-    const image = preview.querySelector(
-      ".library-preview-thumbnail img"
-    );
-    const body = preview.querySelector(
-      ".library-preview-content .card-body"
-    );
-    const title = body?.querySelector(".card-title");
-    const description = body?.querySelector(".card-text");
-    const tags = body?.querySelector(".post-meta");
+    const thumbnail = preview.querySelector(".library-preview-thumbnail");
+    const image = thumbnail?.querySelector("img");
+    const meta = preview.querySelector(".library-preview-content .post-meta");
 
-    if (!image || !body || !title || !description || !tags) return;
+    if (!thumbnail || !image || !meta) return;
 
     let frameId = 0;
 
@@ -23,41 +17,23 @@ function setupLibraryPreview() {
       cancelAnimationFrame(frameId);
 
       frameId = requestAnimationFrame(() => {
-        // Always measure with all content visible.
-        description.style.removeProperty("display");
-        tags.style.removeProperty("display");
-
         const imageHeight = image.getBoundingClientRect().height;
-        if (imageHeight <= 0) return;
+        const thumbnailHeight = thumbnail.getBoundingClientRect().height;
 
-        // Measure the natural height of the content elements.
-        const bodyStyle = getComputedStyle(body);
-        const paddingTop = parseFloat(bodyStyle.paddingTop) || 0;
-        const paddingBottom = parseFloat(bodyStyle.paddingBottom) || 0;
+        if (!imageHeight || !thumbnailHeight) return;
 
-        const requiredHeight =
-          title.getBoundingClientRect().height +
-          (parseFloat(getComputedStyle(title).marginTop) || 0) +
-          (parseFloat(getComputedStyle(title).marginBottom) || 0) +
-          description.getBoundingClientRect().height +
-          (parseFloat(getComputedStyle(description).marginTop) || 0) +
-          (parseFloat(getComputedStyle(description).marginBottom) || 0) +
-          tags.getBoundingClientRect().height +
-          (parseFloat(getComputedStyle(tags).marginTop) || 0) +
-          (parseFloat(getComputedStyle(tags).marginBottom) || 0) +
-          paddingTop +
-          paddingBottom;
-
-        // Hide tags when the image is shorter than the full content.
-        tags.style.display =
-          imageHeight < requiredHeight - 2 ? "none" : "";
+        if (imageHeight < thumbnailHeight - 2) {
+          meta.classList.add("library-meta-hidden");
+        } else {
+          meta.classList.remove("library-meta-hidden");
+        }
       });
     }
 
     if ("ResizeObserver" in window) {
       const observer = new ResizeObserver(updatePreview);
       observer.observe(image);
-      observer.observe(body);
+      observer.observe(thumbnail);
     }
 
     image.addEventListener("load", updatePreview);
