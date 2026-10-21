@@ -504,18 +504,19 @@ a.btn.btn-outline-primary:active i {
   overflow: hidden;
 }
 
-/* Heading: scale with available width */
+/* Heading: responsive scaling, never below 50% of 1.5rem */
 .library-preview-content .card-title {
+  flex: 0 0 auto;
   min-width: 0;
   margin: 0 0 0.35rem !important;
   overflow-wrap: anywhere;
-  font-size: 1.5rem !important;
+  font-size: clamp(0.75rem, 2.5vw, 1.5rem) !important;
   line-height: 1.15;
 }
 
 /* Summary: use remaining space without a scrollbar */
 .library-preview-content .card-text {
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   min-width: 0;
   min-height: 0;
   margin: 0 0 0.25rem !important;
@@ -523,6 +524,9 @@ a.btn.btn-outline-primary:active i {
   overflow-wrap: anywhere;
   font-size: clamp(0.55rem, 0.95vw, 1rem);
   line-height: 1.2;
+
+  /* Crop excess content instead of overlapping */
+  display: block;
 }
 
 .library-preview-content .card-text p {
@@ -534,6 +538,7 @@ a.btn.btn-outline-primary:active i {
   flex: 0 0 auto;
   margin-top: auto;
   min-width: 0;
+  max-width: 100%;
   overflow: hidden;
   overflow-wrap: anywhere;
   font-size: clamp(0.5rem, 0.8vw, 0.875rem);
@@ -574,6 +579,4 @@ a.btn.btn-outline-primary:active i {
   margin-top: 0.1rem !important;
   padding-top: 0.1rem !important;
   line-height: 1;
-  position: relative;
-  top: -0.1em;
 }
