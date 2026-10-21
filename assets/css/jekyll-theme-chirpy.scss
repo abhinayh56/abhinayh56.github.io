@@ -513,7 +513,7 @@ a.btn.btn-outline-primary:active i {
   line-height: 1.15;
 }
 
-/* Summary: use remaining space without a scrollbar */
+/* Description: responsive scaling with a 60% minimum */
 .library-preview-content .card-text {
   flex: 0 1 auto;
   min-width: 0;
@@ -521,10 +521,8 @@ a.btn.btn-outline-primary:active i {
   margin: 0 0 0.25rem !important;
   overflow: hidden;
   overflow-wrap: anywhere;
-  font-size: clamp(0.55rem, 0.95vw, 1rem);
+  font-size: clamp(0.6rem, 0.95vw, 1rem);
   line-height: 1.2;
-
-  /* Crop excess content instead of overlapping */
   display: block;
 }
 
@@ -556,7 +554,7 @@ a.btn.btn-outline-primary:active i {
   }
 
   .library-preview-content .card-text {
-    font-size: clamp(0.5rem, 1.8vw, 0.7rem);
+    font-size: clamp(0.6rem, 1.8vw, 0.7rem);
     line-height: 1.1;
   }
   
