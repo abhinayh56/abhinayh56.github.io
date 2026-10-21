@@ -20,10 +20,10 @@
 #   noblank: true # open link in current tab
 #   url: "/contact"
 
-# - type: ""
-#   icon: "fas fa fa-lock"
-#   noblank: true
-#   url: "/admin1"
+- type: ""
+  icon: "fas fa fa-lock"
+  noblank: true
+  url: "/admin1"
 
 # - type: ""
 #   icon: "fas fa fa-lock"
