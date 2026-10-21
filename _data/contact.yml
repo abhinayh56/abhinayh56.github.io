@@ -15,20 +15,20 @@
   icon: "fab fa-fw fa-instagram"
   url: "https://instagram.com/abhinaykumar_1234"
 
-- type: "contact_me"
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
-  url: "/contact"
+# - type: "contact_me"
+#   icon: "fas fa-envelope"
+#   noblank: true # open link in current tab
+#   url: "/contact"
 
-- type: ""
-  icon: "fas fa fa-lock"
-  noblank: true
-  url: "/admin1"
+# - type: ""
+#   icon: "fas fa fa-lock"
+#   noblank: true
+#   url: "/admin1"
 
-- type: ""
-  icon: "fas fa fa-lock"
-  noblank: true
-  url: "/admin2"
+# - type: ""
+#   icon: "fas fa fa-lock"
+#   noblank: true
+#   url: "/admin2"
   
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
