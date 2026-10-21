@@ -439,3 +439,58 @@ a.btn.btn-outline-primary:active i {
     color: var(--link-color, #0d6efd);
     text-decoration: underline;
 }
+
+/* Library preview layout */
+
+.post-preview.library-preview {
+  display: flex !important;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Image column: flexible width, full card height */
+.library-preview-thumbnail {
+  flex: 0 0 auto;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  min-width: 0;
+
+  /* Black border with rounded corners */
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.library-preview-thumbnail img {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Text occupies the remaining width */
+.library-preview-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.library-preview-content .card-body {
+  height: 100%;
+}
+
+/* Responsive spacing */
+@media (max-width: 576px) {
+  .library-preview-thumbnail {
+    padding: 0;
+  }
+
+  .library-preview-content .card-body {
+    padding: 0.75rem;
+  }
+}

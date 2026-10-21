@@ -8,6 +8,7 @@ permalink: /libraries/lib_estimation_mvue
 math: true
 toc: true
 comments: true
+image_thumbnail: "assets/images/libraries/thumbnail_mvue.png"
 description: "Minimum Variance Unbiased Estimator (MVUE) for multi-sensor data fusion (C++)."
 order: 6
 ---

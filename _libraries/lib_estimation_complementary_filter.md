@@ -8,6 +8,7 @@ permalink: /libraries/lib_estimation_complementary_filter
 math: true
 toc: true
 comments: true
+image_thumbnail: "assets/images/libraries/thumbnail_complimentary_filter.png"
 description: "Implementation of complementary filter for data fusion in C++."
 order: 5
 ---

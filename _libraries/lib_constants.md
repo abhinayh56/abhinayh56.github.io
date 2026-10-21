@@ -8,6 +8,7 @@ permalink: /libraries/lib_constants
 math: true
 toc: true
 comments: true
+image_thumbnail: "assets/images/libraries/thumbnail_constants.jpg"
 description: "Collection of various constants (unit conversion, math, data type, environmental etc)."
 order: 1
 ---

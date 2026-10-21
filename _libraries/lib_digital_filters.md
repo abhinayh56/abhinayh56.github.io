@@ -8,6 +8,7 @@ permalink: /libraries/lib_digital_filters
 math: true
 toc: true
 comments: true
+image_thumbnail: "assets/images/libraries/thumbnail_filters.jpg"
 description: "C++ library for digital filters for realtime implementation (LPF, HPF, BPF, BSP, __)."
 order: 3
 ---
