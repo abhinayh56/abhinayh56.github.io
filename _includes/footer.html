@@ -29,9 +29,7 @@
     •
     <a href="/about">About</a>
     •
-    <a href="/contact"
-      target="_blank"
-      rel="noopener noreferrer">
+    <a href="/contact">
       Contact
     </a>
   </p>
@@ -40,15 +38,9 @@
     {{- '©' }}
     <time>{{ 'now' | date: '%Y' }}</time>
 
-    {% if site.social.links %}
-      <a href="{{ site.social.links[0] }}"
-        target="_blank"
-        rel="noopener noreferrer">
-        {{ site.social.name }}
-      </a>.
-    {% else %}
-      <em class="fst-normal">{{ site.social.name }}</em>.
-    {% endif %}
+    <a href="/about">
+      {{ site.social.name }}
+    </a>.
 
     {% if site.data.locales[include.lang].copyright.brief %}
       <span
