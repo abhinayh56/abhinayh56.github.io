@@ -474,13 +474,12 @@ a.btn.btn-outline-primary:active i {
 
 .library-preview-thumbnail img {
   display: block;
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
   max-width: 100%;
   object-fit: contain;
   object-position: center;
-
-  border: 1px solid #aaaaaa;
+  border: 1px solid #aaa;
   border-radius: 10px;
   box-sizing: border-box;
 }
