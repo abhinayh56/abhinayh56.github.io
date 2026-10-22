@@ -913,3 +913,9 @@ a.btn.btn-outline-primary:active i {
   }
 
 }
+
+/* Remove padding inside collection item links */
+
+#item-list .collection-item-link {
+  padding: 0 !important;
+}
