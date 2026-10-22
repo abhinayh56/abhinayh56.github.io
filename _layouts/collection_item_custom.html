@@ -11,14 +11,6 @@ script_includes:
 {% include lang.html %}
 {% include toc-status.html %}
 
-{%- comment -%}
-  Reusable collection-item layout.
-  Set these in each page's YAML front matter:
-    icon: "fas fa-database"
-    type: datasets
-  Supported types: articles, projects, libraries, datasets.
-{%- endcomment -%}
-
 <article class="px-1" data-toc="{{ enable_toc }}">
   <header>
     <h1 data-toc-skip>
@@ -97,10 +89,6 @@ script_includes:
 
 </article>
 
-{% comment %}
-  Preserve the type-specific related-content sections from the original layouts.
-  Keep the type allowlist so a typo in front matter cannot cause a missing-include build error.
-{% endcomment %}
 {% case page.type %}
   {% when 'articles' %}
     {% include related-articles.html %}
