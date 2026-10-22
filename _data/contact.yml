@@ -11,9 +11,9 @@
   icon: "fab fa-fw fa-youtube"
   url: "https://youtube.com/@my_robotics_lab"
 
-- type: "Instagram"
-  icon: "fab fa-fw fa-instagram"
-  url: "https://instagram.com/abhinaykumar_1234"
+# - type: "Instagram"
+#   icon: "fab fa-fw fa-instagram"
+#   url: "https://instagram.com/abhinaykumar_1234"
 
 # - type: "contact_me"
 #   icon: "fas fa-envelope"
