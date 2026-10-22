@@ -15,7 +15,7 @@
 
 {% assign match_posts = '' | split: '' %}
 
-{% for item in site[page.type] %}
+{% for item in site[page.collection] %}
 
   {% if item.url == page.url %}
     {% continue %}

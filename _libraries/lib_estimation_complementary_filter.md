@@ -3,7 +3,6 @@ title: "Estimation: Complementary Filter"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
-type: libraries
 icon: "fas fa-code"
 layout: collection_item_custom
 permalink: /libraries/lib_estimation_complementary_filter
