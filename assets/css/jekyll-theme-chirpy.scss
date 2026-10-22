@@ -902,10 +902,6 @@ a.btn.btn-outline-primary:active i {
 
 @media (max-width: 768px) {
 
-  #main-content #item-list .collection-item-summary {
-    display: none !important;
-  }
-
   /* Remove spacing previously reserved for the summary */
 
   #main-content #item-list .collection-item-title {
@@ -916,13 +912,4 @@ a.btn.btn-outline-primary:active i {
     padding-top: 0;
   }
 
-}
-
-
-/* Collection: hide summaries on smaller screens */
-
-@media screen and (max-width: 768px) {
-  #main-content .collection-page #item-list .collection-item-summary {
-    display: none !important;
-  }
 }
