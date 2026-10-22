@@ -15,15 +15,15 @@
 
 {% assign match_posts = '' | split: '' %}
 
-{% for article in site.articles %}
+{% for item in site[page.type] %}
 
-  {% if article.url == page.url %}
+  {% if item.url == page.url %}
     {% continue %}
   {% endif %}
 
   {% assign matched = false %}
 
-  {% for category in article.categories %}
+  {% for category in item.categories %}
     {% if page.categories contains category %}
       {% assign matched = true %}
       {% break %}
@@ -31,7 +31,7 @@
   {% endfor %}
 
   {% unless matched %}
-    {% for tag in article.tags %}
+    {% for tag in item.tags %}
       {% if page.tags contains tag %}
         {% assign matched = true %}
         {% break %}
@@ -40,7 +40,7 @@
   {% endunless %}
 
   {% if matched %}
-    {% assign match_posts = match_posts | push: article %}
+    {% assign match_posts = match_posts | push: item %}
   {% endif %}
 
 {% endfor %}

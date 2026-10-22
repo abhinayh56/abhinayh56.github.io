@@ -89,13 +89,6 @@ script_includes:
 
 </article>
 
-{% case page.type %}
-  {% when 'articles' %}
-    {% include related-articles.html %}
-  {% when 'projects' %}
-    {% include related-projects.html %}
-  {% when 'libraries' %}
-    {% include related-libraries.html %}
-  {% when 'datasets' %}
-    {% include related-datasets.html %}
-{% endcase %}
+{% if page.type %}
+    {% include related-items.html %}
+{% endif %}
