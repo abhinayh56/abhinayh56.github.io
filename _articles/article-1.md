@@ -1,5 +1,5 @@
 ---
-title: "Article 1"
+title: "Quaternions"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [kinematics]
@@ -8,7 +8,8 @@ layout: article_custom
 toc: true
 permalink: /articles/article-1
 comments: true
-description: "Description"
+image_thumbnail: "assets/images/articles/quaternion.jpg"
+description: "This is an article on quaternion"
 ---
 
 ## Title Temp

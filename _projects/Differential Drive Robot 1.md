@@ -9,6 +9,7 @@ math: true
 order: 9
 toc: true
 comments: true
+image_thumbnail: "assets/images/projects/ddr.jpg"
 description: "This contains the differential drive robots build for learning, engineering and implementation related skills"
 ---
 

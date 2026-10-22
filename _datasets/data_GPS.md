@@ -7,6 +7,7 @@ layout: dataset_custom
 permalink: /datasets/data_gps
 toc: true
 comments: true
+image_thumbnail: "assets/images/datasets/gps.jpg"
 description: "Data of GPS."
 ---
 
