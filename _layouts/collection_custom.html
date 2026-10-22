@@ -4,8 +4,9 @@ layout: default
 
 {% include lang.html %}
 
-{% assign all_pinned = site.libraries | where: "pin", true %}
-{% assign all_normal = site.libraries | where_exp: "article", "article.pin != true and article.hidden != true" %}
+{% assign all_items = site[page.category] %}
+{% assign all_pinned = all_items | where: "pin", true %}
+{% assign all_normal = all_items | where_exp: "article", "article.pin != true and article.hidden != true" %}
 {% assign collection = all_pinned | concat: all_normal %}
 
 <div class="collection-page flex-grow-1 px-xl-1">
@@ -18,14 +19,21 @@ layout: default
   </h1>
 
 	{% if collection.size < 1 %}
-		<p>No library available.</p>
+    {% if page.title == "Libraries" %}
+      <p>No library is available.</p>
+    {% elsif page.title == "Projects" %}
+      <p>No project is available.</p>
+    {% elsif page.title == "Articles" %}
+      <p>No article is available.</p>
+    {% elsif page.title == "Datasets" %}
+      <p>No dataset is available.</p>
+    {% else %}
+      <p>No item is available.</p>
+    {% endif %}
 	{% else %}
 
 	<p class="collection-description">
-		This page contains a list of libraries / files / scripts
-		compatible with C / C++ / Python / Shell etc. Explore the
-		libraries below, and feel free to suggest improvements at
-		the end of each library page.
+    {{ page.description | escape}}
 	</p>
 
     <div id="item-list" class="collection-list">
