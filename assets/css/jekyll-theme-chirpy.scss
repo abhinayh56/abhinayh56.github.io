@@ -860,3 +860,69 @@ a.btn.btn-outline-primary:active i {
   }
 
 }
+
+
+/* ==========================================================
+   COLLECTION PAGE — FULL WIDTH FIX
+   ========================================================== */
+
+#main-content .collection-page {
+  display: block;
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  align-self: stretch;
+}
+
+#main-content #item-list.collection-list {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Ensure each item occupies the full available width */
+
+#main-content #item-list .collection-item {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+}
+
+/* ==========================================================
+   HIDE SUMMARY ON SMALL SCREENS
+   ========================================================== */
+
+@media (max-width: 768px) {
+
+  #main-content #item-list .collection-item-summary {
+    display: none !important;
+  }
+
+  /* Remove spacing previously reserved for the summary */
+
+  #main-content #item-list .collection-item-title {
+    margin-bottom: 0.35rem;
+  }
+
+  #main-content #item-list .collection-item-footer {
+    padding-top: 0;
+  }
+
+}
+
+
+/* Collection: hide summaries on smaller screens */
+
+@media screen and (max-width: 768px) {
+  #main-content .collection-page #item-list .collection-item-summary {
+    display: none !important;
+  }
+}
