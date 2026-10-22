@@ -1,6 +1,6 @@
 ---
 order: 3
-layout: libraries_custom
+layout: collection_custom
 icon: fas fa-code
 permalink: /libraries
 title: Libraries

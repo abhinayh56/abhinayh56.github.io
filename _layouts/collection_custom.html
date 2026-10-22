@@ -1,0 +1,127 @@
+---
+layout: default
+---
+
+{% include lang.html %}
+
+{% assign all_pinned = site.libraries | where: "pin", true %}
+{% assign all_normal = site.libraries | where_exp: "article", "article.pin != true and article.hidden != true" %}
+{% assign collection = all_pinned | concat: all_normal %}
+
+<div class="collection-page">
+
+  {% if collection.size < 1 %}
+
+    <p>No library available.</p>
+
+  {% else %}
+
+    <p class="collection-description">
+      This page contains a list of libraries / files / scripts
+      compatible with C / C++ / Python / Shell etc. Explore the
+      libraries below, and feel free to suggest improvements at
+      the end of each library page.
+    </p>
+
+    <div id="item-list" class="collection-list">
+
+      {% for item in collection %}
+
+        <article class="collection-item{% if item.image_thumbnail %} has-thumbnail{% else %} no-thumbnail{% endif %}">
+
+          <a
+            href="{{ item.url | relative_url }}"
+            class="collection-item-link"
+            aria-label="{{ item.title | escape }}"
+          >
+
+            <!-- ================= THUMBNAIL ================= -->
+
+            <div class="collection-thumbnail">
+
+              {% if item.image_thumbnail %}
+
+                {% assign thumbnail_src = item.image_thumbnail | relative_url %}
+
+                <img
+                  src="{{ thumbnail_src }}"
+                  alt="{{ item.title | escape }}"
+                  loading="lazy"
+                >
+
+              {% else %}
+
+                <div class="collection-thumbnail-placeholder" aria-hidden="true">
+                  <i class="fas fa-code"></i>
+                </div>
+
+              {% endif %}
+
+            </div>
+
+            <!-- ================= CONTENT ================= -->
+
+            <div class="collection-item-content">
+
+              <div class="collection-item-main">
+
+                <h2 class="collection-item-title">
+                  {{ item.title | escape }}
+                </h2>
+
+                <div class="collection-item-summary content">
+                  {% include item-summary.html %}
+                </div>
+
+              </div>
+
+              <!-- ================= FOOTER ================= -->
+
+              <div class="collection-item-footer">
+
+                <div class="collection-item-tags">
+
+                  {% if item.tags.size > 0 %}
+
+                    <i class="fas fa-tags" aria-hidden="true"></i>
+
+                    <div class="collection-tag-list">
+
+                      {% for tag in item.tags %}
+
+                        <span class="collection-tag">
+                          {{ tag }}
+                        </span>
+
+                      {% endfor %}
+
+                    </div>
+
+                  {% endif %}
+
+                </div>
+
+                {% if item.pin %}
+
+                  <div class="collection-item-pin">
+                    <i class="fas fa-thumbtack" aria-hidden="true"></i>
+                    <span>{{ site.data.locales[lang].item.pin_prompt }}</span>
+                  </div>
+
+                {% endif %}
+
+              </div>
+
+            </div>
+
+          </a>
+
+        </article>
+
+      {% endfor %}
+
+    </div>
+
+  {% endif %}
+
+</div>

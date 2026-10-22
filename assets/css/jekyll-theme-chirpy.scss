@@ -440,158 +440,423 @@ a.btn.btn-outline-primary:active i {
     text-decoration: underline;
 }
 
-/* ========================= LIBRARY PREVIEW LAYOUT ========================= */
 
-/* Library card: content-driven height */
-#post-list .card-wrapper.card {
-  height: auto;
-}
+/* ==========================================================
+   COLLECTION PAGE — YOUTUBE-STYLE LIST
+   ========================================================== */
 
-/* Library preview layout */
-.post-preview.library-preview {
-  display: flex !important;
-  align-items: stretch;
+/* Page wrapper */
+
+.collection-page {
   width: 100%;
   min-width: 0;
 }
 
-/* Thumbnail column */
-.library-preview-thumbnail {
-  flex: 0 0 35%;
-  max-width: 35%;
-  min-width: 0;
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 0 1rem 1rem;
-  box-sizing: border-box;
+.collection-description {
+  margin-bottom: 1.25rem;
+  line-height: 1.65;
 }
 
-/* Keep image height independent of card height */
-.library-preview-thumbnail img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  object-fit: contain;
-  object-position: center;
-  border: 1px solid #aaa;
-  border-radius: 10px;
-  box-sizing: border-box;
-}
+/* Vertical list */
 
-/* Text column */
-.library-preview-content {
-  flex: 1 1 0;
-  min-width: 0;
-  align-self: stretch;
-  box-sizing: border-box;
-}
-
-.library-preview-content .card-body {
+#item-list.collection-list {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  gap: 0.85rem;
+  width: 100%;
   min-width: 0;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
-/* Title: same general typography as Explore card titles */
-.library-preview-content .card-title {
-  flex: 0 0 auto;
-  min-width: 0;
-  margin: 0 0 1rem !important;
-  font-size: 1.25rem !important;
-  font-weight: 500;
-  line-height: 1.3;
-  overflow-wrap: anywhere;
-}
-
-/* Description: natural height, no clipping */
-.library-preview-content .card-text {
-  flex: 0 0 auto;
-  min-width: 0;
-  margin: 0 0 1rem !important;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  overflow-wrap: anywhere;
-}
-
-.library-preview-content .card-text p {
+  padding: 0;
   margin: 0;
 }
 
-/* Tags and metadata */
-.library-preview-content .post-meta {
-  flex: 0 0 auto;
-  margin-top: auto;
-  margin-bottom: 0 !important;
+/* Individual list item */
+
+#item-list .collection-item {
+  display: block;
+  width: 100%;
   min-width: 0;
-  max-width: 100%;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  overflow-wrap: anywhere;
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+
+  background: var(--card-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.65rem;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-/* Library title hover effect */
-#post-list .card-wrapper.card:hover .card-title {
+/* Entire row is clickable */
+
+#item-list .collection-item-link {
+  display: flex;
+  align-items: stretch;
+  gap: 1.15rem;
+
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  padding: 0.85rem;
+
+  color: inherit;
+  text-decoration: none;
+
+  background: transparent !important;
+  background-image: none !important;
+}
+
+/* Keep the card background unchanged on hover */
+
+#item-list .collection-item:hover,
+#item-list .collection-item:focus-within {
+  background: var(--card-bg);
+  border-color: var(--bs-secondary-color);
+  box-shadow: 0 0.35rem 0.9rem rgb(0 0 0 / 8%);
+}
+
+#item-list .collection-item-link:hover,
+#item-list .collection-item-link:focus,
+#item-list .collection-item-link:active {
+  color: inherit;
+  text-decoration: none;
+  background: transparent !important;
+  background-image: none !important;
+}
+
+/* Prevent existing global hover rules from changing row content */
+
+#item-list .collection-item:hover div,
+#item-list .collection-item-link:hover div {
+  background-color: transparent !important;
+}
+
+#item-list .collection-item:focus-within {
+  outline: 2px solid var(--link-color, #0d6efd);
+  outline-offset: 2px;
+}
+
+/* ==========================================================
+   THUMBNAIL
+   ========================================================== */
+
+#item-list .collection-thumbnail {
+  position: relative;
+  flex: 0 0 30%;
+  align-self: flex-start;
+
+  width: 30%;
+  min-width: 0;
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  background: var(--bs-tertiary-bg, #f1f1f1);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.45rem;
+}
+
+/* Actual thumbnail image */
+
+#item-list .collection-thumbnail img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+
+  object-fit: contain;
+  object-position: center;
+
+  border: 0;
+  border-radius: inherit;
+
+  transition: transform 0.25s ease;
+}
+
+/* Subtle image zoom on hover */
+
+#item-list .collection-item:hover .collection-thumbnail img {
+  transform: scale(1.025);
+}
+
+/* Placeholder for items without a thumbnail */
+
+#item-list .collection-thumbnail-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  color: var(--bs-secondary-color);
+  font-size: 2rem;
+
+  background: var(--bs-tertiary-bg, #f1f1f1);
+}
+
+/* ==========================================================
+   CONTENT
+   ========================================================== */
+
+#item-list .collection-item-content {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-self: stretch;
+
+  min-width: 0;
+  padding: 0.1rem 0;
+
+  background: transparent !important;
+}
+
+/* Main content area */
+
+#item-list .collection-item-main {
+  flex: 1 1 auto;
+  min-width: 0;
+
+  background: transparent !important;
+}
+
+/* Item title */
+
+#item-list .collection-item-title {
+  margin: 0 0 0.55rem;
+  padding: 0;
+
+  font-size: 1.15rem;
+  font-weight: 650;
+  line-height: 1.4;
+
+  color: var(--heading-color, inherit);
+
+  overflow-wrap: anywhere;
+
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
+}
+
+/* Highlight the title when the row is hovered */
+
+#item-list .collection-item:hover .collection-item-title,
+#item-list .collection-item:focus-within .collection-item-title {
   color: var(--link-color, #0d6efd) !important;
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-/* Mobile layout */
-@media (max-width: 576px) {
-  .library-preview-thumbnail {
-    max-width: 35%;
-    padding: 0.75rem 0 0.75rem 0.75rem;
-  }
+/* Summary */
 
-  .library-preview-content .card-body {
-    padding: 0.75rem;
-  }
+#item-list .collection-item-summary {
+  min-width: 0;
+  margin: 0 0 0.75rem;
+  padding: 0;
 
-  .library-preview-content .card-title {
-    font-size: 1rem !important;
-    line-height: 1.3;
-    margin-bottom: 0.75rem !important;
-  }
+  color: var(--text-muted-color, var(--bs-secondary-color));
+  font-size: 0.9rem;
+  line-height: 1.6;
 
-  .library-preview-content .card-text {
-    font-size: 0.8rem;
-    line-height: 1.4;
-    margin-bottom: 0.75rem !important;
-  }
-
-  .library-preview-content .post-meta {
-    font-size: 0.7rem;
-    line-height: 1.3;
-  }
+  overflow-wrap: anywhere;
+  background: transparent !important;
 }
 
-.library-preview .post-meta.library-meta-hidden {
-  display: none !important;
+/* Handle paragraphs generated by item-summary.html */
+
+#item-list .collection-item-summary p {
+  margin: 0;
+  padding: 0;
+  background: transparent !important;
 }
 
-/* Keep metadata at the bottom */
-.library-preview .post-meta {
+/* Keep any additional summary elements from introducing
+   excessive vertical spacing */
+
+#item-list .collection-item-summary > *:last-child {
+  margin-bottom: 0;
+}
+
+/* ==========================================================
+   TAGS AND PINNED INDICATOR
+   ========================================================== */
+
+#item-list .collection-item-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.55rem 1rem;
+
+  min-width: 0;
   margin-top: auto;
+  padding-top: 0.35rem;
+
+  background: transparent !important;
 }
 
-/* Hide only the metadata */
-.library-preview .post-meta.library-meta-hidden {
-  display: none !important;
+#item-list .collection-item-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  min-width: 0;
+
+  color: var(--bs-secondary-color);
+  font-size: 0.8rem;
+
+  background: transparent !important;
 }
 
-@media (max-width: 767.98px) {
-  .library-preview-thumbnail {
+#item-list .collection-item-tags > i {
+  flex: 0 0 auto;
+  font-size: 0.8rem;
+}
+
+/* Tags displayed as compact pills */
+
+#item-list .collection-tag-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+
+  min-width: 0;
+  background: transparent !important;
+}
+
+#item-list .collection-tag {
+  display: inline-block;
+  max-width: 100%;
+  padding: 0.2rem 0.55rem;
+
+  color: var(--bs-secondary-color);
+  font-size: 0.73rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+
+  background: var(--bs-tertiary-bg, #f1f1f1);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.3rem;
+}
+
+/* Pinned label */
+
+#item-list .collection-item-pin {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+
+  flex: 0 0 auto;
+  margin-left: auto;
+
+  color: var(--bs-secondary-color);
+  font-size: 0.75rem;
+
+  background: transparent !important;
+}
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (max-width: 768px) {
+
+  #item-list.collection-list {
+    gap: 0.7rem;
+  }
+
+  #item-list .collection-item-link {
+    gap: 0.85rem;
+    padding: 0.7rem;
+  }
+
+  #item-list .collection-thumbnail {
+    flex-basis: 32%;
+    width: 32%;
+  }
+
+  #item-list .collection-item-title {
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+  }
+
+  #item-list .collection-item-summary {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+}
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 480px) {
+
+  #item-list.collection-list {
+    gap: 0.65rem;
+  }
+
+  #item-list .collection-item-link {
+    gap: 0.65rem;
+    padding: 0.55rem;
+  }
+
+  #item-list .collection-thumbnail {
     flex-basis: 35%;
-    max-width: 35%;
-    padding: 0.75rem 0 0.75rem 0.75rem;
+    width: 35%;
+    border-radius: 0.35rem;
   }
 
-  .library-preview-content .card-body {
-    padding: 0.75rem;
+  #item-list .collection-thumbnail-placeholder {
+    font-size: 1.5rem;
   }
+
+  #item-list .collection-item-content {
+    padding-top: 0;
+  }
+
+  #item-list .collection-item-title {
+    font-size: 0.95rem;
+    line-height: 1.35;
+    margin-bottom: 0.35rem;
+  }
+
+  #item-list .collection-item-summary {
+    font-size: 0.8rem;
+    line-height: 1.45;
+    margin-bottom: 0.5rem;
+  }
+
+  #item-list .collection-item-footer {
+    gap: 0.4rem;
+    padding-top: 0.15rem;
+  }
+
+  #item-list .collection-item-tags {
+    gap: 0.3rem;
+    font-size: 0.72rem;
+  }
+
+  #item-list .collection-tag-list {
+    gap: 0.25rem;
+  }
+
+  #item-list .collection-tag {
+    padding: 0.12rem 0.35rem;
+    font-size: 0.67rem;
+  }
+
+  #item-list .collection-item-pin {
+    font-size: 0.68rem;
+  }
+
 }
