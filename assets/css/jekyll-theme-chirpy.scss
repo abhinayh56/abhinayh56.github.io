@@ -953,3 +953,19 @@ a.btn.btn-outline-primary:active i {
 .collection-heading i {
   flex-shrink: 0;
 }
+
+/* ==========================================================
+   COLLECTION SUMMARY VISIBILITY
+   ========================================================== */
+
+/* Hide summaries on mobile and narrow screens */
+#item-list .collection-item-summary {
+  display: none !important;
+}
+
+/* Show summaries at Bootstrap's md breakpoint and above */
+@media (min-width: 768px) {
+  #item-list .collection-item-summary {
+    display: block !important;
+  }
+}
