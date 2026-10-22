@@ -3,7 +3,9 @@ title: "Control: PID"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
-layout: library_custom
+type: libraries
+icon: "fas fa-code"
+layout: collection_item_custom
 permalink: /libraries/lib_control_pid
 math: true
 toc: true
