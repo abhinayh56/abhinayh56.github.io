@@ -10,6 +10,13 @@ layout: default
 
 <div class="collection-page flex-grow-1 px-xl-1">
 
+  <h1 class="collection-heading">
+    {% if page.icon %}
+      <i class="{{ page.icon }}" aria-hidden="true"></i>
+    {% endif %}
+    <span>{{ page.title | escape }}</span>
+  </h1>
+
 	{% if collection.size < 1 %}
 		<p>No library available.</p>
 	{% else %}
