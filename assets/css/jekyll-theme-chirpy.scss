@@ -919,3 +919,10 @@ a.btn.btn-outline-primary:active i {
 #item-list .collection-item-link {
   padding: 0 !important;
 }
+
+/* Remove space above tags in collection items */
+
+#item-list .collection-item-footer {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
