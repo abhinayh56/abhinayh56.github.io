@@ -112,7 +112,7 @@ Feel free to reach out for professional inquiries, robotics and engineering disc
     </a>
 
     <a class="contact-card"
-      href="tel:+918741880525"
+      href="tel:+91XXXXXXXXXX"
       aria-label="Call phone number">
 
       <span class="contact-card-icon">
@@ -121,9 +121,12 @@ Feel free to reach out for professional inquiries, robotics and engineering disc
 
       <span class="contact-card-content">
         <span class="contact-card-label">Phone</span>
-        <span class="contact-card-value">+91&nbsp;87418 80525</span>
+        <span class="contact-card-value">+91&nbsp;XXXXX XXXXX</span>
         <span class="contact-card-description">
+          Phone number partially hidden for privacy.
+          {% comment %}
           Click to call.
+          {% endcomment %}
         </span>
       </span>
 
