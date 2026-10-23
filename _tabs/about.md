@@ -11,7 +11,7 @@ title: About
   <!-- Professional summary and specializations -->
   <section class="about-hero">
     <div class="about-hero-content">
-      <h2 class="about-hero-title">Robotics Software Engineer</h2>
+      <h2 class="about-hero-title">Professional Summary</h2>
 
       <p class="about-hero-description">
         Senior Robotics Software Engineer specializing in medical robotics, real-time
@@ -20,11 +20,13 @@ title: About
         control and estimation tools for embedded platforms.
       </p>
 
+      {% comment %}
       <div class="about-specializations">
         <span><i class="fas fa-robot" aria-hidden="true"></i> Robotics</span>
         <span><i class="fas fa-microchip" aria-hidden="true"></i> Embedded Systems</span>
         <span><i class="fas fa-wave-square" aria-hidden="true"></i> Control Systems</span>
       </div>
+      {% endcomment %}
 
       <div class="about-hero-actions">
         <a class="about-button" href="{{ '/assets/files/Abhinay_Kumar_Resume.pdf' | relative_url }}"
@@ -35,7 +37,7 @@ title: About
 
         <a class="about-button" href="{{ '/assets/files/Abhinay_Kumar_CV.pdf' | relative_url }}"
            target="_blank" rel="noopener noreferrer">
-          <i class="fas fa-file-alt" aria-hidden="true"></i>
+          <i class="fas fa-file-pdf" aria-hidden="true"></i>
           CV
         </a>
 
@@ -45,8 +47,8 @@ title: About
         </a>
 
         <a class="about-button" href="{{ '/' | relative_url }}">
-          <i class="fas fa-globe" aria-hidden="true"></i>
-          Website
+          <i class="fas fa-home" aria-hidden="true"></i>
+          Website Home
         </a>
       </div>
     </div>
@@ -305,7 +307,7 @@ title: About
       </a>
 
       <a class="about-document-card" href="{{ '/' | relative_url }}">
-        <span class="about-document-icon"><i class="fas fa-globe" aria-hidden="true"></i></span>
+        <span class="about-document-icon"><i class="fas fa-home" aria-hidden="true"></i></span>
         <span class="about-document-content">
           <strong>Website Home</strong>
           <span>Explore projects, articles, libraries, and resources</span>

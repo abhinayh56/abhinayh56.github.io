@@ -139,7 +139,7 @@ Feel free to reach out for professional inquiries, robotics and engineering disc
   <div class="contact-about">
 
     <div class="contact-about-text">
-      <h3 class="contact-about-title">Want to know more about me?</h3>
+      <h3 class="contact-about-title">Want to view my portfolio?</h3>
       <p class="contact-about-description">
         Explore my background, engineering experience, and interests in robotics.
       </p>
