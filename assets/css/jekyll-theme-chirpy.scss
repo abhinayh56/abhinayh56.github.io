@@ -251,11 +251,15 @@ a.btn.btn-outline-primary:active i {
         height: 48px;
         aspect-ratio: 16 / 9;
     }
-
+    
     .archive-type {
         grid-area: type;
         justify-content: flex-start;
         align-self: start;
+
+        width: 85.33px;
+        box-sizing: border-box;
+        padding: 0;
     }
 
     .archive-thumbnail-empty {
