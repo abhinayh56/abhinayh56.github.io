@@ -1,6 +1,6 @@
 ---
 order: 6
-layout: about_custom
+layout: minimal_custom
 icon: fas fa-user
 permalink: /about
 title: About
