@@ -115,9 +115,9 @@ a.btn.btn-outline-primary:active i {
     gap: .45rem;
 
     min-width: 100%;
-    padding: .35rem .75rem;
+    padding: 0.1rem 0.1rem;
 
-    border-radius: 6px;
+    border-radius: 2px;
 
     font-size: .72rem;
     font-weight: 700;
@@ -232,31 +232,40 @@ a.btn.btn-outline-primary:active i {
 
 /* Responsive layout */
 
-@media (max-width: 768px) {
+
+/* Archive card: mid layout for screens wider than 480px */
+@media (min-width: 481px) {
     .archive-card {
         display: grid;
-        grid-template-columns: 85.33px max-content minmax(0, 1fr);
+        grid-template-columns: 85.33px minmax(0, 1fr) max-content;
         grid-template-areas:
-            "thumbnail type title"
-            "thumbnail date title";
-        align-items: center;
-        column-gap: 0.75rem;
-        row-gap: 0.25rem;
+            "thumbnail title date"
+            "thumbnail title type";
 
-        padding-top: 0.25rem;
-        padding-bottom: 0.25rem;
+        align-items: stretch;
+        column-gap: 0.5rem;
+        row-gap: 0;
+
+        padding: 0;
+        height: auto;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     .archive-thumbnail {
         grid-area: thumbnail;
-        grid-row: 1 / 3;
         align-self: center;
         justify-self: start;
 
+        display: block;
         width: 85.33px;
-        height: 48px;
+        height: auto;
         aspect-ratio: 16 / 9;
+
         margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border-radius: inherit;
     }
 
     .archive-thumbnail img {
@@ -264,29 +273,22 @@ a.btn.btn-outline-primary:active i {
         width: 100%;
         height: 100%;
         object-fit: cover;
+
+        margin: 0;
+        padding: 0;
+        border-radius: inherit;
     }
 
     .archive-thumbnail-empty {
         display: none;
     }
 
-    .archive-type {
-        grid-area: type;
-        align-self: end;
-        justify-self: start;
-
-        width: auto;
-        min-width: 0;
-        padding: 0;
-        margin: 0;
-        white-space: nowrap;
-    }
-
     .archive-title {
         grid-area: title;
-        align-self: center;
+        align-self: start;
         min-width: 0;
         margin: 0;
+        padding: 0;
     }
 
     .archive-title a {
@@ -296,16 +298,132 @@ a.btn.btn-outline-primary:active i {
 
     .archive-date {
         grid-area: date;
-        align-self: start;
-        justify-self: start;
+        align-self: end;
+        justify-self: end;
 
         margin: 0;
         padding: 0;
-        text-align: left;
-        font-size: 0.8rem;
-        line-height: 1.3;
+        font-size: 0.75rem;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+
+    .archive-type {
+        grid-area: type;
+        align-self: start;
+        justify-self: end;
+
+        min-width: 0;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        line-height: 1.2;
+        white-space: nowrap;
     }
 }
+
+
+/* Compact archive layout for narrow screens */
+@media (max-width: 480px) {
+    .archive-card {
+        display: grid;
+        grid-template-columns: 85.33px minmax(0, 1fr) max-content;
+        grid-template-areas:
+            "thumbnail title title"
+            "thumbnail date type";
+
+        align-items: stretch;
+        column-gap: 0.5rem;
+        row-gap: 0;
+
+        padding: 0;
+        height: auto;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .archive-thumbnail {
+        grid-area: thumbnail;
+        align-self: center;
+        justify-self: start;
+
+        display: block;
+        width: 85.33px;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        box-sizing: border-box;
+
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border-radius: 6px;
+    }
+
+    .archive-thumbnail img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+
+        margin: 0;
+        padding: 0;
+        border-radius: inherit;
+    }
+
+    .archive-thumbnail-empty {
+        display: none;
+    }
+
+    .archive-title {
+        grid-area: title;
+        align-self: start;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .archive-title a {
+        display: block;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        text-overflow: clip;
+    }
+
+    .archive-date {
+        grid-area: date;
+        align-self: end;
+        justify-self: start;
+
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+
+        font-size: 0.7rem;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+
+    .archive-type {
+        grid-area: type;
+        align-self: end;
+        justify-self: end;
+
+        min-width: 0;
+        width: auto;
+        margin: 0;
+        padding: 0;
+
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+
+    .archive-badge {
+        min-width: 0;
+        max-width: 100%;
+    }
+}
+
 
 /* Floating Sidebar Button */
 #panel-toggle {
