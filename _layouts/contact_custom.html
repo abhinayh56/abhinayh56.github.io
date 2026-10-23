@@ -1,0 +1,33 @@
+---
+layout: default
+panel_includes:
+  - toc
+---
+
+{% include lang.html %}
+{% include toc-status.html %}
+
+<article class="px-1" data-toc="{{ enable_toc }}">
+  <header>
+    <h1 data-toc-skip>
+      <i class="{{ page.icon | default: 'fas fa-file-alt' }}" aria-hidden="true"></i>
+      {{ page.title }}
+    </h1>
+
+    {% if page.description %}
+      <p class="post-desc fw-light mb-4">
+        {{ page.description }}
+      </p>
+    {% endif %}
+
+  </header>
+
+  {% if enable_toc %}
+    {% include mobile-toc.html %}
+  {% endif %}
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+</article>

@@ -1,6 +1,6 @@
 ---
 order: 7
-layout: minimal_custom
+layout: contact_custom
 icon: fas fa-envelope
 permalink: /contact
 title: Contact
