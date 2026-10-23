@@ -1814,18 +1814,6 @@ h1[data-toc-skip] {
   min-width: 0;
 }
 
-.about-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-
-  margin-bottom: 0.8rem;
-
-  color: var(--about-accent);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-}
 
 .about-hero-title {
   margin: 0 0 0.65rem;
@@ -1901,50 +1889,38 @@ h1[data-toc-skip] {
     border-color 0.2s ease;
 }
 
-.about-button-primary {
-  color: #fff;
-  background: var(--about-accent);
-  border-color: var(--about-accent);
-}
-
-.about-page a.about-button-primary:hover,
-.about-page a.about-button-primary:focus-visible {
-  color: #fff;
-  background: var(--btn-hover-color, #0056b3);
-  border-color: var(--about-accent);
-  text-decoration: none;
-}
-
-.about-button-secondary {
-  color: inherit;
-  background: transparent;
-}
-
-.about-page a.about-button-secondary:hover,
-.about-page a.about-button-secondary:focus-visible {
-  color: var(--about-accent);
-  border-color: var(--about-accent);
-  text-decoration: none;
-}
-
-.about-hero-mark {
-  display: flex;
-  flex: 0 0 112px;
-  align-items: center;
-  justify-content: center;
-
-  width: 112px;
-  height: 112px;
-
-  color: var(--about-accent);
-  background: var(--bs-tertiary-bg, #f1f1f1);
+/* All hero buttons use a white background; hover changes text to blue. */
+.about-page .about-hero-actions .about-button,
+.about-page .about-hero-actions .about-button-primary,
+.about-page .about-hero-actions .about-button-secondary {
+  color: #212529;
+  background: #fff;
   border: 1px solid var(--bs-border-color);
-  border-radius: 1rem;
-
-  font-size: 3.4rem;
-  opacity: 0.9;
 }
 
+.about-page .about-hero-actions .about-button i,
+.about-page .about-hero-actions .about-button-primary i,
+.about-page .about-hero-actions .about-button-secondary i {
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.about-page .about-hero-actions .about-button:hover,
+.about-page .about-hero-actions .about-button:focus-visible,
+.about-page .about-hero-actions .about-button-primary:hover,
+.about-page .about-hero-actions .about-button-primary:focus-visible,
+.about-page .about-hero-actions .about-button-secondary:hover,
+.about-page .about-hero-actions .about-button-secondary:focus-visible {
+  color: #0d6efd;
+  background: #fff;
+  border-color: #0d6efd;
+  text-decoration: none;
+}
+
+.about-page .about-hero-actions .about-button:hover i,
+.about-page .about-hero-actions .about-button:focus-visible i {
+  color: #0d6efd;
+}
 
 /* ----------------------------------------------------------
    SECTION HEADINGS
@@ -2449,13 +2425,6 @@ h1[data-toc-skip] {
     padding: 1.15rem;
   }
 
-  .about-hero-mark {
-    flex-basis: 78px;
-    width: 78px;
-    height: 78px;
-    font-size: 2.4rem;
-  }
-
   .about-card-grid,
   .about-skill-grid,
   .about-interest-list,
@@ -2472,10 +2441,6 @@ h1[data-toc-skip] {
 @media (max-width: 520px) {
   .about-hero {
     padding: 1rem;
-  }
-
-  .about-hero-mark {
-    display: none;
   }
 
   .about-hero-title {
@@ -2694,5 +2659,145 @@ h1[data-toc-skip] {
   .about-page .about-document-card,
   .about-page .about-info-card {
     padding: 0.65rem 0.75rem;
+  }
+}
+
+/* ==========================================================
+   ABOUT PAGE — REQUESTED REFINEMENTS
+   ========================================================== */
+
+/* Role responsibilities */
+.about-page .about-role-points {
+  margin: 0.55rem 0 0;
+  padding-left: 1.2rem;
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+.about-page .about-role-points li + li {
+  margin-top: 0.25rem;
+}
+
+/* Education uses the same timeline and markers as work experience */
+.about-page .about-education-timeline .about-timeline-header {
+  align-items: flex-start;
+}
+
+.about-page .about-education-header > div {
+  min-width: 0;
+}
+
+.about-page .about-education-header h3 {
+  margin: 0 0 0.15rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.about-page .about-education-header .about-card-kicker {
+  margin-bottom: 0.25rem;
+}
+
+.about-page .about-education-header .about-card-subtitle {
+  margin-bottom: 0.35rem;
+}
+
+.about-page .about-education-header .about-card-institution {
+  margin-bottom: 0;
+}
+
+/* One shared card for the complete work-interest list */
+.about-page .about-single-card {
+  min-width: 0;
+  padding: 0.35rem 0.9rem;
+  background: var(--card-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.65rem;
+}
+
+.about-page .about-single-card.about-interest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.about-page .about-single-card .about-interest-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.65rem 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.about-page .about-single-card .about-interest-item + .about-interest-item {
+  border-top: 1px solid var(--bs-border-color);
+}
+
+.about-page .about-single-card .about-interest-item > i {
+  flex: 0 0 1.1rem;
+  width: 1.1rem;
+  margin-top: 0.2rem;
+  color: var(--about-accent);
+  text-align: center;
+}
+
+/* One shared card for documents and links */
+.about-page .about-single-card.about-document-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0.2rem 0.9rem;
+}
+
+.about-page .about-single-card .about-document-card {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0.7rem 0;
+  background: transparent;
+}
+
+.about-page .about-single-card .about-document-card + .about-document-card {
+  border-top: 1px solid var(--bs-border-color);
+}
+
+.about-page .about-single-card .about-document-card:hover,
+.about-page .about-single-card .about-document-card:focus-visible {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Dates stay at the right on wider screens, then wrap naturally on mobile */
+@media (min-width: 521px) {
+  .about-page .about-education-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-page .about-education-header > .about-date {
+    flex: 0 0 auto;
+    margin-left: 1rem;
+    text-align: right;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-page .about-education-header {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .about-page .about-education-header > .about-date {
+    flex: 0 0 auto;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .about-page .about-single-card {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
