@@ -111,7 +111,9 @@ Feel free to reach out for professional inquiries, robotics and engineering disc
 
     </a>
 
-    <div class="contact-card">
+    <a class="contact-card"
+      href="tel:+918005593692"
+      aria-label="Call phone number">
 
       <span class="contact-card-icon">
         <i class="fas fa-phone-alt" aria-hidden="true"></i>
@@ -119,13 +121,13 @@ Feel free to reach out for professional inquiries, robotics and engineering disc
 
       <span class="contact-card-content">
         <span class="contact-card-label">Phone</span>
-        <span class="contact-card-value">+91&nbsp;8XXXX&nbsp;XXXXX</span>
+        <span class="contact-card-value">+91&nbsp;80055 93692</span>
         <span class="contact-card-description">
-          Phone number partially hidden for privacy.
+          Click to call.
         </span>
       </span>
 
-    </div>
+    </a>
 
   </div>
 
