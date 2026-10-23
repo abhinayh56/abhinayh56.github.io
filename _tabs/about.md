@@ -14,10 +14,7 @@ title: About
       <h2 class="about-hero-title">Professional Summary</h2>
 
       <p class="about-hero-description">
-        Senior Robotics Software Engineer specializing in medical robotics, real-time
-        robot control, embedded systems, and autonomous systems. Experienced in
-        developing robotics software, deterministic control architectures, and
-        control and estimation tools for embedded platforms.
+        Robotics Software Engineer specializing in robot control, real-time systems, and motion control, with experience in robotic software development and hardware implementation. Interested in developing industry-grade robotic systems using C++, ROS 2, EtherCAT, and advanced control techniques
       </p>
 
       {% comment %}
