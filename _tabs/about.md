@@ -135,6 +135,7 @@ title: About
     </h2>
 
     <div class="about-timeline about-education-timeline">
+      <!-- Postgraduate -->
       <article class="about-timeline-item">
         <div class="about-timeline-marker">
           <i class="fas fa-graduation-cap" aria-hidden="true"></i>
@@ -144,15 +145,17 @@ title: About
           <div class="about-timeline-header about-education-header">
             <div>
               <span class="about-card-kicker">POSTGRADUATE</span>
-              <h3>M.Tech.</h3>
-              <p class="about-card-subtitle">Advanced Manufacturing &amp; Design</p>
-              <p class="about-card-institution">Indian Institute of Technology Jodhpur</p>
+              <h3>M.Tech. <span class="about-degree-specialization">(Advanced Manufacturing &amp; Design)</span></h3>
+              <p class="about-card-subtitle">
+                Indian Institute of Technology Jodhpur
+              </p>
             </div>
             <span class="about-date">2022</span>
           </div>
         </div>
       </article>
 
+      <!-- Undergraduate -->
       <article class="about-timeline-item">
         <div class="about-timeline-marker">
           <i class="fas fa-cogs" aria-hidden="true"></i>
@@ -162,9 +165,10 @@ title: About
           <div class="about-timeline-header about-education-header">
             <div>
               <span class="about-card-kicker">UNDERGRADUATE</span>
-              <h3>B.Tech.</h3>
-              <p class="about-card-subtitle">Mechanical Engineering</p>
-              <p class="about-card-institution">Indian Institute of Technology Jodhpur</p>
+              <h3>B.Tech. <span class="about-degree-specialization">(Mechanical Engineering)</span></h3>
+              <p class="about-card-subtitle">
+                Indian Institute of Technology Jodhpur
+              </p>
             </div>
             <span class="about-date">2019</span>
           </div>
