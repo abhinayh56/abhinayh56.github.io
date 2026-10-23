@@ -88,7 +88,7 @@ a.btn.btn-outline-primary:active i {
 
 .archive-card {
     display: grid;
-    grid-template-columns: 110px 85.33px minmax(0, 1fr) 170px;
+    grid-template-columns: 110px 128px minmax(0, 1fr) 170px;
     align-items: center;
     gap: 1.5rem;
     padding: 0rem 0rem;
@@ -153,8 +153,8 @@ a.btn.btn-outline-primary:active i {
     display: block;
     align-self: center;
 
-    width: 85.33px;
-    height: 48px;
+    width: 128px;
+    height: 72px;
     min-width: 0;
     min-height: 0;
 
@@ -237,7 +237,7 @@ a.btn.btn-outline-primary:active i {
 @media (min-width: 481px) {
     .archive-card {
         display: grid;
-        grid-template-columns: 85.33px minmax(0, 1fr) max-content;
+        grid-template-columns: 128px minmax(0, 1fr) max-content;
         grid-template-areas:
             "thumbnail title date"
             "thumbnail title type";
@@ -258,7 +258,7 @@ a.btn.btn-outline-primary:active i {
         justify-self: start;
 
         display: block;
-        width: 85.33px;
+        width: 128px;
         height: auto;
         aspect-ratio: 16 / 9;
 
@@ -327,7 +327,7 @@ a.btn.btn-outline-primary:active i {
 @media (max-width: 480px) {
     .archive-card {
         display: grid;
-        grid-template-columns: 85.33px minmax(0, 1fr) max-content;
+        grid-template-columns: 128px minmax(0, 1fr) max-content;
         grid-template-areas:
             "thumbnail title title"
             "thumbnail date type";
@@ -348,7 +348,7 @@ a.btn.btn-outline-primary:active i {
         justify-self: start;
 
         display: block;
-        width: 85.33px;
+        width: 128px;
         height: auto;
         aspect-ratio: 16 / 9;
         box-sizing: border-box;
