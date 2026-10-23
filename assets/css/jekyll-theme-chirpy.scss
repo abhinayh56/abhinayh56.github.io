@@ -234,30 +234,49 @@ a.btn.btn-outline-primary:active i {
 
 @media (max-width: 768px) {
     .archive-card {
-        grid-template-columns: 1fr;
-        gap: .75rem;
-    }
-
-    .archive-type {
-        justify-content: flex-start;
+        grid-template-columns: 85.33px minmax(0, 1fr);
+        grid-template-areas:
+            "thumbnail title"
+            "type date";
+        align-items: center;
+        column-gap: 1rem;
+        row-gap: 0.75rem;
     }
 
     .archive-thumbnail {
+        grid-area: thumbnail;
+        justify-self: start;
+        align-self: end;
         width: 85.33px;
         height: 48px;
         aspect-ratio: 16 / 9;
+    }
+
+    .archive-type {
+        grid-area: type;
+        justify-content: flex-start;
+        align-self: start;
     }
 
     .archive-thumbnail-empty {
         display: none;
     }
 
+    .archive-title {
+        grid-area: title;
+        min-width: 0;
+        align-self: end;
+    }
+
     .archive-title a {
         white-space: normal;
+        overflow-wrap: anywhere;
     }
 
     .archive-date {
+        grid-area: date;
         text-align: left;
+        align-self: start;
     }
 }
 
