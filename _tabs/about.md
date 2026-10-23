@@ -7,58 +7,452 @@ title: About
 toc: true
 ---
 
-## Professional Summary
+<div class="about-page">
 
-Robotics Software Engineer specializing in **medical robotics, real-time control, embedded systems, and autonomous systems**. Experienced in developing surgical instrument control and calibration software, robotic control frameworks, state-estimation algorithms, and onboard flight-control systems.
+  <!-- Professional introduction -->
+  <section class="about-hero">
 
-## Work Experience
+    <div class="about-hero-content">
 
-### SS Innovations — Senior Robotics Software Engineer
-**February 2023 – Present**
+      <span class="about-eyebrow">
+        <i class="fas fa-code" aria-hidden="true"></i>
+        ENGINEERING PORTFOLIO
+      </span>
 
-- Develop robotics software for surgical robotic systems.
-- Model cable-driven robotic grippers across multiple mechanisms and develop control systems for endo-surgical instruments.
-- Develop automated calibration frameworks for robotic linear joints using EtherCAT, state machines, and calibration algorithms.
-- Standardize production testing procedures for endo-surgical micro-grippers.
+      <h2 class="about-hero-title">
+        Robotics Software Engineer
+      </h2>
 
-### IIT Jodhpur — Robotics Research and Development
-**December 2019 – July 2022**
+      <p class="about-hero-description">
+        Specializing in robot control, embedded systems,
+        real-time control, and autonomous systems.
+      </p>
 
-- Developed an indigenous onboard flight-control software framework for an aerial vehicle under a DRDO-sponsored project.
-- Implemented state estimation, flight control, sensor processing, and communication software; validated the system through autonomous outdoor flight.
-- Worked on visual odometry, GPS-delay compensation, sensor fusion, trajectory tracking, and waypoint navigation for aerial robots.
+      <div class="about-specializations">
+        <span><i class="fas fa-robot" aria-hidden="true"></i> Robotics</span>
+        <span><i class="fas fa-microchip" aria-hidden="true"></i> Embedded Systems</span>
+        <span><i class="fas fa-wave-square" aria-hidden="true"></i> Control Systems</span>
+      </div>
 
-## Education
+      <div class="about-hero-actions">
+        <a class="about-button about-button-primary"
+            href="/assets/files/Abhinay_Kumar_Resume.pdf"
+            target="_blank" rel="noopener">
+            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+            Resume
+        </a>
 
-- **M.Tech., Advanced Manufacturing & Design** — Indian Institute of Technology Jodhpur, 2022
-- **B.Tech., Mechanical Engineering** — Indian Institute of Technology Jodhpur, 2019
+        <a class="about-button about-button-primary"
+            href="/assets/files/Abhinay_Kumar_CV.pdf"
+            target="_blank" rel="noopener">
+            <i class="fas fa-file-alt" aria-hidden="true"></i>
+            CV
+        </a>
 
-## Technical Skills
+        <a class="about-button about-button-secondary" href="/contact">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            Contact
+        </a>
+      </div>
 
-- **Programming:** C, C++, Python, Embedded C
-- **Robotics and middleware:** ROS, ROS 2, robot kinematics and dynamics, motion control, trajectory planning
-- **Real-time and communication:** EtherCAT, state machines, embedded systems, sensor and communication interfaces
-- **Control and estimation:** PID control, Kalman and complementary filters, sensor fusion, state estimation
-- **Platforms:** Teensy, STM32, Arduino, Raspberry Pi, Pixhawk
-- **Simulation and engineering tools:** MATLAB, Simulink, SolidWorks, Gazebo, RViz
+    </div>
 
-## Work Interests
+    <div class="about-hero-mark" aria-hidden="true">
+      <i class="fas fa-robot"></i>
+    </div>
 
-- Surgical and medical robotics
-- Real-time robotic control and software architecture
-- EtherCAT-based distributed control systems
-- Robot calibration, kinematics, and motion control
-- Embedded systems and state estimation
-- Autonomous systems and flight control
+  </section>
 
-## Selected Work
 
-- **Publication:** *Development and Performance Evaluation of Onboard Auto-pilot System for an Aerial Vehicle*, IEEE RO-MAN 2019, Late Breaking Report.
-- **Recognition:** Selected for the PAN IIT R&D Fair 2022; the indigenous autopilot project was recognized among the top five Defense & Aerospace projects.
+  <!-- Work experience -->
+  <section class="about-section" id="experience">
 
-## Documents and Links
+    <h2 class="about-section-title">
+      <i class="fas fa-briefcase" aria-hidden="true"></i>
+      Work Experience
+    </h2>
 
-- <a href="{{ '/assets/files/Abhinay_Kumar_Resume.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Download Resume</a>
-- <a href="{{ '/assets/files/Abhinay_Kumar_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Download CV</a>
-- <a href="{{ '/contact' | relative_url }}">Contact</a>
-- <a href="{{ '/' | relative_url }}">Website Home</a>
+    <div class="about-timeline">
+
+      <article class="about-timeline-item">
+
+        <div class="about-timeline-marker">
+          <i class="fas fa-building" aria-hidden="true"></i>
+        </div>
+
+        <div class="about-timeline-card">
+
+          <div class="about-timeline-header">
+            <div>
+              <h3>SS Innovations Pvt. Ltd.</h3>
+              <p class="about-muted">Medical Robotics</p>
+            </div>
+
+            <span class="about-status">
+              <span class="about-status-dot"></span>
+              Present
+            </span>
+          </div>
+
+          <div class="about-role">
+
+            <div class="about-role-heading">
+              <h4>Senior Robotics Software Engineer</h4>
+              <span class="about-date">21 July 2025 – Present</span>
+            </div>
+
+          </div>
+
+          <div class="about-role">
+
+            <div class="about-role-heading">
+              <h4>Mechatronics Engineer</h4>
+              <span class="about-date">6 February 2023 – 20 July 2025</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="about-timeline-item">
+
+        <div class="about-timeline-marker">
+          <i class="fas fa-university" aria-hidden="true"></i>
+        </div>
+
+        <div class="about-timeline-card">
+
+          <div class="about-timeline-header">
+            <div>
+              <h3>Indian Institute of Technology Jodhpur</h3>
+              <p class="about-muted">Research and Project Work</p>
+            </div>
+          </div>
+
+          <div class="about-role">
+
+            <div class="about-role-heading">
+              <h4>Project Assistant</h4>
+              <span class="about-date">December 2019 – May 2020</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- Education -->
+  <section class="about-section" id="education">
+
+    <h2 class="about-section-title">
+      <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+      Education
+    </h2>
+
+    <div class="about-card-grid">
+
+      <article class="about-info-card">
+
+        <div class="about-card-icon">
+          <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+        </div>
+
+        <div class="about-card-body">
+          <span class="about-card-kicker">POSTGRADUATE</span>
+          <h3>M.Tech.</h3>
+          <p class="about-card-subtitle">Advanced Manufacturing &amp; Design</p>
+          <p class="about-card-institution">
+            Indian Institute of Technology Jodhpur
+          </p>
+          <span class="about-year">2022</span>
+        </div>
+
+      </article>
+
+
+      <article class="about-info-card">
+
+        <div class="about-card-icon">
+          <i class="fas fa-cogs" aria-hidden="true"></i>
+        </div>
+
+        <div class="about-card-body">
+          <span class="about-card-kicker">UNDERGRADUATE</span>
+          <h3>B.Tech.</h3>
+          <p class="about-card-subtitle">Mechanical Engineering</p>
+          <p class="about-card-institution">
+            Indian Institute of Technology Jodhpur
+          </p>
+          <span class="about-year">2019</span>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- Technical skills -->
+  <section class="about-section" id="skills">
+
+    <h2 class="about-section-title">
+      <i class="fas fa-microchip" aria-hidden="true"></i>
+      Technical Skills
+    </h2>
+
+    <div class="about-skill-grid">
+
+      <article class="about-skill-card">
+
+        <h3>
+          <i class="fas fa-code" aria-hidden="true"></i>
+          Programming
+        </h3>
+
+        <div class="about-skill-tags">
+          <span>C</span>
+          <span>C++</span>
+          <span>Python</span>
+          <span>Embedded C</span>
+        </div>
+
+      </article>
+
+
+      <article class="about-skill-card">
+
+        <h3>
+          <i class="fas fa-robot" aria-hidden="true"></i>
+          Robotics
+        </h3>
+
+        <div class="about-skill-tags">
+          <span>ROS</span>
+          <span>ROS 2</span>
+          <span>Kinematics</span>
+          <span>Dynamics</span>
+          <span>Motion Control</span>
+          <span>Trajectory Planning</span>
+        </div>
+
+      </article>
+
+
+      <article class="about-skill-card">
+
+        <h3>
+          <i class="fas fa-stopwatch" aria-hidden="true"></i>
+          Real-Time Systems
+        </h3>
+
+        <div class="about-skill-tags">
+          <span>EtherCAT</span>
+          <span>Embedded Systems</span>
+          <span>State Machines</span>
+        </div>
+
+      </article>
+
+
+      <article class="about-skill-card">
+
+        <h3>
+          <i class="fas fa-chart-line" aria-hidden="true"></i>
+          Control &amp; Estimation
+        </h3>
+
+        <div class="about-skill-tags">
+          <span>PID Control</span>
+          <span>Kalman Filters</span>
+          <span>Sensor Fusion</span>
+          <span>State Estimation</span>
+        </div>
+
+      </article>
+
+
+      <article class="about-skill-card">
+
+        <h3>
+          <i class="fas fa-microchip" aria-hidden="true"></i>
+          Hardware Platforms
+        </h3>
+
+        <div class="about-skill-tags">
+          <span>Teensy</span>
+          <span>STM32</span>
+          <span>Arduino</span>
+          <span>Raspberry Pi</span>
+          <span>Pixhawk</span>
+        </div>
+
+      </article>
+
+
+      <article class="about-skill-card">
+
+        <h3>
+          <i class="fas fa-tools" aria-hidden="true"></i>
+          Engineering Tools
+        </h3>
+
+        <div class="about-skill-tags">
+          <span>MATLAB</span>
+          <span>Simulink</span>
+          <span>SolidWorks</span>
+          <span>Gazebo</span>
+          <span>RViz</span>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- Work interests -->
+  <section class="about-section" id="interests">
+
+    <h2 class="about-section-title">
+      <i class="fas fa-compass" aria-hidden="true"></i>
+      Work Interests
+    </h2>
+
+    <div class="about-interest-list">
+
+      <div class="about-interest-item">
+        <i class="fas fa-sliders-h" aria-hidden="true"></i>
+        <span>Real-time robotic control and software architecture</span>
+      </div>
+
+      <div class="about-interest-item">
+        <i class="fas fa-crosshairs" aria-hidden="true"></i>
+        <span>Robot calibration, kinematics, and motion control</span>
+      </div>
+
+      <div class="about-interest-item">
+        <i class="fas fa-microchip" aria-hidden="true"></i>
+        <span>Embedded systems and state estimation</span>
+      </div>
+
+      <div class="about-interest-item">
+        <i class="fas fa-plane" aria-hidden="true"></i>
+        <span>Autonomous systems and flight control</span>
+      </div>
+
+      <div class="about-interest-item">
+        <i class="fas fa-heartbeat" aria-hidden="true"></i>
+        <span>Surgical and medical robotics</span>
+      </div>
+
+      <div class="about-interest-item">
+        <i class="fas fa-network-wired" aria-hidden="true"></i>
+        <span>EtherCAT-based distributed control systems</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Documents and links -->
+  <section class="about-section" id="documents">
+
+    <h2 class="about-section-title">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      Documents &amp; Links
+    </h2>
+
+    <div class="about-document-grid">
+
+      <a class="about-document-card"
+         href="{{ '/assets/files/Abhinay_Kumar_Resume.pdf' | relative_url }}"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <span class="about-document-icon">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i>
+        </span>
+
+        <span class="about-document-content">
+          <strong>Resume</strong>
+          <span>Professional experience and technical profile</span>
+        </span>
+
+        <i class="fas fa-arrow-up-right-from-square about-document-arrow"
+           aria-hidden="true"></i>
+
+      </a>
+
+
+      <a class="about-document-card"
+         href="{{ '/assets/files/Abhinay_Kumar_CV.pdf' | relative_url }}"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <span class="about-document-icon">
+          <i class="fas fa-file-alt" aria-hidden="true"></i>
+        </span>
+
+        <span class="about-document-content">
+          <strong>Curriculum Vitae</strong>
+          <span>Detailed academic and professional profile</span>
+        </span>
+
+        <i class="fas fa-arrow-up-right-from-square about-document-arrow"
+           aria-hidden="true"></i>
+
+      </a>
+
+
+      <a class="about-document-card"
+         href="{{ '/contact' | relative_url }}">
+
+        <span class="about-document-icon">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+        </span>
+
+        <span class="about-document-content">
+          <strong>Contact</strong>
+          <span>Get in touch regarding engineering and research</span>
+        </span>
+
+        <i class="fas fa-arrow-right about-document-arrow"
+           aria-hidden="true"></i>
+
+      </a>
+
+
+      <a class="about-document-card"
+         href="{{ '/' | relative_url }}">
+
+        <span class="about-document-icon">
+          <i class="fas fa-home" aria-hidden="true"></i>
+        </span>
+
+        <span class="about-document-content">
+          <strong>Website Home</strong>
+          <span>Explore projects, articles, datasets, and resources</span>
+        </span>
+
+        <i class="fas fa-arrow-right about-document-arrow"
+           aria-hidden="true"></i>
+
+      </a>
+
+    </div>
+
+  </section>
+
+</div>
