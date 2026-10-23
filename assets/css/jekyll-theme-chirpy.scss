@@ -2821,3 +2821,9 @@ h1[data-toc-skip] {
   font-size: 1rem;
   font-weight: 400;
 }
+
+/* Technical Skills and Work Interests: theme-aware icon colors */
+.about-page .about-skill-card h3 > i,
+.about-page .about-single-card .about-interest-item > i {
+  color: var(--bs-body-color) !important;
+}
