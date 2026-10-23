@@ -7,7 +7,7 @@ title: Contact
 ---
 
 <style>
-/* ==========================================================
+  /* ==========================================================
    CONTACT PAGE
    ========================================================== */
 
@@ -21,7 +21,7 @@ title: Contact
 /* Intro text */
 
 .contact-intro {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.25rem;
   font-size: 1rem;
   line-height: 1.75;
   color: var(--text-muted-color, var(--bs-secondary-color));
@@ -33,7 +33,10 @@ title: Contact
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  margin: 1.6rem 0 0.85rem;
+
+  margin: 0 0 0.25rem 0;
+  padding: 0;
+
   font-size: 1.25rem;
   font-weight: 650;
 }
@@ -73,10 +76,11 @@ title: Contact
 
 /* Force blue hover and focus effects */
 
+/* Card hover: blue border, but normal text colors */
 .contact-page a.contact-card:hover,
 .contact-page a.contact-card:focus-visible,
 .contact-page a.contact-card:active {
-  color: var(--link-color, #0d6efd) !important;
+  color: inherit !important;
   text-decoration: none !important;
   border-color: var(--link-color, #0d6efd) !important;
   box-shadow: 0 0.35rem 0.9rem rgb(0 0 0 / 8%);
@@ -173,12 +177,11 @@ title: Contact
     transform 0.2s ease;
 }
 
-/* Force blue hover and focus effects */
-
+/* Email card hover: blue border, normal email text */
 .contact-page a.contact-email-card:hover,
 .contact-page a.contact-email-card:focus-visible,
 .contact-page a.contact-email-card:active {
-  color: var(--link-color, #0d6efd) !important;
+  color: inherit !important;
   text-decoration: none !important;
   border-color: var(--link-color, #0d6efd) !important;
   box-shadow: 0 0.35rem 0.9rem rgb(0 0 0 / 8%);
@@ -319,10 +322,6 @@ title: Contact
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .contact-section-title {
-    margin-top: 1.35rem;
-  }
-
   .contact-email-card {
     padding: 1rem;
   }
@@ -354,6 +353,104 @@ title: Contact
   .contact-page a.contact-email-card:hover {
     transform: none;
   }
+}
+
+/* ==========================================================
+   FIX: NEUTRAL CARD BORDERS IN DARK AND LIGHT THEMES
+   ========================================================== */
+
+/* Default border: neutral gray in both themes */
+.contact-page .contact-card,
+.contact-page .contact-email-card,
+.contact-page .contact-about {
+  border-color: #808080 !important;
+}
+
+/* Keep borders gray when not interacting */
+.contact-page .contact-card:not(:hover):not(:focus-visible):not(:active),
+.contact-page .contact-email-card:not(:hover):not(:focus-visible):not(:active) {
+  border-color: #808080 !important;
+}
+
+/* Blue border only during hover or focus */
+.contact-page a.contact-card:hover,
+.contact-page a.contact-card:focus-visible,
+.contact-page a.contact-card:active,
+.contact-page a.contact-email-card:hover,
+.contact-page a.contact-email-card:focus-visible,
+.contact-page a.contact-email-card:active {
+  border-color: var(--link-color, #0d6efd) !important;
+}
+
+/* Preserve the existing About Me button behavior */
+.contact-page a.contact-about-link {
+  border-color: #808080 !important;
+}
+
+.contact-page a.contact-about-link:hover,
+.contact-page a.contact-about-link:focus-visible,
+.contact-page a.contact-about-link:active {
+  border-color: var(--link-color, #0d6efd) !important;
+}
+
+/* Only social card labels turn blue and underline */
+
+.contact-page a.contact-card:hover .contact-card-label,
+.contact-page a.contact-card:focus-visible .contact-card-label {
+  color: var(--link-color, #0d6efd) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+}
+
+/* Preserve normal value and description colors */
+
+.contact-page a.contact-card:hover .contact-card-value,
+.contact-page a.contact-card:focus-visible .contact-card-value {
+  color: var(--text-color, inherit) !important;
+  text-decoration: none !important;
+}
+
+.contact-page a.contact-card:hover .contact-card-description,
+.contact-page a.contact-card:focus-visible .contact-card-description {
+  color: var(--text-muted-color, var(--bs-secondary-color)) !important;
+  text-decoration: none !important;
+}
+
+/* Keep card icon colors unchanged */
+
+.contact-page a.contact-card:hover .contact-card-icon,
+.contact-page a.contact-card:focus-visible .contact-card-icon {
+  color: var(--link-color, #0d6efd) !important;
+}
+
+/* Email address remains unchanged on hover */
+
+.contact-page a.contact-email-card:hover .contact-email-address,
+.contact-page a.contact-email-card:focus-visible .contact-email-address {
+  color: var(--text-color, inherit) !important;
+  text-decoration: none !important;
+}
+
+/* Set top and bottom spacing around contact section headings */
+.contact-page h2.contact-section-title,
+.contact-page .contact-section-title {
+  margin: 1rem 0 0.5rem 0 !important;
+  padding: 0 !important;
+}
+
+/* Diagnose and remove spacing around the contact page */
+#main-wrapper,
+main,
+#post,
+.post-content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Remove spacing around the main Contact page title */
+h1.dynamic-title {
+  margin: 0 0 0 0 !important;
+  padding: 0 !important;
 }
 </style>
 
