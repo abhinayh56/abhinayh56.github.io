@@ -9,14 +9,6 @@
 {% if page.layout == 'post'
    or page.layout == 'page'
    or page.layout == 'home'
-   or page.layout == 'article_custom'
-   or page.layout == 'articles_custom'
-   or page.layout == 'project_custom'
-   or page.layout == 'projects_custom'
-   or page.layout == 'library_custom'
-   or page.layout == 'libraries_custom'
-   or page.layout == 'dataset_custom'
-   or page.layout == 'datasets_custom'
    or page.layout == 'about_custom' %}
 
   {% assign urls = urls
@@ -38,14 +30,6 @@
 
 {% if page.layout == 'home'
    or page.layout == 'post'
-   or page.layout == 'article_custom'
-   or page.layout == 'articles_custom'
-   or page.layout == 'project_custom'
-   or page.layout == 'projects_custom'
-   or page.layout == 'library_custom'
-   or page.layout == 'libraries_custom'
-   or page.layout == 'dataset_custom'
-   or page.layout == 'datasets_custom'
    or page.layout == 'about_custom'
    or page.layout == 'archives'
    or page.layout == 'category'
@@ -90,14 +74,6 @@
     {% assign js = 'home' %}
 
   {% when 'post',
-          'article_custom',
-          'articles_custom',
-          'project_custom',
-          'projects_custom',
-          'library_custom',
-          'libraries_custom',
-          'dataset_custom',
-          'datasets_custom',
           'about_custom' %}
     {% assign js = 'post' %}
 
@@ -130,14 +106,6 @@
 
 <!-- Pageviews -->
 {% if page.layout == 'post'
-   or page.layout == 'article_custom'
-   or page.layout == 'articles_custom'
-   or page.layout == 'project_custom'
-   or page.layout == 'projects_custom'
-   or page.layout == 'library_custom'
-   or page.layout == 'libraries_custom'
-   or page.layout == 'dataset_custom'
-   or page.layout == 'datasets_custom'
    or page.layout == 'about_custom'
 %}
 
