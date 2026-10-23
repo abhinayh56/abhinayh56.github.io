@@ -51,9 +51,6 @@
       {% elsif page.collection == 'tabs' or page.collection == 'pages' %}
         {%- capture tab_key -%}{{ page.url | split: '/' }}{%- endcapture -%}
         {% case page.layout %}
-          {% when 'about_custom' %}
-            <i class="fas fa-user me-1"></i>
-            {{ site.data.locales[include.lang].layout[page.layout] | default: "About" }}
           {% when 'categories_custom' %}
             <a href="{{ '/categories/'}}">
               <i class="fas fa-stream me-1"></i>
