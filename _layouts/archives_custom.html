@@ -16,6 +16,10 @@ layout: default
     </p>
   {% endif %}
 
+  <p class="archive-description">
+      List of everyting uploaded on this webpage is sorted in chronological order.
+  </p>
+
 </header>
 
 {% assign all_items = site.posts
@@ -43,7 +47,7 @@ layout: default
       </div>
     {% endunless %}
 
-    <h2 class="archive-year mt-5 mb-3">
+    <h2 class="archive-year mt-3 mb-2">
       {{ cur_year }}
     </h2>
 
