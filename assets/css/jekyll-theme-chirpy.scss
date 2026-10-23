@@ -984,7 +984,10 @@ a.btn.btn-outline-primary:active i {
 /* Intro text */
 
 .contact-intro {
-  margin: 0 0 0.25rem;
+  margin-top: 0 !important;
+  margin-bottom: 0.25rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
   font-size: 1rem;
   line-height: 1.75;
   color: var(--text-muted-color, var(--bs-secondary-color));
@@ -1414,13 +1417,6 @@ main,
 h1.dynamic-title {
   margin: 0 0 0 0 !important;
   padding: 0 !important;
-}
-
-/* Contact page main heading */
-.contact-page-title {
-  margin: 0 0 0.25rem 0 !important;
-  padding: 0 !important;
-  text-align: center;
 }
 
 h1[data-toc-skip] {
