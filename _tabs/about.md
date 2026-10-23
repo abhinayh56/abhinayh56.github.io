@@ -9,353 +9,56 @@ toc: true
 
 ## Professional Summary
 
-Robotics Software Engineer with experience in **medical robotics, autonomous aerial vehicles, embedded systems, control systems, state estimation, EtherCAT, and robotics software architecture**. Experienced in developing real-time robotic control software, onboard flight control systems, mathematical modeling, robotic calibration systems, and autonomous navigation algorithms.
+Robotics Software Engineer specializing in **medical robotics, real-time control, embedded systems, and autonomous systems**. Experienced in developing surgical instrument control and calibration software, robotic control frameworks, state-estimation algorithms, and onboard flight-control systems.
 
-Strong background in **C++, Python, robotics algorithms, state estimation, embedded programming, and robotic system integration** with industrial as well as research experience. Passionate about designing reliable robotic software frameworks for real-time applications.
+## Work Experience
 
----
+### SS Innovations — Senior Robotics Software Engineer
+**February 2023 – Present**
+
+- Develop robotics software for surgical robotic systems.
+- Model cable-driven robotic grippers across multiple mechanisms and develop control systems for endo-surgical instruments.
+- Develop automated calibration frameworks for robotic linear joints using EtherCAT, state machines, and calibration algorithms.
+- Standardize production testing procedures for endo-surgical micro-grippers.
+
+### IIT Jodhpur — Robotics Research and Development
+**December 2019 – July 2022**
+
+- Developed an indigenous onboard flight-control software framework for an aerial vehicle under a DRDO-sponsored project.
+- Implemented state estimation, flight control, sensor processing, and communication software; validated the system through autonomous outdoor flight.
+- Worked on visual odometry, GPS-delay compensation, sensor fusion, trajectory tracking, and waypoint navigation for aerial robots.
 
 ## Education
 
-| Degree / Level | Institute | Course / Department | Year |
-|---------|-----------|-----------|------:|
-| **M.Tech.** | Indian Institute of Technology Jodhpur | Advanced Manufacturing & Design | 2022 |
-| **B.Tech.** | Indian Institute of Technology Jodhpur | Mechanical Engineering | 2019 |
-| **Class XII** | Indian Public School, Madhubani | Science & Math | 2014 |
-| **Class X** | Ramakrishna Mission Vidyapith, Deoghar | CBSE | 2012 |
-
----
-
-## Professional Experience
-
-### SS Innovations Pvt. Ltd.
-**Mechatronics Engineer (Robotics Software Development)**
-
-**February 2023 – Present**
-
-#### Responsibilities
-
-- Develop robotics software for surgical robotic systems.
-- Designed mathematical models for **30+ cable-driven robotic grippers** spanning five different mechanisms.
-- Developed control systems for various **endo-surgical robotic instruments**.
-- Developed an automatic calibration framework for robotic linear joints using:
-  - EtherCAT
-  - State machines
-  - Automated calibration algorithms
-- Standardized production testing procedures for endo-surgical micro-grippers.
-
----
-
-### IIT Jodhpur
-
-#### **Research Engineer**
-**Robotics Lab | March 2022 – May 2022**
-##### Project
-SERB-DST funded project on autonomous unmanned rotorcraft navigation.
-##### Contributions
-- Integrated flight controller with Single Board Computer (SBC).
-- Implemented visual odometry framework.
-- Interfaced long-range communication module (RFD900) with custom autopilot.
-
-- Developed communication software for transmission, reception and packet-loss analysis.
-- Investigated autonomous hovering and waypoint navigation for helicopter platforms.
-
----
-
-#### **Student Project Research Associate**
-**Helicopter Lab | October 2020 – July 2022**
-##### Responsibilities
-- Improved quadrotor orientation and position control.
-- Implemented GPS delay compensation using IMU sensor fusion.
-- Studied and implemented modern waypoint navigation algorithms.
-- Implemented trajectory tracking algorithms for aerial and mobile robotic platforms.
-
----
-
-#### **Project Assistant**
-**Helicopter Laboratory | December 2019 – September 2020**
-##### DRDO DYSL-AST Sponsored Project
-Development of indigenous onboard Flight Control System (FCS)
-##### Responsibilities
-- Developed complete flight-control software framework.
-- Implemented:
-  - State estimation
-  - Flight control
-  - Sensor interpretation
-  - Data processing algorithms
-- Developed indigenous reusable software libraries.
-- Successfully demonstrated autonomous outdoor flight.
-- Delivered software and documentation to DRDO.
-
-##### Additional Responsibilities
-
-###### Mid-range RF Communication System
-- Designed and developed RF transceiver (>10 km range) for nuclear radiation sensors.
-
-###### Nuclear Sensor Communication
-- Developed communication software for DRDO DELRAD nuclear sensors.
-- Used TI TIVA CC1310 LaunchPad.
-- Implemented wireless communication and sensor data interpretation.
-
----
-
-## Major Projects
-
----
-
-### GPS Delay Compensation, Trajectory Tracking & Mini Helicopter Integration
-
-**M.Tech Thesis**
-
-**Supervisor:** Prof. C. Venkatesan
-
-**August 2021 – July 2022**
-
-#### Highlights
-
-- Estimated GPS latency using cross-correlation techniques.
-- Compensated GPS delay using acceleration kinematic models.
-- Developed embedded drivers for:
-  - Sensors
-  - Communication modules
-  - Teensy 4.1
-- Developed C++ libraries for:
-  - Complementary Filter
-  - Kalman Filter
-  - Full state estimation
-- Implemented:
-  - Outdoor waypoint navigation
-  - Trajectory tracking
-- Performed assembly and integration of Align 470 electric helicopter.
-
----
-
-### Design of Onboard Flight Control System for Aerial Vehicle
-
-**B.Tech Project**
-
-**Supervisor:** Prof. C. Venkatesan
-
-**June 2018 – May 2019**
-
-#### Highlights
-
-- Designed complete avionics architecture.
-- Integrated:
-  - IMU
-  - Servo motors
-  - Brushless motors
-  - Radio receiver
-  - ATmega328 controller
-- Implemented onboard flight control software.
-- Successfully validated through autonomous flight experiments.
-
----
-
-### Quadrotor Mounted with Manipulator Arm
-
-**Supervisor:** Prof. Suril V. Shah
-
-**January 2017 – April 2018**
-
-#### Highlights
-
-- Developed mathematical dynamics of quadrotor-manipulator system.
-- Simulated dynamic inversion and PID control in MATLAB.
-- Controlled hardware using:
-  - Pixhawk
-  - ROS
-  - Vicon Motion Capture
-- Built prototype using Arduino Uno.
-
----
-
-### Two-Wheel Self-Balancing Robot
-
-**Summer Project**
-
-**Supervisor:** Prof. B. Ravindra
-
-**April 2016 – June 2016**
-
-#### Highlights
-
-- Built complete balancing robot prototype.
-- Developed:
-  - PID stabilization
-  - Odometry estimation
-  - Velocity control
-- Used:
-  - Arduino Mega
-  - ESP32
-  - Raspberry Pi
-  - ROS
-- Simulated robot in Simulink using CAD-derived parameters.
-
----
-
-### Collaborative Control & Teleoperation of Robotic Swarm
-
-#### Highlights
-
-- Designed framework for controlling four TurtleBot3 robots.
-- Implemented:
-  - Consensus algorithms
-  - Aggregation
-  - Dispersion
-  - Homing
-  - Obstacle avoidance
-
----
-
-### Obstacle Avoidance & Path Tracking of Mobile Robot
-
-#### Highlights
-
-- Differential drive waypoint navigation.
-- Implemented:
-  - Artificial Potential Field
-  - Rapidly Exploring Random Tree (RRT)
-  - Pure Pursuit Controller
-  - Stanley Controller
-
----
-
-### Teleoperation of 6-DOF Manipulator with Force Feedback
-
-#### Highlights
-
-- Kinematic analysis of UR5 manipulator.
-- Developed ROS-based teleoperation software.
-- Integrated:
-  - UR5
-  - Phantom Omni
-  - Multi-axis joystick
-- Implemented:
-  - Jacobian-based position control
-  - Force feedback
-  - Workspace confinement
-  - RViz visualization
-  - Gazebo simulation
-
----
+- **M.Tech., Advanced Manufacturing & Design** — Indian Institute of Technology Jodhpur, 2022
+- **B.Tech., Mechanical Engineering** — Indian Institute of Technology Jodhpur, 2019
 
 ## Technical Skills
 
-### Programming
+- **Programming:** C, C++, Python, Embedded C
+- **Robotics and middleware:** ROS, ROS 2, robot kinematics and dynamics, motion control, trajectory planning
+- **Real-time and communication:** EtherCAT, state machines, embedded systems, sensor and communication interfaces
+- **Control and estimation:** PID control, Kalman and complementary filters, sensor fusion, state estimation
+- **Platforms:** Teensy, STM32, Arduino, Raspberry Pi, Pixhawk
+- **Simulation and engineering tools:** MATLAB, Simulink, SolidWorks, Gazebo, RViz
 
-- C, C++
-- Python
-- Embedded C
+## Work Interests
 
-### Robotics
+- Surgical and medical robotics
+- Real-time robotic control and software architecture
+- EtherCAT-based distributed control systems
+- Robot calibration, kinematics, and motion control
+- Embedded systems and state estimation
+- Autonomous systems and flight control
 
-- ROS, ROS2
-- RViz
-- Gazebo
-- EtherCAT
-- State Machines
-- Motion Control
-- Robot Kinematics
-- Robot Dynamics
-- Trajectory Planning
+## Selected Work
 
-### Control & Estimation
+- **Publication:** *Development and Performance Evaluation of Onboard Auto-pilot System for an Aerial Vehicle*, IEEE RO-MAN 2019, Late Breaking Report.
+- **Recognition:** Selected for the PAN IIT R&D Fair 2022; the indigenous autopilot project was recognized among the top five Defense & Aerospace projects.
 
-- PID
-- Complementary Filter
-- Kalman Filter
-- Sensor Fusion
-- State Estimation
+## Documents and Links
 
-### Embedded Platforms
-
-- AVR
-- Arduino
-- Teensy
-- STM32 Nucleo
-- Raspberry Pi
-- Pixhawk
-
-### CAD & Simulation
-
-- SolidWorks
-- MATLAB
-- Scilab
-- Octave
-- Simulink
-- Adams View (Basic)
-- ANSYS Static Structural (Basic)
-- Lotus Suspension
-- Cinderella
-
----
-
-## Relevant Coursework
-
-- Introduction to Robotics
-- Introduction to Aerial Robotics
-- Swarm Robotics
-- Mechatronics
-- Mechanical Vibrations
-- Sensors and Instrumentation
-- Kinematics and Dynamics of Machines
-- Multibody Dynamics
-- Linear Algebra
-
----
-
-## Publication
-**Abhinay Kumar** and Prof. C. Venkatesan, _**"Development and Performance Evaluation of Onboard Auto-pilot System for an Aerial Vehicle"**_, 
-28th IEEE International Conference on Robot & Human Interactive Communication (RO-MAN), New Delhi, India, October 2019. Accepted as LBR (Late Breaking Report)
-
----
-
-## Achievements
-
-### IIT R&D Fair 2022
-
-- Selected for the PAN IIT R&D Fair.
-- Demonstrated indigenous autopilot system.
-- Recognized among the **Top 5 Defense & Aerospace Projects** across all IITs.
-- Represented IIT Jodhpur before officials from:
-  - Ministry of Home Affairs
-  - Industry
-  - Startups
-  - Academic Institutions
-
----
-
-### SAE BAJA 2017
-
-- Secured **63rd Rank** among **400+ teams**.
-- Designed:
-  - Front upright
-  - Rear upright
-  - Suspension linkages
-- Performed suspension optimization using Lotus Suspension.
-- Conducted structural analysis using ANSYS.
-- Optimized design to:
-  - Factor of Safety > 2
-  - Weight < 500 g
-
----
-
-## Areas of Interest
-
-- Surgical Robotics
-- Medical Robotics
-- Autonomous Systems
-- Embedded Systems
-- Robot Control
-- Motion Planning
-- Flight Control Systems
-- State Estimation
-- Robot Software Architecture
-- EtherCAT
-- Real-Time Robotics
-
----
-
-You can reach out to me on the following link <br>
-<a href="{{ '/contact' | relative_url }}" class="btn btn-sm btn-outline-primary" ><i class="fas fa-envelope"></i> **Contact**</a>
+- <a href="{{ '/assets/files/Abhinay_Kumar_Resume.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Download Resume</a>
+- <a href="{{ '/assets/files/Abhinay_Kumar_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Download CV</a>
+- <a href="{{ '/contact' | relative_url }}">Contact</a>
+- <a href="{{ '/' | relative_url }}">Website Home</a>
