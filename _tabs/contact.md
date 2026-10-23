@@ -19,7 +19,7 @@ title: Contact
 }
 
 .contact-intro {
-  margin: 0 0 1.5rem;
+  margin: 0 0 0.75rem;
   font-size: 1rem;
   line-height: 1.75;
   color: var(--text-muted-color, var(--bs-secondary-color));
@@ -51,7 +51,7 @@ title: Contact
   align-items: flex-start;
   gap: 0.9rem;
   min-width: 0;
-  padding: 1.05rem;
+  padding: 0.75rem;
   color: inherit;
   text-decoration: none;
   background: var(--card-bg);
@@ -132,7 +132,7 @@ a.contact-card:focus-visible {
   align-items: flex-start;
   gap: 0.65rem;
   min-width: 0;
-  padding: 1.15rem;
+  padding: 0.75rem;
   color: inherit;
   text-decoration: none;
   background: var(--card-bg);
