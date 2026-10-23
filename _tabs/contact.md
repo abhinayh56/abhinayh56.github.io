@@ -18,12 +18,16 @@ title: Contact
   color: var(--text-color, inherit);
 }
 
+/* Intro text */
+
 .contact-intro {
   margin: 0 0 0.75rem;
   font-size: 1rem;
   line-height: 1.75;
   color: var(--text-muted-color, var(--bs-secondary-color));
 }
+
+/* Section headings */
 
 .contact-section-title {
   display: flex;
@@ -39,6 +43,10 @@ title: Contact
   text-align: center;
   color: var(--link-color, #0d6efd);
 }
+
+/* ==========================================================
+   CONTACT CARDS
+   ========================================================== */
 
 .contact-grid {
   display: grid;
@@ -63,19 +71,35 @@ title: Contact
     transform 0.2s ease;
 }
 
-a.contact-card:hover,
-a.contact-card:focus-visible {
-  color: inherit;
-  text-decoration: none;
-  border-color: var(--link-color, #0d6efd);
+/* Force blue hover and focus effects */
+
+.contact-page a.contact-card:hover,
+.contact-page a.contact-card:focus-visible,
+.contact-page a.contact-card:active {
+  color: var(--link-color, #0d6efd) !important;
+  text-decoration: none !important;
+  border-color: var(--link-color, #0d6efd) !important;
   box-shadow: 0 0.35rem 0.9rem rgb(0 0 0 / 8%);
   transform: translateY(-2px);
 }
 
-a.contact-card:focus-visible {
+/* Keep every text element blue when hovering */
+
+.contact-page a.contact-card:hover *,
+.contact-page a.contact-card:focus-visible *,
+.contact-page a.contact-card:active * {
+  color: var(--link-color, #0d6efd) !important;
+  text-decoration: none !important;
+}
+
+/* Keyboard focus outline */
+
+.contact-page a.contact-card:focus-visible {
   outline: 2px solid var(--link-color, #0d6efd);
   outline-offset: 3px;
 }
+
+/* Card icon */
 
 .contact-card-icon {
   display: flex;
@@ -120,6 +144,10 @@ a.contact-card:focus-visible {
   line-height: 1.5;
 }
 
+/* ==========================================================
+   EMAIL CARDS
+   ========================================================== */
+
 .contact-email-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -139,21 +167,36 @@ a.contact-card:focus-visible {
   border: 1px solid var(--bs-border-color);
   border-radius: 0.65rem;
   transition:
+    color 0.2s ease,
     border-color 0.2s ease,
     box-shadow 0.2s ease,
     transform 0.2s ease;
 }
 
-a.contact-email-card:hover,
-a.contact-email-card:focus-visible {
-  color: inherit;
-  text-decoration: none;
-  border-color: var(--link-color, #0d6efd);
+/* Force blue hover and focus effects */
+
+.contact-page a.contact-email-card:hover,
+.contact-page a.contact-email-card:focus-visible,
+.contact-page a.contact-email-card:active {
+  color: var(--link-color, #0d6efd) !important;
+  text-decoration: none !important;
+  border-color: var(--link-color, #0d6efd) !important;
   box-shadow: 0 0.35rem 0.9rem rgb(0 0 0 / 8%);
   transform: translateY(-2px);
 }
 
-a.contact-email-card:focus-visible {
+/* Keep email text and icons blue */
+
+.contact-page a.contact-email-card:hover *,
+.contact-page a.contact-email-card:focus-visible *,
+.contact-page a.contact-email-card:active * {
+  color: var(--link-color, #0d6efd) !important;
+  text-decoration: none !important;
+}
+
+/* Keyboard focus outline */
+
+.contact-page a.contact-email-card:focus-visible {
   outline: 2px solid var(--link-color, #0d6efd);
   outline-offset: 3px;
 }
@@ -178,6 +221,8 @@ a.contact-email-card:focus-visible {
   overflow-wrap: anywhere;
 }
 
+/* Email action, if used */
+
 .contact-email-action {
   display: inline-flex;
   align-items: center;
@@ -188,6 +233,10 @@ a.contact-email-card:focus-visible {
   font-size: 0.82rem;
   font-weight: 600;
 }
+
+/* ==========================================================
+   ABOUT ME CARD
+   ========================================================== */
 
 .contact-about {
   display: flex;
@@ -237,13 +286,32 @@ a.contact-email-card:focus-visible {
     border-color 0.2s ease;
 }
 
-.contact-about-link:hover,
-.contact-about-link:focus-visible {
-  color: #fff;
-  background: var(--link-color, #0d6efd);
-  border-color: var(--link-color, #0d6efd);
-  text-decoration: none;
+/* Blue background and white text on About Me hover */
+
+.contact-page a.contact-about-link:hover,
+.contact-page a.contact-about-link:focus-visible,
+.contact-page a.contact-about-link:active {
+  color: #fff !important;
+  background: var(--link-color, #0d6efd) !important;
+  border-color: var(--link-color, #0d6efd) !important;
+  text-decoration: none !important;
 }
+
+.contact-page a.contact-about-link:hover *,
+.contact-page a.contact-about-link:focus-visible *,
+.contact-page a.contact-about-link:active * {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.contact-page a.contact-about-link:focus-visible {
+  outline: 2px solid var(--link-color, #0d6efd);
+  outline-offset: 3px;
+}
+
+/* ==========================================================
+   RESPONSIVE LAYOUT
+   ========================================================== */
 
 @media (max-width: 767.98px) {
   .contact-grid,
@@ -271,11 +339,20 @@ a.contact-email-card:focus-visible {
   }
 }
 
+/* ==========================================================
+   REDUCED MOTION
+   ========================================================== */
+
 @media (prefers-reduced-motion: reduce) {
   .contact-card,
   .contact-email-card,
   .contact-about-link {
     transition: none;
+  }
+
+  .contact-page a.contact-card:hover,
+  .contact-page a.contact-email-card:hover {
+    transform: none;
   }
 }
 </style>
