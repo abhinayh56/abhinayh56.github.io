@@ -7,8 +7,6 @@ title: About
 toc: true
 ---
 
----
-
 ## Professional Summary
 
 Robotics Software Engineer with experience in **medical robotics, autonomous aerial vehicles, embedded systems, control systems, state estimation, EtherCAT, and robotics software architecture**. Experienced in developing real-time robotic control software, onboard flight control systems, mathematical modeling, robotic calibration systems, and autonomous navigation algorithms.
@@ -361,5 +359,3 @@ Development of indigenous onboard Flight Control System (FCS)
 
 You can reach out to me on the following link <br>
 <a href="{{ '/contact' | relative_url }}" class="btn btn-sm btn-outline-primary" ><i class="fas fa-envelope"></i> **Contact**</a>
-
----
