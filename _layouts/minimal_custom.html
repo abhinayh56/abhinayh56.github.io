@@ -2,10 +2,6 @@
 layout: default
 panel_includes:
   - toc
-tail_includes:
-  - post-nav
-script_includes:
-  - comment
 ---
 
 {% include lang.html %}
@@ -34,21 +30,4 @@ script_includes:
     {{ content }}
   </div>
 
-  <div class="post-tail-wrapper text-muted">
-    <div class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2">
-      <!-- license -->
-      <div class="license-wrapper">
-        {% if site.data.locales[lang].copyright.license.template %}
-          {% capture replacement %}
-            <a href="{{ site.data.locales[lang].copyright.license.link }}">
-              {{ site.data.locales[lang].copyright.license.name }}
-            </a>
-          {% endcapture %}
-          {{ site.data.locales[lang].copyright.license.template | replace: ':LICENSE_NAME', replacement }}
-        {% endif %}
-      </div>
-      <!-- share buttons -->
-      {% include post-sharing.html lang=lang %}
-    </div>
-  </div>
 </article>
