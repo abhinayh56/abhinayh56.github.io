@@ -28,7 +28,7 @@ Feel free to reach out for professional inquiries, robotics and engineering disc
      href="mailto:kumarabhinay53@gmail.com">
     <span class="contact-email-address">
       <i class="fas fa-envelope" aria-hidden="true"></i>
-      kumarabhinay53@gmail.com
+      <span class="contact-email-label">kumarabhinay53@gmail.com</span>
     </span>
   </a>
 
@@ -36,7 +36,7 @@ Feel free to reach out for professional inquiries, robotics and engineering disc
      href="mailto:kumar.19@alumni.iitj.ac.in">
     <span class="contact-email-address">
       <i class="fas fa-envelope" aria-hidden="true"></i>
-      kumar.19@alumni.iitj.ac.in
+      <span class="contact-email-label">kumar.19@alumni.iitj.ac.in</span>
     </span>
   </a>
 

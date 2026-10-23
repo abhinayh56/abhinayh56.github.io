@@ -1020,7 +1020,8 @@ a.btn.btn-outline-primary:active i {
 .contact-section-title i {
   width: 1.35rem;
   text-align: center;
-  color: var(--link-color, #0d6efd);
+  color: inherit;
+  transition: color 0.2s ease;
 }
 
 /* ==========================================================
@@ -1063,15 +1064,6 @@ a.btn.btn-outline-primary:active i {
   transform: translateY(-2px);
 }
 
-/* Keep every text element blue when hovering */
-
-.contact-page a.contact-card:hover *,
-.contact-page a.contact-card:focus-visible *,
-.contact-page a.contact-card:active * {
-  color: var(--link-color, #0d6efd) !important;
-  text-decoration: none !important;
-}
-
 /* Keyboard focus outline */
 
 .contact-page a.contact-card:focus-visible {
@@ -1088,11 +1080,14 @@ a.btn.btn-outline-primary:active i {
   justify-content: center;
   width: 2.65rem;
   height: 2.65rem;
-  color: var(--link-color, #0d6efd);
+
+  color: inherit;
   background: var(--bs-tertiary-bg, #f1f1f1);
   border: 1px solid var(--bs-border-color);
   border-radius: 0.55rem;
   font-size: 1.15rem;
+
+  transition: color 0.2s ease;
 }
 
 .contact-card-content {
@@ -1164,15 +1159,6 @@ a.btn.btn-outline-primary:active i {
   transform: translateY(-2px);
 }
 
-/* Keep email text and icons blue */
-
-.contact-page a.contact-email-card:hover *,
-.contact-page a.contact-email-card:focus-visible *,
-.contact-page a.contact-email-card:active * {
-  color: var(--link-color, #0d6efd) !important;
-  text-decoration: none !important;
-}
-
 /* Keyboard focus outline */
 
 .contact-page a.contact-email-card:focus-visible {
@@ -1189,8 +1175,9 @@ a.btn.btn-outline-primary:active i {
 }
 
 .contact-email-heading i {
-  color: var(--link-color, #0d6efd);
+  color: inherit;
   font-size: 1.15rem;
+  transition: color 0.2s ease;
 }
 
 .contact-email-address {
@@ -1369,42 +1356,128 @@ a.btn.btn-outline-primary:active i {
   border-color: var(--link-color, #0d6efd) !important;
 }
 
-/* Only social card labels turn blue and underline */
 
+/* ==========================================================
+   CONTACT CARDS — DEFAULT AND HOVER COLORS
+   ========================================================== */
+
+/* Preserve Chirpy's normal text and icon colors */
+.contact-page .contact-card,
+.contact-page .contact-email-card {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Smooth transitions */
+.contact-page .contact-card,
+.contact-page .contact-card-icon,
+.contact-page .contact-card-label,
+.contact-page .contact-email-card,
+.contact-page .contact-email-address,
+.contact-page .contact-email-address i,
+.contact-page .contact-email-label {
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    text-decoration-color 0.2s ease;
+}
+
+/* Default card icons: use the inherited theme color */
+.contact-page .contact-card-icon,
+.contact-page .contact-card-icon i,
+.contact-page .contact-email-address i {
+  color: inherit;
+}
+
+/* Social/contact card: blue border on hover */
+.contact-page a.contact-card:hover,
+.contact-page a.contact-card:focus-visible {
+  color: inherit;
+  text-decoration: none;
+  border-color: var(--link-color, #0d6efd);
+  box-shadow: 0 0.35rem 0.9rem rgb(0 0 0 / 8%);
+  transform: translateY(-2px);
+}
+
+/* Only the social card label becomes blue and underlined */
 .contact-page a.contact-card:hover .contact-card-label,
 .contact-page a.contact-card:focus-visible .contact-card-label {
-  color: var(--link-color, #0d6efd) !important;
-  text-decoration: underline !important;
+  color: var(--link-color, #0d6efd);
+  text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-/* Preserve normal value and description colors */
+/* Only the corresponding social card icon becomes blue */
+.contact-page a.contact-card:hover .contact-card-icon,
+.contact-page a.contact-card:hover .contact-card-icon i,
+.contact-page a.contact-card:focus-visible .contact-card-icon,
+.contact-page a.contact-card:focus-visible .contact-card-icon i {
+  color: var(--link-color, #0d6efd);
+}
 
+/* Keep value and description colors unchanged */
 .contact-page a.contact-card:hover .contact-card-value,
 .contact-page a.contact-card:focus-visible .contact-card-value {
-  color: var(--text-color, inherit) !important;
-  text-decoration: none !important;
+  color: inherit;
+  text-decoration: none;
 }
 
 .contact-page a.contact-card:hover .contact-card-description,
 .contact-page a.contact-card:focus-visible .contact-card-description {
-  color: var(--text-muted-color, var(--bs-secondary-color)) !important;
-  text-decoration: none !important;
+  color: var(--text-muted-color, var(--bs-secondary-color));
+  text-decoration: none;
 }
 
-/* Keep card icon colors unchanged */
-
-.contact-page a.contact-card:hover .contact-card-icon,
-.contact-page a.contact-card:focus-visible .contact-card-icon {
-  color: var(--link-color, #0d6efd) !important;
+/* Email card: blue border on hover */
+.contact-page a.contact-email-card:hover,
+.contact-page a.contact-email-card:focus-visible {
+  color: inherit;
+  text-decoration: none;
+  border-color: var(--link-color, #0d6efd);
+  box-shadow: 0 0.35rem 0.9rem rgb(0 0 0 / 8%);
+  transform: translateY(-2px);
 }
 
-/* Email address turns blue and underlined on card hover */
-.contact-page a.contact-email-card:hover .contact-email-address,
-.contact-page a.contact-email-card:focus-visible .contact-email-address {
-  color: var(--link-color, #0d6efd) !important;
-  text-decoration: underline !important;
+/* Email icon turns blue, but is never underlined */
+.contact-page a.contact-email-card:hover .contact-email-address i,
+.contact-page a.contact-email-card:focus-visible .contact-email-address i {
+  color: var(--link-color, #0d6efd);
+  text-decoration: none;
+}
+
+/* Only the email address text becomes blue and underlined */
+.contact-page a.contact-email-card:hover .contact-email-label,
+.contact-page a.contact-email-card:focus-visible .contact-email-label {
+  color: var(--link-color, #0d6efd);
+  text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+/* Accessible keyboard focus */
+.contact-page a.contact-card:focus-visible,
+.contact-page a.contact-email-card:focus-visible {
+  outline: 2px solid var(--link-color, #0d6efd);
+  outline-offset: 3px;
+}
+
+/* Do not animate when reduced motion is preferred */
+@media (prefers-reduced-motion: reduce) {
+  .contact-page .contact-card,
+  .contact-page .contact-card-icon,
+  .contact-page .contact-card-label,
+  .contact-page .contact-email-card,
+  .contact-page .contact-email-address,
+  .contact-page .contact-email-address i,
+  .contact-page .contact-email-label {
+    transition: none;
+  }
+
+  .contact-page a.contact-card:hover,
+  .contact-page a.contact-email-card:hover {
+    transform: none;
+  }
 }
 
 /* Set top and bottom spacing around contact section headings */
@@ -1433,4 +1506,23 @@ h1[data-toc-skip] {
   margin-top: 0.25rem !important;
   margin-bottom: 0.5rem !important;
   text-align: center !important;
+}
+
+.contact-email-address {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  font-size: 0.87rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.contact-email-address > i {
+  flex: 0 0 auto;
+}
+
+.contact-email-label {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
