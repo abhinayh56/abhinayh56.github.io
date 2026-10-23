@@ -64,11 +64,6 @@
               <i class="fas fa-tags me-1"></i>
               {{ site.data.locales[include.lang].layout[page.layout] | default: "Tags" }}
             </a>
-          {% when 'contact_custom' %}
-            <a href="{{ '/contact'}}">
-              <i class="fas fa-envelope me-1"></i>
-              {{ site.data.locales[include.lang].layout[page.layout] | default: "Contact" }}
-            </a>
         {% endcase %}
       {% else %}
         {% case page.layout %}
