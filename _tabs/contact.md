@@ -4,8 +4,11 @@ layout: minimal_custom
 icon: fas fa-envelope
 permalink: /contact
 title: Contact
-description: Feel free to reach out for professional inquiries, robotics and engineering discussions, collaborations, or questions about my projects and technical work. You can contact me directly by email or connect with me through the platforms below.
 ---
+
+<p class="contact-description">
+Feel free to reach out for professional inquiries, robotics and engineering discussions, collaborations, or questions about my projects and technical work. You can contact me directly by email or connect with me through the platforms below.
+</p>
 
 <div class="contact-page">
   <!-- ========================= EMAIL ========================= -->
