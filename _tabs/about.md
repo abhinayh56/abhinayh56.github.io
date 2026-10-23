@@ -4,7 +4,6 @@ layout: about_custom
 icon: fas fa-user
 permalink: /about
 title: About
-toc: true
 ---
 
 <div class="about-page">
