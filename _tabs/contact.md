@@ -423,12 +423,12 @@ title: Contact
   color: var(--link-color, #0d6efd) !important;
 }
 
-/* Email address remains unchanged on hover */
-
+/* Email address turns blue and underlined on card hover */
 .contact-page a.contact-email-card:hover .contact-email-address,
 .contact-page a.contact-email-card:focus-visible .contact-email-address {
-  color: var(--text-color, inherit) !important;
-  text-decoration: none !important;
+  color: var(--link-color, #0d6efd) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
 }
 
 /* Set top and bottom spacing around contact section headings */
