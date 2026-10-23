@@ -99,11 +99,29 @@ layout: default
     <div class="archive-type">
       <a href="{{ type_url | relative_url }}">
         <span class="archive-badge {{ badge_class }}">
-          <i class="{{ icon }}"></i>
+          <i class="{{ icon }}" aria-hidden="true"></i>
           <span>{{ type }}</span>
         </span>
       </a>
     </div>
+
+    {% if item.image_thumbnail %}
+      <a
+        class="archive-thumbnail"
+        href="{{ item.url | relative_url }}"
+        aria-label="Open {{ item.title | escape }}"
+        tabindex="0"
+      >
+        <img
+          src="{{ item.image_thumbnail | relative_url }}"
+          alt="{{ item.title | escape }}"
+          loading="lazy"
+          decoding="async"
+        >
+      </a>
+    {% else %}
+      <div class="archive-thumbnail archive-thumbnail-empty" aria-hidden="true"></div>
+    {% endif %}
 
     <div class="archive-title">
       <a href="{{ item.url | relative_url }}">
