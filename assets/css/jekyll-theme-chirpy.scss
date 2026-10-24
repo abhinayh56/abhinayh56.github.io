@@ -2832,3 +2832,10 @@ h1[data-toc-skip] {
 .about-page .about-single-card .about-interest-item > i {
   color: var(--bs-body-color) !important;
 }
+
+@media (min-width: 1400px) {
+  .blank-page-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
