@@ -2839,3 +2839,28 @@ h1[data-toc-skip] {
     padding-right: 0 !important;
   }
 }
+
+footer[aria-label="Site Info"].blank-custom-footer {
+  margin-top: 0 !important;
+}
+
+/* Remove footer spacing only on blank_custom pages */
+.blank-custom-tail {
+  margin-top: 0 !important;
+}
+
+.blank-custom-tail footer[aria-label="Site Info"] {
+  margin-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  line-height: normal;
+}
+
+.blank-custom-tail footer[aria-label="Site Info"] p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}

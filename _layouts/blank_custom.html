@@ -25,7 +25,7 @@ layout: compress
         {% include topbar.html lang=lang %}
 
         <div class="row flex-grow-1">
-          <main aria-label="Main Content" class="{% if page.layout == 'collection_custom' or page.layout == 'about_custom' or page.layout == 'blank_custom' or page.layout == 'archives_custom' or page.layout == 'contact_custom' or page.layout == 'home_custom' %}col-12{% else %}col-12 col-lg-11 col-xl-9{% endif %} px-0">
+          <main aria-label="Main Content" class="{% if page.layout == 'blank_custom' %}col-12{% else %}col-12 col-lg-11 col-xl-9{% endif %} px-0">
             {% if layout.layout == 'default' %}
               {% include refactor-content.html content=content lang=lang %}
             {% else %}
@@ -44,30 +44,26 @@ layout: compress
                 min-height: 600px;
                 border: none;
                 }
-            </style>
-            <div class="website-b-container">
-              <iframe
-                class="website-b-frame"
-                src="/PID_control_docs/index.html"
-                title="Website B"
-                loading="eager"
-              ></iframe>
-            </div>
+              </style>
+              <div class="website-b-container">
+                <iframe
+                  class="website-b-frame"
+                  src="/PID_control_docs/index.html"
+                  title="Website B"
+                  loading="eager"
+                ></iframe>
+              </div>
             {% endif %}
           </main>
         </div>
 
         <div class="row">
           <!-- tail -->
-          <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
-            {% for _include in layout.tail_includes %}
-              {% assign _include_path = _include | append: '.html' %}
-              {% include {{ _include_path }} lang=lang %}
-            {% endfor %}
-
-            {% if page.layout != 'blank_custom' %}
-              {% include_cached footer.html lang=lang %}
-            {% endif %}
+          <div
+            id="tail-wrapper"
+            class="col-12 px-md-4 {% if page.layout == 'blank_custom' %}blank-custom-tail{% endif %}"
+          >
+            {% include_cached footer.html lang=lang %}
           </div>
         </div>
 
