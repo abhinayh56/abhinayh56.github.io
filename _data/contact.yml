@@ -20,16 +20,11 @@
 #   noblank: true # open link in current tab
 #   url: "/contact"
 
-- type: ""
-  icon: "fas fa fa-lock"
-  noblank: true
-  url: "/admin1"
-
 # - type: ""
 #   icon: "fas fa fa-lock"
 #   noblank: true
-#   url: "/admin2"
-  
+#   url: "/admin1"
+
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
 #   url:  ''                  # Fill with your stackoverflow homepage
