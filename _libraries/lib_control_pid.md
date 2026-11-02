@@ -11,7 +11,7 @@ toc: true
 comments: true
 image_thumbnail: "assets/images/libraries/PID Control Diagram and Hierarchy.png"
 description: "C++ library of discrete PID control system for application in realtime and embedded systems."
-order: 4
+order: 3
 ---
 
 ### Details

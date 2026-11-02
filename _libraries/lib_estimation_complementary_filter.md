@@ -11,7 +11,7 @@ toc: true
 comments: true
 image_thumbnail: "assets/images/libraries/Complementary Filter Estimation Diagram.png"
 description: "Implementation of complementary filter for data fusion in C++."
-order: 5
+order: 4
 ---
 
 ### Details

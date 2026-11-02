@@ -11,7 +11,7 @@ toc: true
 comments: true
 image_thumbnail: "assets/images/libraries/Signal Filters Technical Infographic.png"
 description: "C++ library for digital filters for realtime implementation (LPF, HPF, BPF, BSP, __)."
-order: 3
+order: 2
 ---
 
 ### Details
