@@ -9,7 +9,7 @@ permalink: /libraries/lib_control_pid
 math: true
 toc: true
 comments: true
-image_thumbnail: "assets/images/libraries/thumbnail_pid.png"
+image_thumbnail: "assets/images/libraries/PID Controller Hierarchy and Flowcharts.png"
 description: "C++ library of discrete PID control system for application in realtime and embedded systems."
 order: 4
 ---
