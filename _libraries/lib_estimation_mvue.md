@@ -1,5 +1,5 @@
 ---
-title: "Estimation: MVUE"
+title: "Estimation: MVUE / BLUE"
 date: 2024-07-20 02:05:30 +0530
 categories: [Robotics]
 tags: [Kinematics]
