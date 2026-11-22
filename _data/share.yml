@@ -2,6 +2,10 @@
 #  Icons from <https://fontawesome.com/>
 
 platforms:
+  - type: WhatsApp
+    icon: "fa-brands fa-whatsapp"
+    link: "https://wa.me/?text=TITLE%20URL"
+    
   - type: Email
     icon: "fas fa-envelope"
     link: "mailto:?subject=TITLE&body=URL"
@@ -25,6 +29,10 @@ platforms:
   - type: Reddit
     icon: "fa-brands fa-square-reddit"
     link: "https://www.reddit.com/submit?url=URL&title=TITLE"
+
+  - type: WeChat
+    icon: "fab fa-weixin"
+    link: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=URL"
   
   - type: Threads
     icon: "fa-brands fa-square-threads"
