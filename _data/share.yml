@@ -6,6 +6,10 @@ platforms:
     icon: "fa-brands fa-whatsapp"
     link: "https://wa.me/?text=TITLE%20URL"
     
+  - type: Email
+    icon: "fas fa-envelope"
+    link: "mailto:?subject=TITLE&body=URL"
+
   - type: Linkedin
     icon: "fab fa-linkedin"
     link: "https://www.linkedin.com/feed/?shareActive=true&shareUrl=URL"
