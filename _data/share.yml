@@ -30,9 +30,6 @@ platforms:
     icon: "fa-brands fa-square-reddit"
     link: "https://www.reddit.com/submit?url=URL&title=TITLE"
 
-  - type: WeChat
-    icon: "fab fa-weixin"
-    link: "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=URL"
   
   - type: Threads
     icon: "fa-brands fa-square-threads"
