@@ -2,6 +2,10 @@
 #  Icons from <https://fontawesome.com/>
 
 platforms:
+  - type: WhatsApp
+    icon: "fa-brands fa-whatsapp"
+    link: "https://wa.me/?text=TITLE%20URL"
+    
   - type: Linkedin
     icon: "fab fa-linkedin"
     link: "https://www.linkedin.com/feed/?shareActive=true&shareUrl=URL"
