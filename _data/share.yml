@@ -8,7 +8,7 @@ platforms:
     
   - type: Email
     icon: "fas fa-envelope"
-    link: "mailto:share@example.com?subject=TITLE&body=URL"
+    link: "mailto:?subject=TITLE&body=URL%0A%0AThumbnail Image:%20IMAGE"
   
   - type: LinkedinMessage
     icon: "fas fa-paper-plane"
