@@ -6,7 +6,6 @@
     {% capture title %}{{ page.title }} - {{ site.title }}{% endcapture %}
     {% assign title = title | uri_escape %}
     {% assign url = page.url | absolute_url | url_encode %}
-    {% assign image = page.image_thumbnail | absolute_url | url_encode %}
 
     {% for share in site.data.share.platforms -%}
       {%- capture tooltip -%}
@@ -31,7 +30,7 @@
         {% continue %}
       {% endif %}
 
-      {% assign link = share.link | replace: 'TITLE', title | replace: 'URL', url | replace: 'IMAGE', image %}
+      {% assign link = share.link | replace: 'TITLE', title | replace: 'URL', url %}
 
       <a href="{{ link }}" target="_blank" rel="noopener" {{ tooltip }}>
         <i class="fa-fw {{ share.icon }}"></i>
