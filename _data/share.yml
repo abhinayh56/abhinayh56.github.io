@@ -9,8 +9,12 @@ platforms:
   - type: Email
     icon: "fas fa-envelope"
     link: "mailto:share@example.com?subject=TITLE&body=URL"
+  
+  - type: LinkedinMessage
+    icon: "fas fa-paper-plane"
+    link: "https://www.linkedin.com/messaging/"
 
-  - type: Linkedin
+  - type: LinkedinPost
     icon: "fab fa-linkedin"
     link: "https://www.linkedin.com/feed/?shareActive=true&shareUrl=URL"
 
